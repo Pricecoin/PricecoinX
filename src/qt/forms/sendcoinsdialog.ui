@@ -504,7 +504,7 @@
            <number>12</number>
           </property>
           <property name="sizeConstraint">
-           <enum>QLayout::SetDefaultConstraint</enum>
+           <enum>QLayout::SetDefauprcxonstraint</enum>
           </property>
           <property name="topMargin">
            <number>5</number>

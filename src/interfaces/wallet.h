@@ -243,7 +243,7 @@ public:
     virtual OutputType getDefaultAddressType() = 0;
 
     // Get default change type.
-    virtual OutputType getDefaultChangeType() = 0;
+    virtual OutputType getDefauprcxhangeType() = 0;
 
     //! Register handler for unload message.
     using UnloadFn = std::function<void()>;

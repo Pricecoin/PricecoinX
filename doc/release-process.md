@@ -34,7 +34,7 @@ If you're using the automated script (found in [contrib/gitian-build.py](/contri
 Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
-    git clone https://github.com/ZachChan105/gitian.sigs.ltc.git
+    git clone https://github.com/ZachChan105/gitian.sigs.prcx.git
     git clone https://github.com/ZachChan105/pricecoinx-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
     git clone https://github.com/ZachChan105/pricecoinx.git
@@ -69,9 +69,9 @@ Setup Gitian descriptors:
     git checkout v${VERSION}
     popd
 
-Ensure your gitian.sigs.ltc are up-to-date if you wish to gverify your builds against other Gitian signatures.
+Ensure your gitian.sigs.prcx are up-to-date if you wish to gverify your builds against other Gitian signatures.
 
-    pushd ./gitian.sigs.ltc
+    pushd ./gitian.sigs.prcx
     git pull
     popd
 
@@ -118,16 +118,16 @@ The gbuild invocations below <b>DO NOT DO THIS</b> by default.
     
     pushd ./gitian-builder
     ./bin/gbuild --num-make $GITIAN_THREADS --memory $GITIAN_MEMORY --commit pricecoinx=v${VERSION} ../pricecoinx/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gsign --signer "$SIGNER" --release ${VERSION}-linux --destination ../gitian.sigs.ltc/ ../pricecoinx/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gsign --signer "$SIGNER" --release ${VERSION}-linux --destination ../gitian.sigs.prcx/ ../pricecoinx/contrib/gitian-descriptors/gitian-linux.yml
     mv build/out/pricecoinx-*.tar.gz build/out/src/pricecoinx-*.tar.gz ../
 
     ./bin/gbuild --num-make $GITIAN_THREADS --memory $GITIAN_MEMORY --commit pricecoinx=v${VERSION} ../pricecoinx/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gsign --signer "$SIGNER" --release ${VERSION}-win-unsigned --destination ../gitian.sigs.ltc/ ../pricecoinx/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gsign --signer "$SIGNER" --release ${VERSION}-win-unsigned --destination ../gitian.sigs.prcx/ ../pricecoinx/contrib/gitian-descriptors/gitian-win.yml
     mv build/out/pricecoinx-*-win-unsigned.tar.gz inputs/pricecoinx-win-unsigned.tar.gz
     mv build/out/pricecoinx-*.zip build/out/pricecoinx-*.exe ../
 
     ./bin/gbuild --num-make $GITIAN_THREADS --memory $GITIAN_MEMORY --commit pricecoinx=v${VERSION} ../pricecoinx/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gsign --signer "$SIGNER" --release ${VERSION}-osx-unsigned --destination ../gitian.sigs.ltc/ ../pricecoinx/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gsign --signer "$SIGNER" --release ${VERSION}-osx-unsigned --destination ../gitian.sigs.prcx/ ../pricecoinx/contrib/gitian-descriptors/gitian-osx.yml
     mv build/out/pricecoinx-*-osx-unsigned.tar.gz inputs/pricecoinx-osx-unsigned.tar.gz
     mv build/out/pricecoinx-*.tar.gz build/out/pricecoinx-*.dmg ../
     popd
@@ -138,7 +138,7 @@ Build output expected:
   2. linux 32-bit and 64-bit dist tarballs (`pricecoinx-${VERSION}-linux[32|64].tar.gz`)
   3. windows 32-bit and 64-bit unsigned installers and dist zips (`pricecoinx-${VERSION}-win[32|64]-setup-unsigned.exe`, `pricecoinx-${VERSION}-win[32|64].zip`)
   4. macOS unsigned installer and dist tarball (`pricecoinx-${VERSION}-osx-unsigned.dmg`, `pricecoinx-${VERSION}-osx64.tar.gz`)
-  5. Gitian signatures (in `gitian.sigs.ltc/${VERSION}-<linux|{win,osx}-unsigned>/(your Gitian key)/`)
+  5. Gitian signatures (in `gitian.sigs.prcx/${VERSION}-<linux|{win,osx}-unsigned>/(your Gitian key)/`)
 
 ### Verify other gitian builders signatures to your own. (Optional)
 
@@ -147,16 +147,16 @@ Add other gitian builders keys to your gpg keyring, and/or refresh keys: See `..
 Verify the signatures
 
     pushd ./gitian-builder
-    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-linux ../pricecoinx/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-win-unsigned ../pricecoinx/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-osx-unsigned ../pricecoinx/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gverify -v -d ../gitian.sigs.prcx/ -r ${VERSION}-linux ../pricecoinx/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gverify -v -d ../gitian.sigs.prcx/ -r ${VERSION}-win-unsigned ../pricecoinx/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gverify -v -d ../gitian.sigs.prcx/ -r ${VERSION}-osx-unsigned ../pricecoinx/contrib/gitian-descriptors/gitian-osx.yml
     popd
 
 ### Next steps:
 
-Commit your signature to gitian.sigs.ltc:
+Commit your signature to gitian.sigs.prcx:
 
-    pushd gitian.sigs.ltc
+    pushd gitian.sigs.prcx
     git add ${VERSION}-linux/"${SIGNER}"
     git add ${VERSION}-win-unsigned/"${SIGNER}"
     git add ${VERSION}-osx-unsigned/"${SIGNER}"
@@ -204,8 +204,8 @@ Create (and optionally verify) the signed macOS binary:
 
     pushd ./gitian-builder
     ./bin/gbuild -i --commit signature=v${VERSION} ../pricecoinx/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gsign --signer "$SIGNER" --release ${VERSION}-osx-signed --destination ../gitian.sigs.ltc/ ../pricecoinx/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-osx-signed ../pricecoinx/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gsign --signer "$SIGNER" --release ${VERSION}-osx-signed --destination ../gitian.sigs.prcx/ ../pricecoinx/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs.prcx/ -r ${VERSION}-osx-signed ../pricecoinx/contrib/gitian-descriptors/gitian-osx-signer.yml
     mv build/out/pricecoinx-osx-signed.dmg ../pricecoinx-${VERSION}-osx.dmg
     popd
 
@@ -213,19 +213,19 @@ Create (and optionally verify) the signed Windows binaries:
 
     pushd ./gitian-builder
     ./bin/gbuild -i --commit signature=v${VERSION} ../pricecoinx/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gsign --signer "$SIGNER" --release ${VERSION}-win-signed --destination ../gitian.sigs.ltc/ ../pricecoinx/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-win-signed ../pricecoinx/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gsign --signer "$SIGNER" --release ${VERSION}-win-signed --destination ../gitian.sigs.prcx/ ../pricecoinx/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs.prcx/ -r ${VERSION}-win-signed ../pricecoinx/contrib/gitian-descriptors/gitian-win-signer.yml
     mv build/out/pricecoinx-*win64-setup.exe ../pricecoinx-${VERSION}-win64-setup.exe
     mv build/out/pricecoinx-*win32-setup.exe ../pricecoinx-${VERSION}-win32-setup.exe
     popd
 
 Commit your signature for the signed macOS/Windows binaries:
 
-    pushd gitian.sigs.ltc
+    pushd gitian.sigs.prcx
     git add ${VERSION}-osx-signed/"${SIGNER}"
     git add ${VERSION}-win-signed/"${SIGNER}"
     git commit -a
-    git push  # Assuming you can push to the gitian.sigs.ltc tree
+    git push  # Assuming you can push to the gitian.sigs.prcx tree
     popd
 
 ### After 3 or more people have gitian-built and their results match:

@@ -130,7 +130,7 @@ void PaymentServer::LoadRootCAs(X509_STORE* _store)
 
         certList = QSslCertificate::fromPath(certFile);
         // Use those certificates when fetching payment requests, too:
-        QSslSocket::setDefaultCaCertificates(certList);
+        QSslSocket::setDefauprcxaCertificates(certList);
     } else
         certList = QSslSocket::systemCaCertificates();
 
@@ -633,7 +633,7 @@ void PaymentServer::fetchPaymentACK(WalletModel* walletModel, const SendCoinsRec
         // use for change. Despite an actual payment and not change, this is a close match:
         // it's the output type we use subject to privacy issues, but not restricted by what
         // other software supports.
-        const OutputType change_type = walletModel->wallet().getDefaultChangeType() != OutputType::CHANGE_AUTO ? walletModel->wallet().getDefaultChangeType() : walletModel->wallet().getDefaultAddressType();
+        const OutputType change_type = walletModel->wallet().getDefauprcxhangeType() != OutputType::CHANGE_AUTO ? walletModel->wallet().getDefauprcxhangeType() : walletModel->wallet().getDefaultAddressType();
         walletModel->wallet().learnRelatedScripts(newKey, change_type);
         CTxDestination dest = GetDestinationForKey(newKey, change_type);
         std::string label = tr("Refund from %1").arg(recipient.authenticatedMerchant).toStdString();
