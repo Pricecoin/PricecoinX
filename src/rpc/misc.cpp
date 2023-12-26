@@ -56,8 +56,8 @@ static UniValue validateaddress(const JSONRPCRequest& request)
             "  \"witness_program\" : \"hex\"     (string, optional) The hex value of the witness program\n"
             "}\n"
             "\nExamples:\n"
-            + HelpExampleCli("validateaddress", "\"LER4HnAEFwYHbmGxCfP2po1nPrUeiK8KM2\"")
-            + HelpExampleRpc("validateaddress", "\"LER4HnAEFwYHbmGxCfP2po1nPrUeiK8KM2\"")
+            + HelpExampleCli("validateaddress", "\"Address\"")
+            + HelpExampleRpc("validateaddress", "\"Address\"")
         );
 
     CTxDestination dest = DecodeDestination(request.params[0].get_str());
