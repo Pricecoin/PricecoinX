@@ -1,4 +1,4 @@
-This directory contains the PricecoinXQT graphical user interface (GUI). It uses the cross-platform framework [Qt](https://www1.qt.io/developers/).
+This directory contains the PricecoinxQT graphical user interface (GUI). It uses the cross-platform framework [Qt](https://www1.qt.io/developers/).
 
 The current precise version for Qt 5 is specified in [qt.mk](/depends/packages/qt.mk).
 
@@ -32,7 +32,7 @@ Tests.
 
 ### bitcoingui.(h/cpp)
 
-Represents the main window of the PricecoinX UI.
+Represents the main window of the Pricecoinx UI.
 
 ### \*model.(h/cpp)
 
@@ -64,8 +64,8 @@ Represents the view to a single wallet.
 * `callback.h`
 * `guiconstants.h`: UI colors, app name, etc
 * `guiutil.h`: several helper functions
-* `macdockiconhandler.(h/cpp)`
-* `macdockiconhandler.(h/cpp)`: display notifications in macOS
+* `macdockiconhandler.(h/mm)`: macOS dock icon handler
+* `macnotificationhandler.(h/mm)`: display notifications in macOS
 
 ## Contribute
 
