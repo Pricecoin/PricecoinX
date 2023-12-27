@@ -66,11 +66,11 @@
         <translation>آدرس‌های دریافتی</translation>
     </message>
     <message>
-        <source>These are your PricecoinX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Pricecoinx addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>این‌ها آدرس‌های بیتکوین برای پرداخت‌ها هستند. همیشه قبل از فرستادن سکه‌ها مقدار و آدرس دریافت‌کننده را بررسی نمایید.</translation>
     </message>
     <message>
-        <source>These are your PricecoinX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Pricecoinx addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>این‌ها آدرس‌های بیتکوین شما برای دریافت مبالغ می‌باشد. توصیه می‌شود برای هر تراکنش از یک آدرس جدید استفاده کنید.</translation>
     </message>
     <message>
@@ -140,6 +140,10 @@
         <translation>نمایش گذرواژه</translation>
     </message>
     <message>
+        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <translation>کلمه رمز جدید را وارد کنید. &lt;br/&gt;لطفا کلمه رمزی که انتخاب میکنید &lt;b&gt;۱۰ یا بیشتر حرف تصادفی باشد &lt;b&gt; یا ۸ کلمه یا بیشتر باشد.</translation>
+    </message>
+    <message>
         <source>Encrypt wallet</source>
         <translation>رمزنگاری کیف پول</translation>
     </message>
@@ -178,6 +182,10 @@
     <message>
         <source>Wallet encrypted</source>
         <translation>کیف پول رمزنگاری شد</translation>
+    </message>
+    <message>
+        <source>Your wallet is now encrypted. Remember that encrypting your wallet cannot fully protect your pricecoinxs from being stolen by malware infecting your computer.</source>
+        <translation>کیف pricecoinx رمزنگاری شد. به یاد داشته باشید رمزنگار کردن کیف pricecoinx نمیتواند به صورت کامل pricecoinx شما را در مقابل سرقت آنها توسط بدافزارهایی که ممکن است بر روی کامپیوتر شما نصب شوند، محافظت نماید.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -228,10 +236,6 @@
     <message>
         <source>&amp;Overview</source>
         <translation>&amp;بررسی اجمالی</translation>
-    </message>
-    <message>
-        <source>Node</source>
-        <translation>گره</translation>
     </message>
     <message>
         <source>Show general overview of wallet</source>
@@ -290,16 +294,12 @@
         <translation>&amp;تغییر گذرواژه...</translation>
     </message>
     <message>
-        <source>&amp;Sending addresses...</source>
-        <translation>&amp;در حال ارسال آدرس ها...</translation>
-    </message>
-    <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>&amp;در حال دریافت آدرس ها...</translation>
-    </message>
-    <message>
         <source>Open &amp;URI...</source>
         <translation>باز کردن &amp;آدرس</translation>
+    </message>
+    <message>
+        <source>Wallet:</source>
+        <translation>کیف:</translation>
     </message>
     <message>
         <source>Click to disable network activity.</source>
@@ -318,8 +318,8 @@
         <translation>بازنشانی بلوک‌ها روی دیسک...</translation>
     </message>
     <message>
-        <source>Send coins to a PricecoinX address</source>
-        <translation>ارسال وجه به نشانی PricecoinX</translation>
+        <source>Send coins to a Pricecoinx address</source>
+        <translation>ارسال وجه به نشانی Pricecoinx</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -342,12 +342,8 @@
         <translation>با&amp;زبینی پیام...</translation>
     </message>
     <message>
-        <source>PricecoinX</source>
-        <translation>PricecoinX</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>کیف پول</translation>
+        <source>Pricecoinx</source>
+        <translation>Pricecoinx</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -370,12 +366,12 @@
         <translation>رمزنگاری کلیدهای خصوصی متعلق به کیف پول شما</translation>
     </message>
     <message>
-        <source>Sign messages with your PricecoinX addresses to prove you own them</source>
-        <translation>برای اثبات اینکه پیام‌ها به شما تعلق دارند، آن‌ها را با نشانی PricecoinX خود امضا کنید</translation>
+        <source>Sign messages with your Pricecoinx addresses to prove you own them</source>
+        <translation>برای اثبات اینکه پیام‌ها به شما تعلق دارند، آن‌ها را با نشانی Pricecoinx خود امضا کنید</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified PricecoinX addresses</source>
-        <translation>برای حصول اطمینان از اینکه پیام با نشانی PricecoinX مشخص شده امضا است یا خیر، پیام را شناسایی کنید</translation>
+        <source>Verify messages to ensure they were signed with specified Pricecoinx addresses</source>
+        <translation>برای حصول اطمینان از اینکه پیام با نشانی Pricecoinx مشخص شده امضا است یا خیر، پیام را شناسایی کنید</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -414,8 +410,8 @@
         <translation>گزینه‌های خط‌فرمان</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to PricecoinX network</source>
-        <translation><numerusform>%n ارتباط فعال با شبکهٔ PricecoinX</numerusform><numerusform>%n ارتباط فعال با شبکهٔ PricecoinX</numerusform></translation>
+        <source>%n active connection(s) to Pricecoinx network</source>
+        <translation><numerusform>%n ارتباط فعال با شبکهٔ Pricecoinx</numerusform><numerusform>%n ارتباط فعال با شبکهٔ Pricecoinx</numerusform></translation>
     </message>
     <message>
         <source>Processing blocks on disk...</source>
@@ -452,6 +448,14 @@
     <message>
         <source>Up to date</source>
         <translation>وضعیت به‌روز</translation>
+    </message>
+    <message>
+        <source>&amp;Window</source>
+        <translation>&amp;پنجره</translation>
+    </message>
+    <message>
+        <source>Connecting to peers...</source>
+        <translation>در حال اتصال به همتایان</translation>
     </message>
     <message>
         <source>Catching up...</source>
@@ -658,8 +662,8 @@
         <translation>ویرایش آدرس قرستنده</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid PricecoinX address.</source>
-        <translation>نشانی وارد شده "%1" یک نشانی معتبر PricecoinX نیست.</translation>
+        <source>The entered address "%1" is not a valid Pricecoinx address.</source>
+        <translation>نشانی وارد شده "%1" یک نشانی معتبر Pricecoinx نیست.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -731,8 +735,8 @@
         <translation>استفاده از یک مسیر سفارشی:</translation>
     </message>
     <message>
-        <source>PricecoinX</source>
-        <translation>PricecoinX</translation>
+        <source>Pricecoinx</source>
+        <translation>Pricecoinx</translation>
     </message>
     <message>
         <source>Error</source>
@@ -812,10 +816,6 @@
         <translation>اجرای خودکار %1 بعد زمان ورود به سیستم.</translation>
     </message>
     <message>
-        <source>MB</source>
-        <translation>مگابایت</translation>
-    </message>
-    <message>
         <source>Reset all client options to default.</source>
         <translation>بازنشانی تمام تنظیمات به پیش‌فرض.</translation>
     </message>
@@ -836,8 +836,8 @@
         <translation>استخراج</translation>
     </message>
     <message>
-        <source>Automatically open the PricecoinX client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>باز کردن خودکار درگاه شبکهٔ PricecoinX روی روترها. تنها زمانی کار می‌کند که روتر از پروتکل UPnP پشتیبانی کند و این پروتکل فعال باشد.</translation>
+        <source>Automatically open the Pricecoinx client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>باز کردن خودکار درگاه شبکهٔ Pricecoinx روی روترها. تنها زمانی کار می‌کند که روتر از پروتکل UPnP پشتیبانی کند و این پروتکل فعال باشد.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -939,8 +939,8 @@
         <translation>فرم</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the PricecoinX network after a connection is established, but this process has not completed yet.</source>
-        <translation>اطلاعات نمایش‌داده شده ممکن است قدیمی باشند. بعد از این که یک اتصال با شبکه برقرار شد، کیف پول شما به‌صورت خودکار با شبکهٔ PricecoinX همگام‌سازی می‌شود. اما این روند هنوز کامل نشده است.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Pricecoinx network after a connection is established, but this process has not completed yet.</source>
+        <translation>اطلاعات نمایش‌داده شده ممکن است قدیمی باشند. بعد از این که یک اتصال با شبکه برقرار شد، کیف پول شما به‌صورت خودکار با شبکهٔ Pricecoinx همگام‌سازی می‌شود. اما این روند هنوز کامل نشده است.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -997,6 +997,10 @@
 <context>
     <name>PeerTableModel</name>
     <message>
+        <source>Ping</source>
+        <translation>پینگ</translation>
+    </message>
+    <message>
         <source>Sent</source>
         <translation>ارسال شده</translation>
     </message>
@@ -1012,8 +1016,8 @@
         <translation>مبلغ</translation>
     </message>
     <message>
-        <source>Enter a PricecoinX address (e.g. %1)</source>
-        <translation>یک آدرس PricecoinX وارد کنید (مثلاً %1)</translation>
+        <source>Enter a Pricecoinx address (e.g. %1)</source>
+        <translation>یک آدرس Pricecoinx وارد کنید (مثلاً %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1492,8 +1496,8 @@
         <translation>این یک پرداخت عادی است</translation>
     </message>
     <message>
-        <source>The PricecoinX address to send the payment to</source>
-        <translation>نشانی PricecoinX برای ارسال پرداخت به آن</translation>
+        <source>The Pricecoinx address to send the payment to</source>
+        <translation>نشانی Pricecoinx برای ارسال پرداخت به آن</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1545,8 +1549,8 @@
         <translation>ا&amp;مضای پیام</translation>
     </message>
     <message>
-        <source>The PricecoinX address to sign the message with</source>
-        <translation>نشانی PricecoinX برای امضاء پیغام با آن</translation>
+        <source>The Pricecoinx address to sign the message with</source>
+        <translation>نشانی Pricecoinx برای امضاء پیغام با آن</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1577,7 +1581,7 @@
         <translation>امضای فعلی را به حافظهٔ سیستم کپی کن</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this PricecoinX address</source>
+        <source>Sign the message to prove you own this Pricecoinx address</source>
         <translation>برای اثبات تعلق این نشانی به شما، پیام را امضا کنید</translation>
     </message>
     <message>
@@ -1597,12 +1601,12 @@
         <translation>&amp;شناسایی پیام</translation>
     </message>
     <message>
-        <source>The PricecoinX address the message was signed with</source>
-        <translation>نشانی PricecoinX که پیغام با آن امضاء شده</translation>
+        <source>The Pricecoinx address the message was signed with</source>
+        <translation>نشانی Pricecoinx که پیغام با آن امضاء شده</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified PricecoinX address</source>
-        <translation>برای حصول اطمینان از اینکه پیام با نشانی PricecoinX مشخص شده امضا است یا خیر، پیام را شناسایی کنید</translation>
+        <source>Verify the message to ensure it was signed with the specified Pricecoinx address</source>
+        <translation>برای حصول اطمینان از اینکه پیام با نشانی Pricecoinx مشخص شده امضا است یا خیر، پیام را شناسایی کنید</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1807,13 +1811,36 @@
     <name>UnitDisplayStatusBarControl</name>
     </context>
 <context>
+    <name>WalletController</name>
+    </context>
+<context>
     <name>WalletFrame</name>
     </context>
 <context>
     <name>WalletModel</name>
+    <message>
+        <source>Send Coins</source>
+        <translation>فرستادن سکه ها</translation>
+    </message>
+    <message>
+        <source>Current fee:</source>
+        <translation>دستمزد فعلی</translation>
+    </message>
+    <message>
+        <source>Increase:</source>
+        <translation>افزایش</translation>
+    </message>
+    <message>
+        <source>New fee:</source>
+        <translation>تعرفه جدید</translation>
+    </message>
     </context>
 <context>
     <name>WalletView</name>
+    <message>
+        <source>&amp;Export</source>
+        <translation>و صدور</translation>
+    </message>
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation>صدور داده‌های برگهٔ فعلی به یک پرونده</translation>
@@ -1822,8 +1849,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>PricecoinX Core</source>
-        <translation> هسته PricecoinX </translation>
+        <source>Pricecoinx Core</source>
+        <translation> هسته Pricecoinx </translation>
     </message>
     <message>
         <source>Copyright (C) %i-%i</source>

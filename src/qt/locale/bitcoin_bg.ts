@@ -66,12 +66,12 @@
         <translation>Получаване на адреси</translation>
     </message>
     <message>
-        <source>These are your PricecoinX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Pricecoinx addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Това са адресите на получателите на плащания. Винаги проверявайте размера на сумата и адреса на получателя, преди да изпратите монети.</translation>
     </message>
     <message>
-        <source>These are your PricecoinX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Това са Вашите PricecoinX адреси,благодарение на които ще получавате плащания.Препоръчително е да използвате нови адреси за получаване на всяка транзакция.</translation>
+        <source>These are your Pricecoinx addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Това са Вашите Pricecoinx адреси,благодарение на които ще получавате плащания.Препоръчително е да използвате нови адреси за получаване на всяка транзакция.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -134,6 +134,10 @@
     <message>
         <source>Repeat new passphrase</source>
         <translation>Въведете новата парола повторно</translation>
+    </message>
+    <message>
+        <source>Show password</source>
+        <translation>Покажи парола</translation>
     </message>
     <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
@@ -246,10 +250,6 @@
         <translation>&amp;Баланс</translation>
     </message>
     <message>
-        <source>Node</source>
-        <translation>Сървър</translation>
-    </message>
-    <message>
         <source>Show general overview of wallet</source>
         <translation>Обобщена информация за портфейла</translation>
     </message>
@@ -306,16 +306,12 @@
         <translation>&amp;Смяна на паролата...</translation>
     </message>
     <message>
-        <source>&amp;Sending addresses...</source>
-        <translation>&amp;Изпращане на адресите...</translation>
-    </message>
-    <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>&amp;Получаване на адресите...</translation>
-    </message>
-    <message>
         <source>Open &amp;URI...</source>
         <translation>Отвори &amp;URI...</translation>
+    </message>
+    <message>
+        <source>Wallet:</source>
+        <translation>Портфейл</translation>
     </message>
     <message>
         <source>Click to disable network activity.</source>
@@ -330,11 +326,15 @@
         <translation>Натиснете за повторно активиране на мрежата.</translation>
     </message>
     <message>
+        <source>Syncing Headers (%1%)...</source>
+        <translation>Синхронизиране на хедъри (%1%)</translation>
+    </message>
+    <message>
         <source>Reindexing blocks on disk...</source>
         <translation>Повторно индексиране на блоковете на диска...</translation>
     </message>
     <message>
-        <source>Send coins to a PricecoinX address</source>
+        <source>Send coins to a Pricecoinx address</source>
         <translation>Изпращане към Биткоин адрес</translation>
     </message>
     <message>
@@ -358,12 +358,8 @@
         <translation>&amp;Проверка на съобщение...</translation>
     </message>
     <message>
-        <source>PricecoinX</source>
+        <source>Pricecoinx</source>
         <translation>Биткоин</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Портфейл</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -386,12 +382,12 @@
         <translation>Шифроване на личните ключове,които принадлежат на портфейла Ви.</translation>
     </message>
     <message>
-        <source>Sign messages with your PricecoinX addresses to prove you own them</source>
-        <translation>Пишете съобщения със своя PricecoinX адрес за да докажете,че е ваш.</translation>
+        <source>Sign messages with your Pricecoinx addresses to prove you own them</source>
+        <translation>Пишете съобщения със своя Pricecoinx адрес за да докажете,че е ваш.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified PricecoinX addresses</source>
-        <translation>Потвърждаване на съобщения  за да се знае,че са написани с дадените PricecoinX адреси.</translation>
+        <source>Verify messages to ensure they were signed with specified Pricecoinx addresses</source>
+        <translation>Потвърждаване на съобщения  за да се знае,че са написани с дадените Pricecoinx адреси.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -411,7 +407,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and pricecoinx: URIs)</source>
-        <translation>Изискване на плащания(генерира QR кодове и PricecoinX: URIs)</translation>
+        <translation>Изискване на плащания(генерира QR кодове и Pricecoinx: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -423,7 +419,7 @@
     </message>
     <message>
         <source>Open a pricecoinx: URI or payment request</source>
-        <translation>Отворете PricecoinX: URI  или заявка за плащане</translation>
+        <translation>Отворете Pricecoinx: URI  или заявка за плащане</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -466,8 +462,20 @@
         <translation>Синхронизиран</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible PricecoinX command-line options</source>
-        <translation>Покажи %1 помощно съобщение за да получиш лист с възможни PricecoinX команди</translation>
+        <source>Show the %1 help message to get a list with possible Pricecoinx command-line options</source>
+        <translation>Покажи %1 помощно съобщение за да получиш лист с възможни Pricecoinx команди</translation>
+    </message>
+    <message>
+        <source>default wallet</source>
+        <translation>Портфейл по подразбиране</translation>
+    </message>
+    <message>
+        <source>&amp;Window</source>
+        <translation>&amp;Прозорец</translation>
+    </message>
+    <message>
+        <source>Minimize</source>
+        <translation>Минимизирай</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -528,8 +536,8 @@
         <translation>Портфейлът е &lt;b&gt;криптиран&lt;/b&gt; и &lt;b&gt;заключен&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. PricecoinX can no longer continue safely and will quit.</source>
-        <translation>Възникна фатална грешка. PricecoinX не може да продължи безопасно и ще се изключи.</translation>
+        <source>A fatal error occurred. Pricecoinx can no longer continue safely and will quit.</source>
+        <translation>Възникна фатална грешка. Pricecoinx не може да продължи безопасно и ще се изключи.</translation>
     </message>
 </context>
 <context>
@@ -710,7 +718,7 @@
         <translation>Редактиране на адрес за изпращане</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid PricecoinX address.</source>
+        <source>The entered address "%1" is not a valid Pricecoinx address.</source>
         <translation>"%1" не е валиден Биткоин адрес.</translation>
     </message>
     <message>
@@ -787,7 +795,7 @@
         <translation>Използване на директория ръчно</translation>
     </message>
     <message>
-        <source>PricecoinX</source>
+        <source>Pricecoinx</source>
         <translation>Биткоин</translation>
     </message>
     <message>
@@ -852,10 +860,6 @@
         <translation>Размер на кеша в &amp;базата данни</translation>
     </message>
     <message>
-        <source>MB</source>
-        <translation>Мегабайта</translation>
-    </message>
-    <message>
         <source>Number of script &amp;verification threads</source>
         <translation>Брой на скриптове и &amp;нишки за потвърждение</translation>
     </message>
@@ -876,6 +880,10 @@
         <translation>&amp;Мрежа</translation>
     </message>
     <message>
+        <source>GB</source>
+        <translation>ГБ</translation>
+    </message>
+    <message>
         <source>W&amp;allet</source>
         <translation>По&amp;ртфейл</translation>
     </message>
@@ -892,16 +900,24 @@
         <translation>&amp;Похарчете непотвърденото ресто</translation>
     </message>
     <message>
-        <source>Automatically open the PricecoinX client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматично отваряне на входящия PricecoinX порт. Работи само с рутери поддържащи UPnP.</translation>
+        <source>Automatically open the Pricecoinx client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматично отваряне на входящия Pricecoinx порт. Работи само с рутери поддържащи UPnP.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Отваряне на входящия порт чрез &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the PricecoinX network through a SOCKS5 proxy.</source>
-        <translation>Свързване с PricecoinX мрежата чрез SOCKS5  прокси.</translation>
+        <source>Accept connections from outside.</source>
+        <translation>Позволи външни връзки</translation>
+    </message>
+    <message>
+        <source>Allow incomin&amp;g connections</source>
+        <translation>Позволи входящи връзки</translation>
+    </message>
+    <message>
+        <source>Connect to the Pricecoinx network through a SOCKS5 proxy.</source>
+        <translation>Свързване с Pricecoinx мрежата чрез SOCKS5  прокси.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -918,6 +934,10 @@
     <message>
         <source>Port of the proxy (e.g. 9050)</source>
         <translation>Порт на прокси сървъра (пр. 9050)</translation>
+    </message>
+    <message>
+        <source>Tor</source>
+        <translation>Тор</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -980,6 +1000,10 @@
         <translation>Изисква се рестартиране на клиента за активиране на извършените промени.</translation>
     </message>
     <message>
+        <source>Client will be shut down. Do you want to proceed?</source>
+        <translation>Клиентът ще бъде изключен. Искате ли да продължите?</translation>
+    </message>
+    <message>
         <source>Error</source>
         <translation>Грешка</translation>
     </message>
@@ -999,7 +1023,7 @@
         <translation>Формуляр</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the PricecoinX network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Pricecoinx network after a connection is established, but this process has not completed yet.</source>
         <translation>Текущата информация на екрана може да не е актуална. Вашият портфейл ще се синхронизира автоматично с мрежата на Биткоин, щом поне една връзката с нея се установи; този процес все още не е приключил.</translation>
     </message>
     <message>
@@ -1055,7 +1079,7 @@
     </message>
     <message>
         <source>Cannot start pricecoinx: click-to-pay handler</source>
-        <translation>PricecoinX не можe да се стартира: click-to-pay handler</translation>
+        <translation>Pricecoinx не можe да се стартира: click-to-pay handler</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1136,8 +1160,8 @@
         <translation>Сума</translation>
     </message>
     <message>
-        <source>Enter a PricecoinX address (e.g. %1)</source>
-        <translation>Въведете PricecoinX адрес (например: %1)</translation>
+        <source>Enter a Pricecoinx address (e.g. %1)</source>
+        <translation>Въведете Pricecoinx адрес (например: %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1677,8 +1701,8 @@
         <translation>Заявката за плащане е изтекла.</translation>
     </message>
     <message>
-        <source>Warning: Invalid PricecoinX address</source>
-        <translation>Внимание: Невалиден PricecoinX адрес</translation>
+        <source>Warning: Invalid Pricecoinx address</source>
+        <translation>Внимание: Невалиден Pricecoinx адрес</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -1797,7 +1821,7 @@
         <translation>Копиране на текущия подпис</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this PricecoinX address</source>
+        <source>Sign the message to prove you own this Pricecoinx address</source>
         <translation>Подпишете съобщение като доказателство, че притежавате определен адрес</translation>
     </message>
     <message>
@@ -1813,7 +1837,7 @@
         <translation>&amp;Провери</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified PricecoinX address</source>
+        <source>Verify the message to ensure it was signed with the specified Pricecoinx address</source>
         <translation>Проверете съобщение, за да сте сигурни че е подписано с определен Биткоин адрес</translation>
     </message>
     <message>
@@ -2247,6 +2271,9 @@
     <name>UnitDisplayStatusBarControl</name>
     </context>
 <context>
+    <name>WalletController</name>
+    </context>
+<context>
     <name>WalletFrame</name>
     <message>
         <source>No wallet has been loaded.</source>
@@ -2259,7 +2286,11 @@
         <source>Send Coins</source>
         <translation>Изпращане</translation>
     </message>
-    </context>
+    <message>
+        <source>default wallet</source>
+        <translation>Портфейл по подразбиране</translation>
+    </message>
+</context>
 <context>
     <name>WalletView</name>
     <message>
@@ -2298,8 +2329,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>PricecoinX Core</source>
-        <translation>PricecoinX ядро</translation>
+        <source>Pricecoinx Core</source>
+        <translation>Pricecoinx ядро</translation>
     </message>
     <message>
         <source>Do you want to rebuild the block database now?</source>

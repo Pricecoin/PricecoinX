@@ -62,12 +62,12 @@
         <translation>Adresa na koju se prima</translation>
     </message>
     <message>
-        <source>These are your PricecoinX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Ovo su Vaše PricecoinX adrese na koju se vrše uplate. Uvek proverite iznos i prijemnu adresu pre slanja novčića.</translation>
+        <source>These are your Pricecoinx addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Ovo su Vaše Pricecoinx adrese na koju se vrše uplate. Uvek proverite iznos i prijemnu adresu pre slanja novčića.</translation>
     </message>
     <message>
-        <source>These are your PricecoinX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Ovo su Vaše PricecoinX adrese za primanje uplata. Preporučuje se upotreba nove adrese za svaku transakciju.</translation>
+        <source>These are your Pricecoinx addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Ovo su Vaše Pricecoinx adrese za primanje uplata. Preporučuje se upotreba nove adrese za svaku transakciju.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -180,10 +180,6 @@
         <translation>Novčanik je šifrovan</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your pricecoinxs from being stolen by malware infecting your computer.</source>
-        <translation>%1 će se ugasiti da bi dovršio proces enkriptovanja. Imajte u vidu da enkripcija novčanika ne garantuje potpunu zaštitu pricecoinxa od krađe od strane nekog virusa koji bi zarazio vaš kompjuter.</translation>
-    </message>
-    <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
         <translation>VAŽNO: Ranije rezervne kopije wallet datoteke trebate zameniti sa novo-kreiranom, enkriptovanom wallet datotekom. Iz sigurnosnih razloga, ranije ne-enkriptovane wallet datoteke će postati neupotrebljive čim počnete koristiti novi, enkriptovani novčanik.</translation>
     </message>
@@ -246,10 +242,6 @@
         <translation>&amp;Pregled</translation>
     </message>
     <message>
-        <source>Node</source>
-        <translation>Čvor</translation>
-    </message>
-    <message>
         <source>Show general overview of wallet</source>
         <translation>Prikaži opšti pregled novčanika</translation>
     </message>
@@ -306,14 +298,6 @@
         <translation>&amp;Izmeni pristupnu frazu...</translation>
     </message>
     <message>
-        <source>&amp;Sending addresses...</source>
-        <translation>&amp;Slanje adresa...</translation>
-    </message>
-    <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>&amp;Primanje adresa...</translation>
-    </message>
-    <message>
         <source>Open &amp;URI...</source>
         <translation>Otvori &amp;URI...</translation>
     </message>
@@ -338,8 +322,8 @@
         <translation>Ponovo obeležavam blokove na disku...</translation>
     </message>
     <message>
-        <source>Send coins to a PricecoinX address</source>
-        <translation>Pošalji novčiće na PricecoinX adresu</translation>
+        <source>Send coins to a Pricecoinx address</source>
+        <translation>Pošalji novčiće na Pricecoinx adresu</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -362,12 +346,8 @@
         <translation>&amp;Proveri poruku...</translation>
     </message>
     <message>
-        <source>PricecoinX</source>
-        <translation>PricecoinX</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Novčanik</translation>
+        <source>Pricecoinx</source>
+        <translation>Pricecoinx</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -390,12 +370,12 @@
         <translation>Enkriptuj privatne ključeve novčanika</translation>
     </message>
     <message>
-        <source>Sign messages with your PricecoinX addresses to prove you own them</source>
-        <translation>Potpišite poruke sa svojim PricecoinX adresama da biste dokazali njihovo vlasništvo</translation>
+        <source>Sign messages with your Pricecoinx addresses to prove you own them</source>
+        <translation>Potpišite poruke sa svojim Pricecoinx adresama da biste dokazali njihovo vlasništvo</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified PricecoinX addresses</source>
-        <translation>Proverite poruke da biste utvrdili sa kojim PricecoinX adresama su potpisane</translation>
+        <source>Verify messages to ensure they were signed with specified Pricecoinx addresses</source>
+        <translation>Proverite poruke da biste utvrdili sa kojim Pricecoinx adresama su potpisane</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -519,8 +499,8 @@
 <context>
     <name>Intro</name>
     <message>
-        <source>PricecoinX</source>
-        <translation>PricecoinX</translation>
+        <source>Pricecoinx</source>
+        <translation>Pricecoinx</translation>
     </message>
     <message>
         <source>Error</source>
@@ -683,6 +663,9 @@
     <name>UnitDisplayStatusBarControl</name>
     </context>
 <context>
+    <name>WalletController</name>
+    </context>
+<context>
     <name>WalletFrame</name>
     </context>
 <context>
@@ -694,8 +677,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>PricecoinX Core</source>
-        <translation>PricecoinX Core</translation>
+        <source>Pricecoinx Core</source>
+        <translation>Pricecoinx Core</translation>
     </message>
     <message>
         <source>Information</source>

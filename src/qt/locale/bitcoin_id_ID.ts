@@ -19,7 +19,7 @@
     </message>
     <message>
         <source>&amp;Copy</source>
-        <translation>&amp;Menyalin</translation>
+        <translation>&amp;Salin</translation>
     </message>
     <message>
         <source>C&amp;lose</source>
@@ -66,12 +66,12 @@
         <translation>Alamat-alamat penerima</translation>
     </message>
     <message>
-        <source>These are your PricecoinX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Berikut ialah alamat-alamat PricecoinX Anda yang digunakan untuk mengirimkan pembayaran. Selalu periksa jumlah dan alamat penerima sebelum mengirimkan koin.</translation>
+        <source>These are your Pricecoinx addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Berikut ialah alamat-alamat Pricecoinx Anda yang digunakan untuk mengirimkan pembayaran. Selalu periksa jumlah dan alamat penerima sebelum mengirimkan koin.</translation>
     </message>
     <message>
-        <source>These are your PricecoinX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Berikut ialah alamat-alamat PricecoinX Anda yang digunakan untuk menerima pembayaran. Dianjurkan untuk menggunakan alamat penerimaan baru untuk setiap transaksi.</translation>
+        <source>These are your Pricecoinx addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Berikut ialah alamat-alamat Pricecoinx Anda yang digunakan untuk menerima pembayaran. Dianjurkan untuk menggunakan alamat penerimaan baru untuk setiap transaksi.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -188,8 +188,8 @@
         <translation>Dompet terenkripsi</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your pricecoinxs from being stolen by malware infecting your computer.</source>
-        <translation>%1 sekarang akan ditutup untuk menyelesaikan proses enkripsi. Ingatlah bahwa mengenkripsi dompet Anda tidak dapat sepenuhnya melindungi komputer Anda dari pencurian malware yang menginfeksi komputer Anda.</translation>
+        <source>Your wallet is now encrypted. Remember that encrypting your wallet cannot fully protect your pricecoinxs from being stolen by malware infecting your computer.</source>
+        <translation>Wallet anda sekarang telah terenkripsi. Ingat bahwa enkripsi wallet anda tersebut tidak dapat sepenuhnya melindungi dari pencurian atau malware yang menyerang komputer anda. </translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -254,10 +254,6 @@
         <translation>&amp;Kilasan</translation>
     </message>
     <message>
-        <source>Node</source>
-        <translation>Node</translation>
-    </message>
-    <message>
         <source>Show general overview of wallet</source>
         <translation>Tampilkan gambaran umum dompet Anda</translation>
     </message>
@@ -314,16 +310,12 @@
         <translation>&amp;Ubah Kata Kunci...</translation>
     </message>
     <message>
-        <source>&amp;Sending addresses...</source>
-        <translation>&amp;Alamat-alamat untuk mengirim...</translation>
-    </message>
-    <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>&amp;Alamat-alamat untuk menerima...</translation>
-    </message>
-    <message>
         <source>Open &amp;URI...</source>
         <translation>Buka &amp;URI</translation>
+    </message>
+    <message>
+        <source>Wallet:</source>
+        <translation>Wallet:</translation>
     </message>
     <message>
         <source>Click to disable network activity.</source>
@@ -346,8 +338,12 @@
         <translation>Mengindex ulang blok di dalam disk...</translation>
     </message>
     <message>
-        <source>Send coins to a PricecoinX address</source>
-        <translation>Kirim koin ke alamat PricecoinX</translation>
+        <source>Proxy is &lt;b&gt;enabled&lt;/b&gt;: %1</source>
+        <translation>Proxy di &lt;b&gt;aktifkan&lt;/b&gt;: %1</translation>
+    </message>
+    <message>
+        <source>Send coins to a Pricecoinx address</source>
+        <translation>Kirim koin ke alamat Pricecoinx</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -370,12 +366,8 @@
         <translation>&amp;Verifikasi pesan...</translation>
     </message>
     <message>
-        <source>PricecoinX</source>
-        <translation>PricecoinX</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Dompet</translation>
+        <source>Pricecoinx</source>
+        <translation>Pricecoinx</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -398,12 +390,12 @@
         <translation>Enkripsi private key yang dimiliki dompet Anda</translation>
     </message>
     <message>
-        <source>Sign messages with your PricecoinX addresses to prove you own them</source>
-        <translation>Tanda tangani sebuah pesan menggunakan alamat PricecoinX Anda untuk membuktikan bahwa Anda adalah pemilik alamat tersebut</translation>
+        <source>Sign messages with your Pricecoinx addresses to prove you own them</source>
+        <translation>Tanda tangani sebuah pesan menggunakan alamat Pricecoinx Anda untuk membuktikan bahwa Anda adalah pemilik alamat tersebut</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified PricecoinX addresses</source>
-        <translation>Verifikasi pesan untuk memastikan bahwa pesan tersebut ditanda tangani oleh suatu alamat PricecoinX tertentu</translation>
+        <source>Verify messages to ensure they were signed with specified Pricecoinx addresses</source>
+        <translation>Verifikasi pesan untuk memastikan bahwa pesan tersebut ditanda tangani oleh suatu alamat Pricecoinx tertentu</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -442,8 +434,8 @@
         <translation>&amp;pilihan Command-line</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to PricecoinX network</source>
-        <translation><numerusform>%n koneksi aktif ke jaringan PricecoinX</numerusform></translation>
+        <source>%n active connection(s) to Pricecoinx network</source>
+        <translation><numerusform>%n koneksi aktif ke jaringan Pricecoinx</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -486,8 +478,40 @@
         <translation>Terbaru</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible PricecoinX command-line options</source>
-        <translation>Tampilkan %1 pesan bantuan untuk mendapatkan daftar opsi baris perintah PricecoinX yang memungkinkan</translation>
+        <source>&amp;Sending addresses</source>
+        <translation>&amp;Address pengiriman</translation>
+    </message>
+    <message>
+        <source>&amp;Receiving addresses</source>
+        <translation>&amp;Address penerima</translation>
+    </message>
+    <message>
+        <source>Show the %1 help message to get a list with possible Pricecoinx command-line options</source>
+        <translation>Tampilkan %1 pesan bantuan untuk mendapatkan daftar opsi baris perintah Pricecoinx yang memungkinkan</translation>
+    </message>
+    <message>
+        <source>default wallet</source>
+        <translation>wallet default</translation>
+    </message>
+    <message>
+        <source>&amp;Window</source>
+        <translation>&amp;Jendela</translation>
+    </message>
+    <message>
+        <source>Minimize</source>
+        <translation>Minimalkan</translation>
+    </message>
+    <message>
+        <source>Zoom</source>
+        <translation>Zoom</translation>
+    </message>
+    <message>
+        <source>Restore</source>
+        <translation>Pulihkan</translation>
+    </message>
+    <message>
+        <source>Main Window</source>
+        <translation>Jendela Utama</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -511,6 +535,12 @@
         <source>Amount: %1
 </source>
         <translation>Jumlah: %1
+</translation>
+    </message>
+    <message>
+        <source>Wallet: %1
+</source>
+        <translation>Wallet: %1
 </translation>
     </message>
     <message>
@@ -548,6 +578,10 @@
         <translation>Pembuatan kunci HD &lt;b&gt;dinonaktifkan&lt;/b&gt;</translation>
     </message>
     <message>
+        <source>Private key &lt;b&gt;disabled&lt;/b&gt;</source>
+        <translation>Private key &lt;b&gt;non aktif&lt;/b&gt;</translation>
+    </message>
+    <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
         <translation>Dompet saat ini &lt;b&gt;terenkripsi&lt;/b&gt; dan &lt;b&gt;terbuka&lt;/b&gt;</translation>
     </message>
@@ -556,8 +590,8 @@
         <translation>Dompet saat ini &lt;b&gt;terenkripsi&lt;/b&gt; dan &lt;b&gt;terkunci&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. PricecoinX can no longer continue safely and will quit.</source>
-        <translation>Terjadi Kesalahan Fatal. PricecoinX Tidak Dapat Melanjutkan Dengan Aman Dan Akan Keluar</translation>
+        <source>A fatal error occurred. Pricecoinx can no longer continue safely and will quit.</source>
+        <translation>Terjadi Kesalahan Fatal. Pricecoinx Tidak Dapat Melanjutkan Dengan Aman Dan Akan Keluar</translation>
     </message>
 </context>
 <context>
@@ -698,7 +732,15 @@
         <source>(no label)</source>
         <translation>(tidak ada label)</translation>
     </message>
-    </context>
+    <message>
+        <source>change from %1 (%2)</source>
+        <translation>kembalian dari %1 (%2)</translation>
+    </message>
+    <message>
+        <source>(change)</source>
+        <translation>(kembalian)</translation>
+    </message>
+</context>
 <context>
     <name>EditAddressDialog</name>
     <message>
@@ -734,8 +776,16 @@
         <translation>Ubah alamat pengirim</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid PricecoinX address.</source>
-        <translation>Alamat yang dimasukkan "%1" bukanlah alamat PricecoinX yang valid.</translation>
+        <source>The entered address "%1" is not a valid Pricecoinx address.</source>
+        <translation>Alamat yang dimasukkan "%1" bukanlah alamat Pricecoinx yang valid.</translation>
+    </message>
+    <message>
+        <source>Address "%1" already exists as a receiving address with label "%2" and so cannot be added as a sending address.</source>
+        <translation>Alamat "%1" sudah ada sebagai alamat penerimaan dengan label "%2" sehingga tidak bisa ditambah sebagai alamat pengiriman.</translation>
+    </message>
+    <message>
+        <source>The entered address "%1" is already in the address book with label "%2".</source>
+        <translation>Alamat "%1" yang dimasukkan sudah ada di dalam buku alamat dengan label "%2".</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -823,8 +873,8 @@
         <translation>Gunakan direktori pilihan Anda:</translation>
     </message>
     <message>
-        <source>PricecoinX</source>
-        <translation>PricecoinX</translation>
+        <source>Pricecoinx</source>
+        <translation>Pricecoinx</translation>
     </message>
     <message>
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
@@ -835,8 +885,8 @@
         <translation>%1 GB data akan disimpan di direktori ini.</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the PricecoinX block chain.</source>
-        <translation>%1 akan mengunduh dan menyimpan salinan PricecoinX block chain.</translation>
+        <source>%1 will download and store a copy of the Pricecoinx block chain.</source>
+        <translation>%1 akan mengunduh dan menyimpan salinan Pricecoinx block chain.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -867,7 +917,11 @@
     </message>
     <message>
         <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the pricecoinx network, as detailed below.</source>
-        <translation>Transaksi-transaksi terkini mungkin belum terlihat dan oleh karenanya, saldo dompet Anda mungkin tidak tepat. Informasi ini akan akurat ketika dompet Anda tersinkronisasi dengan jaringan PricecoinX, seperti rincian berikut.</translation>
+        <translation>Transaksi-transaksi terkini mungkin belum terlihat dan oleh karenanya, saldo dompet Anda mungkin tidak tepat. Informasi ini akan akurat ketika dompet Anda tersinkronisasi dengan jaringan Pricecoinx, seperti rincian berikut.</translation>
+    </message>
+    <message>
+        <source>Attempting to spend pricecoinxs that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>Usaha untuk menggunakan pricecoinx yang dipengaruhi oleh transaksi yang belum terlihat tidak akan diterima oleh jaringan.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -882,6 +936,14 @@
         <translation>Waktu blok terakhir</translation>
     </message>
     <message>
+        <source>Progress</source>
+        <translation>Perkembangan</translation>
+    </message>
+    <message>
+        <source>Progress increase per hour</source>
+        <translation>Peningkatan perkembangan per jam</translation>
+    </message>
+    <message>
         <source>calculating...</source>
         <translation>menghitung...</translation>
     </message>
@@ -893,11 +955,7 @@
         <source>Hide</source>
         <translation>Sembunyikan</translation>
     </message>
-    <message>
-        <source>Unknown. Syncing Headers (%1)...</source>
-        <translation>Tidak diketahui. Menyinkronisasikan Headers (%1)...</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>OpenURIDialog</name>
     <message>
@@ -916,7 +974,11 @@
         <source>Select payment request file</source>
         <translation>Pilih data permintaan pembayaran</translation>
     </message>
-    </context>
+    <message>
+        <source>Select payment request file to open</source>
+        <translation>Pilih data permintaan pembayaran yang akan dibuka</translation>
+    </message>
+</context>
 <context>
     <name>OptionsDialog</name>
     <message>
@@ -940,10 +1002,6 @@
         <translation>Ukuran cache &amp;database</translation>
     </message>
     <message>
-        <source>MB</source>
-        <translation>MB</translation>
-    </message>
-    <message>
         <source>Number of script &amp;verification threads</source>
         <translation>Jumlah script &amp;verification threads</translation>
     </message>
@@ -952,8 +1010,20 @@
         <translation>Alamat IP proxy (cth. IPv4: 127.0.0.1 / IPv6: ::1)</translation>
     </message>
     <message>
+        <source>Shows if the supplied default SOCKS5 proxy is used to reach peers via this network type.</source>
+        <translation>Perlihatkan apabila proxy SOCKS5 default digunakan untuk berhungan dengan orang lain lewat tipe jaringan ini.</translation>
+    </message>
+    <message>
+        <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor hidden services:</source>
+        <translation>Menggunakan proxy SOCKS5 tersendiri untuk berhubungan dengan orang lain melalui layanan Tor:</translation>
+    </message>
+    <message>
         <source>Hide the icon from the system tray.</source>
         <translation>Sembunyikan ikon dari system tray.</translation>
+    </message>
+    <message>
+        <source>&amp;Hide tray icon</source>
+        <translation>&amp;Sembunyikan ikon tray</translation>
     </message>
     <message>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Exit in the menu.</source>
@@ -964,8 +1034,8 @@
         <translation>URL pihak ketika (misalnya sebuah block explorer) yang mumcul dalam tab transaksi sebagai konteks menu. %s dalam URL diganti dengan kode transaksi. URL dipisahkan dengan tanda vertikal |.</translation>
     </message>
     <message>
-        <source>Active command-line options that override above options:</source>
-        <translation>Pilihan command-line yang aktif menimpa diatas opsi: </translation>
+        <source>Open the %1 configuration file from the working directory.</source>
+        <translation>Buka file konfigurasi %1 dari direktori kerja.</translation>
     </message>
     <message>
         <source>Open Configuration File</source>
@@ -982,6 +1052,26 @@
     <message>
         <source>&amp;Network</source>
         <translation>&amp;Jaringan</translation>
+    </message>
+    <message>
+        <source>Disables some advanced features but all blocks will still be fully validated. Reverting this setting requires re-downloading the entire blockchain. Actual disk usage may be somewhat higher.</source>
+        <translation>Menonaktifkan beberapa fitur canggih akan tetapi semua block akan tetap divalidasi seutuhnya. Mengembalikan pengaturan ini memerlukan untuk mengunduh seluruh blockchain. Penggunaan disk mungkin akan lebih tinggi.</translation>
+    </message>
+    <message>
+        <source>Prune &amp;block storage to</source>
+        <translation>Prune &amp;ruang penyimpan block ke</translation>
+    </message>
+    <message>
+        <source>GB</source>
+        <translation>GB</translation>
+    </message>
+    <message>
+        <source>Reverting this setting requires re-downloading the entire blockchain.</source>
+        <translation>Mengembalikan pengaturan ini membutuhkan pengunduhan seluruh blockchain lagi. </translation>
+    </message>
+    <message>
+        <source>MiB</source>
+        <translation>MiB</translation>
     </message>
     <message>
         <source>(0 = auto, &lt;0 = leave that many cores free)</source>
@@ -1008,8 +1098,8 @@
         <translation>&amp;Perubahan saldo untuk transaksi yang belum dikonfirmasi</translation>
     </message>
     <message>
-        <source>Automatically open the PricecoinX client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Otomatis membuka port client PricecoinX di router. Hanya berjalan apabila router anda mendukung UPnP dan di-enable.</translation>
+        <source>Automatically open the Pricecoinx client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Otomatis membuka port client Pricecoinx di router. Hanya berjalan apabila router anda mendukung UPnP dan di-enable.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1024,8 +1114,12 @@
         <translation>Terima koneksi-koneksi masuk</translation>
     </message>
     <message>
-        <source>Connect to the PricecoinX network through a SOCKS5 proxy.</source>
-        <translation>Hubungkan ke jaringan PricecoinX melalui SOCKS5 proxy.</translation>
+        <source>Connect to the Pricecoinx network through a SOCKS5 proxy.</source>
+        <translation>Hubungkan ke jaringan Pricecoinx melalui SOCKS5 proxy.</translation>
+    </message>
+    <message>
+        <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
+        <translation>&amp;Hubungkan melalui proxy SOCKS5 (proxy default):</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1040,6 +1134,10 @@
         <translation>Port proxy (cth. 9050)</translation>
     </message>
     <message>
+        <source>Used for reaching peers via:</source>
+        <translation>Digunakan untuk berhubungan dengan peers melalui:</translation>
+    </message>
+    <message>
         <source>IPv4</source>
         <translation>IPv4</translation>
     </message>
@@ -1050,6 +1148,10 @@
     <message>
         <source>Tor</source>
         <translation>Tor</translation>
+    </message>
+    <message>
+        <source>Connect to the Pricecoinx network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>Koneksi ke jaringan pricecoinx melalui proxy SOCKS5 yang berbeda untuk layanan Tor tersembunyi.</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -1092,6 +1194,10 @@
         <translation>Ingin menunjukkan cara pengaturan koin atau tidak.</translation>
     </message>
     <message>
+        <source>&amp;Third party transaction URLs</source>
+        <translation>&amp;URL transaksi pihak ketiga</translation>
+    </message>
+    <message>
         <source>&amp;OK</source>
         <translation>&amp;YA</translation>
     </message>
@@ -1120,6 +1226,14 @@
         <translation>Klien akan dimatikan, apakah anda hendak melanjutkan?</translation>
     </message>
     <message>
+        <source>Configuration options</source>
+        <translation>Konfigurasi pengaturan</translation>
+    </message>
+    <message>
+        <source>The configuration file is used to specify advanced user options which override GUI settings. Additionally, any command-line options will override this configuration file.</source>
+        <translation>File konfigurasi digunakan untuk menspesifikkan pilihan khusus pengguna yang akan menimpa pengaturan GUI. Sebagai tambahan, pengaturan command-line apapun akan menimpa file konfigurasi itu.</translation>
+    </message>
+    <message>
         <source>Error</source>
         <translation>Terjadi sebuah kesalahan</translation>
     </message>
@@ -1143,8 +1257,12 @@
         <translation>Formulir</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the PricecoinX network after a connection is established, but this process has not completed yet.</source>
-        <translation>Informasi terlampir mungkin sudah kedaluwarsa. Dompet Anda secara otomatis mensinkronisasi dengan jaringan PricecoinX ketika sebuah hubungan terbentuk, namun proses ini belum selesai.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Pricecoinx network after a connection is established, but this process has not completed yet.</source>
+        <translation>Informasi terlampir mungkin sudah kedaluwarsa. Dompet Anda secara otomatis mensinkronisasi dengan jaringan Pricecoinx ketika sebuah hubungan terbentuk, namun proses ini belum selesai.</translation>
+    </message>
+    <message>
+        <source>Watch-only:</source>
+        <translation>Hanya lihat:</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1183,15 +1301,83 @@
         <translation>Jumlah saldo Anda sekarang</translation>
     </message>
     <message>
+        <source>Your current balance in watch-only addresses</source>
+        <translation>Saldomu di alamat hanya lihat</translation>
+    </message>
+    <message>
+        <source>Spendable:</source>
+        <translation>Bisa digunakan:</translation>
+    </message>
+    <message>
         <source>Recent transactions</source>
         <translation>Transaksi-transaksi terkini</translation>
     </message>
-    </context>
+    <message>
+        <source>Unconfirmed transactions to watch-only addresses</source>
+        <translation>Transaksi yang belum terkonfirmasi ke alamat hanya lihat</translation>
+    </message>
+    <message>
+        <source>Mined balance in watch-only addresses that has not yet matured</source>
+        <translation>Saldo hasil mining di alamat hanya lihat yang belum bisa digunakan</translation>
+    </message>
+    <message>
+        <source>Current total balance in watch-only addresses</source>
+        <translation>Jumlah saldo di alamat hanya lihat</translation>
+    </message>
+</context>
 <context>
     <name>PaymentServer</name>
     <message>
         <source>Payment request error</source>
         <translation>Terjadi kesalahan pada permintaan pembayaran</translation>
+    </message>
+    <message>
+        <source>Cannot start pricecoinx: click-to-pay handler</source>
+        <translation>Tidak bisa memulai pricecoinx: handler click-to-pay</translation>
+    </message>
+    <message>
+        <source>URI handling</source>
+        <translation>Pengelolaan URI</translation>
+    </message>
+    <message>
+        <source>'pricecoinx://' is not a valid URI. Use 'pricecoinx:' instead.</source>
+        <translation>'pricecoinx://' bukanlah alamat URI yang valid. Silakan gunakan 'pricecoinx:'.</translation>
+    </message>
+    <message>
+        <source>Payment request fetch URL is invalid: %1</source>
+        <translation>URL permintaan pembayaran tidak valid: %1</translation>
+    </message>
+    <message>
+        <source>URI cannot be parsed! This can be caused by an invalid Pricecoinx address or malformed URI parameters.</source>
+        <translation>URI tidak bisa dimengerti! Hal ini bisa disebabkan karena alamat Pricecoinx yang tidak sah atau parameter URI yang tidak tepat.</translation>
+    </message>
+    <message>
+        <source>Payment request file handling</source>
+        <translation>Pengelolaan file permintaan pembayaran</translation>
+    </message>
+    <message>
+        <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
+        <translation>File permintaan pembayaran tidak bisa dibaca! Hal ini bisa disebabkan karena file permintaan pembayaran tidak valid.</translation>
+    </message>
+    <message>
+        <source>Payment request rejected</source>
+        <translation>Permintaan pembayaran ditolak</translation>
+    </message>
+    <message>
+        <source>Payment request network doesn't match client network.</source>
+        <translation>Jaringan permintaan pembayaran tidak sesuai dengan jaringan klien.</translation>
+    </message>
+    <message>
+        <source>Payment request expired.</source>
+        <translation>Permintaan pembayaran telah kadaluarsa.</translation>
+    </message>
+    <message>
+        <source>Payment request is not initialized.</source>
+        <translation>Permintaan pembayaran tidak terinisialisasi</translation>
+    </message>
+    <message>
+        <source>Payment request %1 is too large (%2 bytes, allowed %3 bytes).</source>
+        <translation>Permintaan pembayaran %1 terlalu besar (%2 bita, diperbolehkan %3 bita)</translation>
     </message>
     </context>
 <context>
@@ -1204,7 +1390,11 @@
         <source>Sent</source>
         <translation>Terkirim</translation>
     </message>
-    </context>
+    <message>
+        <source>Received</source>
+        <translation>Diterima</translation>
+    </message>
+</context>
 <context>
     <name>QObject</name>
     <message>
@@ -1212,8 +1402,8 @@
         <translation>Nilai</translation>
     </message>
     <message>
-        <source>Enter a PricecoinX address (e.g. %1)</source>
-        <translation>Masukkan alamat PricecoinX (contoh %1)</translation>
+        <source>Enter a Pricecoinx address (e.g. %1)</source>
+        <translation>Masukkan alamat Pricecoinx (contoh %1)</translation>
     </message>
     <message>
         <source>%1 h</source>
@@ -1303,6 +1493,10 @@
     <message>
         <source>Current number of blocks</source>
         <translation>Jumlah blok terkini</translation>
+    </message>
+    <message>
+        <source>Received</source>
+        <translation>Diterima</translation>
     </message>
     <message>
         <source>Sent</source>
@@ -1631,6 +1825,10 @@
         <translation>Biaya Transaksi</translation>
     </message>
     <message>
+        <source>Payment request expired.</source>
+        <translation>Permintaan pembayaran telah kadaluarsa.</translation>
+    </message>
+    <message>
         <source>(no label)</source>
         <translation>(tidak ada label)</translation>
     </message>
@@ -1739,8 +1937,8 @@
         <translation>Salin tanda tangan terpilih ke sistem klipboard</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this PricecoinX address</source>
-        <translation>Tandai pesan untuk menyetujui kamu pemiliki alamat PricecoinX ini</translation>
+        <source>Sign the message to prove you own this Pricecoinx address</source>
+        <translation>Tandai pesan untuk menyetujui kamu pemiliki alamat Pricecoinx ini</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1845,19 +2043,26 @@
     <name>UnitDisplayStatusBarControl</name>
     </context>
 <context>
+    <name>WalletController</name>
+    </context>
+<context>
     <name>WalletFrame</name>
     </context>
 <context>
     <name>WalletModel</name>
-    </context>
+    <message>
+        <source>default wallet</source>
+        <translation>wallet default</translation>
+    </message>
+</context>
 <context>
     <name>WalletView</name>
     </context>
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>PricecoinX Core</source>
-        <translation>PricecoinX Core</translation>
+        <source>Pricecoinx Core</source>
+        <translation>Pricecoinx Core</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>

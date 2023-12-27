@@ -38,12 +38,8 @@
         <translation>Билдирүүнү &amp;текшерүү...</translation>
     </message>
     <message>
-        <source>PricecoinX</source>
-        <translation>PricecoinX</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Капчык</translation>
+        <source>Pricecoinx</source>
+        <translation>Pricecoinx</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -68,6 +64,10 @@
     <message>
         <source>Up to date</source>
         <translation>Жаңыланган</translation>
+    </message>
+    <message>
+        <source>&amp;Window</source>
+        <translation>&amp;Терезе</translation>
     </message>
     </context>
 <context>
@@ -101,8 +101,8 @@
 <context>
     <name>Intro</name>
     <message>
-        <source>PricecoinX</source>
-        <translation>PricecoinX</translation>
+        <source>Pricecoinx</source>
+        <translation>Pricecoinx</translation>
     </message>
     <message>
         <source>Error</source>
@@ -117,10 +117,6 @@
     </context>
 <context>
     <name>OptionsDialog</name>
-    <message>
-        <source>MB</source>
-        <translation>МБ</translation>
-    </message>
     <message>
         <source>&amp;Network</source>
         <translation>&amp;Тармак</translation>
@@ -331,6 +327,9 @@
     </context>
 <context>
     <name>UnitDisplayStatusBarControl</name>
+    </context>
+<context>
+    <name>WalletController</name>
     </context>
 <context>
     <name>WalletFrame</name>

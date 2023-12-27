@@ -66,12 +66,12 @@
         <translation>Vastuvõtvad aadressid</translation>
     </message>
     <message>
-        <source>These are your PricecoinX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Need on sinu PricecoinX aadressid maksete saatmiseks. Ennem müntide saatmist kontrolli alati summat ja makse saaja aadressi.</translation>
+        <source>These are your Pricecoinx addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Need on sinu Pricecoinx aadressid maksete saatmiseks. Ennem müntide saatmist kontrolli alati summat ja makse saaja aadressi.</translation>
     </message>
     <message>
-        <source>These are your PricecoinX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Need on sinu PricecoinX aadressid sisenevate maksete vastu võtmiseks. Soovitav on iga tehingu tarbeks kasutada uut aadressi.</translation>
+        <source>These are your Pricecoinx addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Need on sinu Pricecoinx aadressid sisenevate maksete vastu võtmiseks. Soovitav on iga tehingu tarbeks kasutada uut aadressi.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -294,8 +294,8 @@
         <translation>Kettal olevate blokkide re-indekseerimine...</translation>
     </message>
     <message>
-        <source>Send coins to a PricecoinX address</source>
-        <translation>Saada münte PricecoinXi aadressile</translation>
+        <source>Send coins to a Pricecoinx address</source>
+        <translation>Saada münte Pricecoinxi aadressile</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -318,12 +318,8 @@
         <translation>&amp;Kontrolli sõnumit...</translation>
     </message>
     <message>
-        <source>PricecoinX</source>
-        <translation>PricecoinX</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Rahakott</translation>
+        <source>Pricecoinx</source>
+        <translation>Pricecoinx</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -346,12 +342,12 @@
         <translation>Krüpteeri oma rahakoti privaatvõtmed</translation>
     </message>
     <message>
-        <source>Sign messages with your PricecoinX addresses to prove you own them</source>
-        <translation>Omandi tõestamiseks allkirjasta sõnumid oma PricecoinXi aadressiga</translation>
+        <source>Sign messages with your Pricecoinx addresses to prove you own them</source>
+        <translation>Omandi tõestamiseks allkirjasta sõnumid oma Pricecoinxi aadressiga</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified PricecoinX addresses</source>
-        <translation>Kinnita sõnumid kindlustamaks et need allkirjastati määratud PricecoinXi aadressiga</translation>
+        <source>Verify messages to ensure they were signed with specified Pricecoinx addresses</source>
+        <translation>Kinnita sõnumid kindlustamaks et need allkirjastati määratud Pricecoinxi aadressiga</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -382,8 +378,8 @@
         <translation>Käsurea valikud</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to PricecoinX network</source>
-        <translation><numerusform>%n aktiivne ühendus PricecoinXi võrku</numerusform><numerusform>%n aktiivset ühendust PricecoinXi võrku</numerusform></translation>
+        <source>%n active connection(s) to Pricecoinx network</source>
+        <translation><numerusform>%n aktiivne ühendus Pricecoinxi võrku</numerusform><numerusform>%n aktiivset ühendust Pricecoinxi võrku</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -424,6 +420,10 @@
     <message>
         <source>Up to date</source>
         <translation>Ajakohane</translation>
+    </message>
+    <message>
+        <source>&amp;Window</source>
+        <translation>&amp;Aken</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -626,8 +626,8 @@
         <translation>Muuda saatvat aadressi</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid PricecoinX address.</source>
-        <translation>Sisestatud aadress "%1" ei ole korrektne PricecoinX aadress.</translation>
+        <source>The entered address "%1" is not a valid Pricecoinx address.</source>
+        <translation>Sisestatud aadress "%1" ei ole korrektne Pricecoinx aadress.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -663,8 +663,8 @@
         <translation>Teretulemast</translation>
     </message>
     <message>
-        <source>PricecoinX</source>
-        <translation>PricecoinX</translation>
+        <source>Pricecoinx</source>
+        <translation>Pricecoinx</translation>
     </message>
     <message>
         <source>Error</source>
@@ -716,10 +716,6 @@
         <translation>&amp;Peamine</translation>
     </message>
     <message>
-        <source>MB</source>
-        <translation>MB</translation>
-    </message>
-    <message>
         <source>Reset all client options to default.</source>
         <translation>Taasta kõik klientprogrammi seadete vaikeväärtused.</translation>
     </message>
@@ -740,8 +736,8 @@
         <translation>Ekspert</translation>
     </message>
     <message>
-        <source>Automatically open the PricecoinX client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>PricecoinXi kliendi pordi automaatne avamine ruuteris. Toimib, kui sinu ruuter aktsepteerib UPnP ühendust.</translation>
+        <source>Automatically open the Pricecoinx client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Pricecoinxi kliendi pordi automaatne avamine ruuteris. Toimib, kui sinu ruuter aktsepteerib UPnP ühendust.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -839,7 +835,7 @@
         <translation>Vorm</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the PricecoinX network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Pricecoinx network after a connection is established, but this process has not completed yet.</source>
         <translation>Kuvatav info ei pruugi olla ajakohane. Ühenduse loomisel süngitakse sinu rahakott automaatselt Liteconi võrgustikuga, kuid see toiming on hetkel lõpetamata.</translation>
     </message>
     <message>
@@ -1345,8 +1341,8 @@
         <translation>Maksepäring aegunud.</translation>
     </message>
     <message>
-        <source>Warning: Invalid PricecoinX address</source>
-        <translation>Hoiatus: Ebakorrektne PricecoinX aadress</translation>
+        <source>Warning: Invalid Pricecoinx address</source>
+        <translation>Hoiatus: Ebakorrektne Pricecoinx aadress</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1429,8 +1425,8 @@
         <translation>&amp;Allkirjastamise teade</translation>
     </message>
     <message>
-        <source>The PricecoinX address to sign the message with</source>
-        <translation>PricecoinX aadress millega sõnum allkirjastada</translation>
+        <source>The Pricecoinx address to sign the message with</source>
+        <translation>Pricecoinx aadress millega sõnum allkirjastada</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1461,8 +1457,8 @@
         <translation>Kopeeri praegune signatuur vahemällu</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this PricecoinX address</source>
-        <translation>Allkirjasta sõnum PricecoinXi aadressi sulle kuulumise tõestamiseks</translation>
+        <source>Sign the message to prove you own this Pricecoinx address</source>
+        <translation>Allkirjasta sõnum Pricecoinxi aadressi sulle kuulumise tõestamiseks</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1481,12 +1477,12 @@
         <translation>&amp;Kinnita Sõnum</translation>
     </message>
     <message>
-        <source>The PricecoinX address the message was signed with</source>
-        <translation>PricecoinX aadress millega sõnum on allkirjastatud</translation>
+        <source>The Pricecoinx address the message was signed with</source>
+        <translation>Pricecoinx aadress millega sõnum on allkirjastatud</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified PricecoinX address</source>
-        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud PricecoinXi aadressiga.</translation>
+        <source>Verify the message to ensure it was signed with the specified Pricecoinx address</source>
+        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud Pricecoinxi aadressiga.</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1879,6 +1875,9 @@
     <name>UnitDisplayStatusBarControl</name>
     </context>
 <context>
+    <name>WalletController</name>
+    </context>
+<context>
     <name>WalletFrame</name>
     </context>
 <context>
@@ -1918,8 +1917,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>PricecoinX Core</source>
-        <translation>PricecoinXi tuumik</translation>
+        <source>Pricecoinx Core</source>
+        <translation>Pricecoinxi tuumik</translation>
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>

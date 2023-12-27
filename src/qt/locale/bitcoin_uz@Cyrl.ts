@@ -86,10 +86,6 @@
         <translation>&amp;Кўриб чиқиш</translation>
     </message>
     <message>
-        <source>Node</source>
-        <translation>Улам</translation>
-    </message>
-    <message>
         <source>Show general overview of wallet</source>
         <translation>Ҳамённинг умумий кўринишини кўрсатиш</translation>
     </message>
@@ -134,14 +130,6 @@
         <translation>Махфий сўзни &amp;ўзгартириш...</translation>
     </message>
     <message>
-        <source>&amp;Sending addresses...</source>
-        <translation>&amp;Жўнатилувчи манзиллар...</translation>
-    </message>
-    <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>&amp;Қабул қилувчи манзиллар...</translation>
-    </message>
-    <message>
         <source>Open &amp;URI...</source>
         <translation>Интернет манзилни очиш</translation>
     </message>
@@ -150,8 +138,8 @@
         <translation>Дискдаги блоклар қайта индексланмоқда...</translation>
     </message>
     <message>
-        <source>Send coins to a PricecoinX address</source>
-        <translation>Тангаларни PricecoinX манзилига жўнатиш</translation>
+        <source>Send coins to a Pricecoinx address</source>
+        <translation>Тангаларни Pricecoinx манзилига жўнатиш</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -174,12 +162,8 @@
         <translation>Хабарни &amp;тасдиқлаш...</translation>
     </message>
     <message>
-        <source>PricecoinX</source>
-        <translation>PricecoinX</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Ҳамён</translation>
+        <source>Pricecoinx</source>
+        <translation>Pricecoinx</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -202,12 +186,12 @@
         <translation>Ҳамёнингизга тегишли махфий калитларни кодлаш</translation>
     </message>
     <message>
-        <source>Sign messages with your PricecoinX addresses to prove you own them</source>
-        <translation>PricecoinX манзилидан унинг эгаси эканлигингизни исботлаш учун хабарлар ёзинг</translation>
+        <source>Sign messages with your Pricecoinx addresses to prove you own them</source>
+        <translation>Pricecoinx манзилидан унинг эгаси эканлигингизни исботлаш учун хабарлар ёзинг</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified PricecoinX addresses</source>
-        <translation>Хабарларни махсус PricecoinX манзилларингиз билан ёзилганлигига ишонч ҳосил қилиш учун уларни тасдиқланг</translation>
+        <source>Verify messages to ensure they were signed with specified Pricecoinx addresses</source>
+        <translation>Хабарларни махсус Pricecoinx манзилларингиз билан ёзилганлигига ишонч ҳосил қилиш учун уларни тасдиқланг</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -239,15 +223,15 @@
     </message>
     <message>
         <source>Open a pricecoinx: URI or payment request</source>
-        <translation>PricecoinX’ни очиш: URI ёки тўлов сўрови</translation>
+        <translation>Pricecoinx’ни очиш: URI ёки тўлов сўрови</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Буйруқлар сатри мосламалари</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to PricecoinX network</source>
-        <translation><numerusform>%n та PricecoinX тармоғига фаол уланиш мавжуд</numerusform></translation>
+        <source>%n active connection(s) to Pricecoinx network</source>
+        <translation><numerusform>%n та Pricecoinx тармоғига фаол уланиш мавжуд</numerusform></translation>
     </message>
     <message>
         <source>%1 behind</source>
@@ -276,6 +260,14 @@
     <message>
         <source>Up to date</source>
         <translation>Янгиланган</translation>
+    </message>
+    <message>
+        <source>&amp;Window</source>
+        <translation>&amp;Ойна</translation>
+    </message>
+    <message>
+        <source>Minimize</source>
+        <translation>Камайтириш</translation>
     </message>
     <message>
         <source>Catching up...</source>
@@ -433,8 +425,8 @@
         <translation>Бошқа маълумотлар директориясида фойдаланинг:</translation>
     </message>
     <message>
-        <source>PricecoinX</source>
-        <translation>PricecoinX</translation>
+        <source>Pricecoinx</source>
+        <translation>Pricecoinx</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -488,10 +480,6 @@
     <message>
         <source>Size of &amp;database cache</source>
         <translation>&amp;Маълумотлар базаси кеши</translation>
-    </message>
-    <message>
-        <source>MB</source>
-        <translation>МБ</translation>
     </message>
     <message>
         <source>Number of script &amp;verification threads</source>
@@ -593,8 +581,8 @@
         <translation>Шакл</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the PricecoinX network after a connection is established, but this process has not completed yet.</source>
-        <translation>Кўрсатилган маълумот эскирган бўлиши мумкин. Ҳамёнингиз алоқа ўрнатилгандан сўнг PricecoinX тармоқ билан автоматик тарзда синхронланади, аммо жараён ҳалигача тугалланмади.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Pricecoinx network after a connection is established, but this process has not completed yet.</source>
+        <translation>Кўрсатилган маълумот эскирган бўлиши мумкин. Ҳамёнингиз алоқа ўрнатилгандан сўнг Pricecoinx тармоқ билан автоматик тарзда синхронланади, аммо жараён ҳалигача тугалланмади.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -674,8 +662,8 @@
         <translation>Миқдори</translation>
     </message>
     <message>
-        <source>Enter a PricecoinX address (e.g. %1)</source>
-        <translation>PricecoinX манзилини киритинг (масалан.  %1)</translation>
+        <source>Enter a Pricecoinx address (e.g. %1)</source>
+        <translation>Pricecoinx манзилини киритинг (масалан.  %1)</translation>
     </message>
     <message>
         <source>%1 m</source>
@@ -1161,6 +1149,9 @@
     <name>UnitDisplayStatusBarControl</name>
     </context>
 <context>
+    <name>WalletController</name>
+    </context>
+<context>
     <name>WalletFrame</name>
     </context>
 <context>
@@ -1172,8 +1163,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>PricecoinX Core</source>
-        <translation>PricecoinX Core</translation>
+        <source>Pricecoinx Core</source>
+        <translation>Pricecoinx Core</translation>
     </message>
     <message>
         <source>Information</source>

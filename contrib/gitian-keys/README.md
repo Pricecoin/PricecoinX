@@ -19,9 +19,17 @@ gpg --refresh-keys
 To fetch keys of Gitian builders and active developers, feed the list of
 fingerprints of the primary keys into gpg:
 
+## Pricecoinx
+
 ```sh
-while read fingerprint keyholder_name; do gpg --keyserver hkp://subset.pool.sks-keyservers.net --recv-keys ${fingerprint}; done < ./keys.txt
+while read fingerprint keyholder_name; do gpg --keyserver hkp://subset.pool.sks-keyservers.net --recv-keys ${fingerprint}; done < ./keys-pricecoinx.txt
 ```
 
 Add your key to the list if you provided Gitian signatures for two major or
-minor releases of PricecoinX Core.
+minor releases of Pricecoinx Core.
+
+## Bitcoin
+
+```sh
+while read fingerprint keyholder_name; do gpg --keyserver hkp://subset.pool.sks-keyservers.net --recv-keys ${fingerprint}; done < ./keys.txt
+```

@@ -126,16 +126,12 @@
         <translation>&amp;Cambiar contrasinal...</translation>
     </message>
     <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>Direccións para recibir</translation>
-    </message>
-    <message>
         <source>Reindexing blocks on disk...</source>
         <translation>Reindexando bloques no disco...</translation>
     </message>
     <message>
-        <source>Send coins to a PricecoinX address</source>
-        <translation>Enviar moedas a unha dirección PricecoinX</translation>
+        <source>Send coins to a Pricecoinx address</source>
+        <translation>Enviar moedas a unha dirección Pricecoinx</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -158,12 +154,8 @@
         <translation>&amp;Verificar mensaxe...</translation>
     </message>
     <message>
-        <source>PricecoinX</source>
-        <translation>PricecoinX</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Moedeiro</translation>
+        <source>Pricecoinx</source>
+        <translation>Pricecoinx</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -186,12 +178,12 @@
         <translation>Encriptar as claves privadas que pertencen ao teu moedeiro</translation>
     </message>
     <message>
-        <source>Sign messages with your PricecoinX addresses to prove you own them</source>
-        <translation>Asina mensaxes coas túas direccións PricecoinX para probar que te pertencen</translation>
+        <source>Sign messages with your Pricecoinx addresses to prove you own them</source>
+        <translation>Asina mensaxes coas túas direccións Pricecoinx para probar que te pertencen</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified PricecoinX addresses</source>
-        <translation>Verificar mensaxes para asegurar que foron asinados con direccións PricecoinX dadas.</translation>
+        <source>Verify messages to ensure they were signed with specified Pricecoinx addresses</source>
+        <translation>Verificar mensaxes para asegurar que foron asinados con direccións Pricecoinx dadas.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -256,6 +248,10 @@
     <message>
         <source>Up to date</source>
         <translation>Actualizado</translation>
+    </message>
+    <message>
+        <source>&amp;Window</source>
+        <translation>&amp;Xanela</translation>
     </message>
     <message>
         <source>Catching up...</source>
@@ -401,8 +397,8 @@
         <translation>Empregar un directorio de datos personalizado</translation>
     </message>
     <message>
-        <source>PricecoinX</source>
-        <translation>PricecoinX</translation>
+        <source>Pricecoinx</source>
+        <translation>Pricecoinx</translation>
     </message>
     <message>
         <source>Error</source>
@@ -466,8 +462,8 @@
         <translation>Moedeiro</translation>
     </message>
     <message>
-        <source>Automatically open the PricecoinX client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir automáticamente o porto do cliente PricecoinX no router. Esto so funciona se o teu router soporta UPnP e está habilitado.</translation>
+        <source>Automatically open the Pricecoinx client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir automáticamente o porto do cliente Pricecoinx no router. Esto so funciona se o teu router soporta UPnP e está habilitado.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -549,8 +545,8 @@
         <translation>Formulario</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the PricecoinX network after a connection is established, but this process has not completed yet.</source>
-        <translation>A información amosada por estar desactualizada. O teu moedeiro sincronízase automáticamente coa rede PricecoinX despois de que se estableza unha conexión, pero este proceso non está todavía rematado.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Pricecoinx network after a connection is established, but this process has not completed yet.</source>
+        <translation>A información amosada por estar desactualizada. O teu moedeiro sincronízase automáticamente coa rede Pricecoinx despois de que se estableza unha conexión, pero este proceso non está todavía rematado.</translation>
     </message>
     <message>
         <source>Your current spendable balance</source>
@@ -923,8 +919,8 @@
         <translation>Copiar a sinatura actual ao portapapeis do sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this PricecoinX address</source>
-        <translation>Asina a mensaxe para probar que posees esta dirección PricecoinX</translation>
+        <source>Sign the message to prove you own this Pricecoinx address</source>
+        <translation>Asina a mensaxe para probar que posees esta dirección Pricecoinx</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -943,8 +939,8 @@
         <translation>&amp;Verificar Mensaxe</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified PricecoinX address</source>
-        <translation>Verificar a mensaxe para asegurar que foi asinada coa dirección PricecoinX especificada</translation>
+        <source>Verify the message to ensure it was signed with the specified Pricecoinx address</source>
+        <translation>Verificar a mensaxe para asegurar que foi asinada coa dirección Pricecoinx especificada</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -989,6 +985,9 @@
     <name>UnitDisplayStatusBarControl</name>
     </context>
 <context>
+    <name>WalletController</name>
+    </context>
+<context>
     <name>WalletFrame</name>
     </context>
 <context>
@@ -1000,8 +999,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>PricecoinX Core</source>
-        <translation>Core de PricecoinX</translation>
+        <source>Pricecoinx Core</source>
+        <translation>Core de Pricecoinx</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
