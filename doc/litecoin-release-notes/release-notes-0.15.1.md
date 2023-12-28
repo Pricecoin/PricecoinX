@@ -1,4 +1,4 @@
-Litecoin Core version *0.15.1* is now available from:
+PricecoinX Core version *0.15.1* is now available from:
 
   <https://download.pricecoinx.org/pricecoinx-0.15.1/>
 
@@ -18,8 +18,8 @@ How to Upgrade
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the 
-installer (on Windows) or just copy over `/Applications/Litecoin-Qt` (on Mac)
-or `litecoind`/`pricecoinx-qt` (on Linux).
+installer (on Windows) or just copy over `/Applications/PricecoinX-Qt` (on Mac)
+or `pricecoinxd`/`pricecoinx-qt` (on Linux).
 
 The first time you run version 0.15.0 or higher, your chainstate database will
 be converted to a new format, which will take anywhere from a few minutes to
@@ -48,10 +48,10 @@ processing the entire blockchain.
 Compatibility
 ==============
 
-Litecoin Core is extensively tested on multiple operating systems using
+PricecoinX Core is extensively tested on multiple operating systems using
 the Linux kernel, macOS 10.8+, and Windows Vista and later. Windows XP is not supported.
 
-Litecoin Core should also work on most other Unix-like systems but is not
+PricecoinX Core should also work on most other Unix-like systems but is not
 frequently tested on them.
 
 
@@ -61,7 +61,7 @@ Notable changes
 Network fork safety enhancements
 --------------------------------
 
-A number of changes to the way Litecoin Core deals with peer connections and invalid blocks
+A number of changes to the way PricecoinX Core deals with peer connections and invalid blocks
 have been made, as a safety precaution against blockchain forks and misbehaving peers.
 
 - Unrequested blocks with less work than the minimum-chain-work are now no longer processed even

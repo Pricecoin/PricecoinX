@@ -43,7 +43,7 @@ script: |
   cd ..
 
   UNSIGNED_TARBALL=pricecoinx-osx-unsigned.tar.gz
-  UNSIGNED_APP=dist/Litecoin-Qt.app
+  UNSIGNED_APP=dist/PricecoinX-Qt.app
   SIGNED=pricecoinx-osx-signed.dmg
 
   tar -xf ${UNSIGNED_TARBALL}

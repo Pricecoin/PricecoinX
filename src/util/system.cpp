@@ -655,7 +655,7 @@ fs::path GetDefaultDataDir()
     // Unix-like: ~/.bitcoin
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Litecoin";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "PricecoinX";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -665,7 +665,7 @@ fs::path GetDefaultDataDir()
         pathRet = fs::path(pszHome);
 #ifdef MAC_OSX
     // macOS
-    return pathRet / "Library/Application Support/Litecoin";
+    return pathRet / "Library/Application Support/PricecoinX";
 #else
     // Unix-like
     return pathRet / ".pricecoinx";

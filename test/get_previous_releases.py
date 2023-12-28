@@ -161,7 +161,7 @@ def build_release(tag, args) -> int:
         # Move binaries, so they're in the same place as in the
         # release download
         Path('bin').mkdir(exist_ok=True)
-        files = ['litecoind', 'pricecoinx-cli', 'pricecoinx-tx']
+        files = ['pricecoinxd', 'pricecoinx-cli', 'pricecoinx-tx']
         for f in files:
             Path('src/'+f).rename('bin/'+f)
     return 0
