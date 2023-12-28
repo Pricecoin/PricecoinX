@@ -15,8 +15,6 @@
 #include <outputtype.h>
 #include <rpc/blockchain.h>
 #include <rpc/server.h>
-#include <index/blockfilterindex.h>
-#include <index/txindex.h>
 #include <rpc/util.h>
 #include <timedata.h>
 #include <util.h>
@@ -470,60 +468,6 @@ static UniValue getinfo_deprecated(const JSONRPCRequest& request)
     );
 }
 
-static UniValue SummaryToJSON(const IndexSummary&& summary, std::string index_name)
-{
-    UniValue ret_summary(UniValue::VOBJ);
-    if (!index_name.empty() && index_name != summary.name) return ret_summary;
-
-    UniValue entry(UniValue::VOBJ);
-    entry.pushKV("synced", summary.synced);
-    entry.pushKV("best_block_height", summary.best_block_height);
-    ret_summary.pushKV(summary.name, entry);
-    return ret_summary;
-}
-
-static RPCHelpMan getindexinfo()
-{
-    return RPCHelpMan{"getindexinfo",
-                "\nReturns the status of one or all available indices currently running in the node.\n",
-                {
-                    {"index_name", RPCArg::Type::STR, RPCArg::Optional::OMITTED_NAMED_ARG, "Filter results for an index with a specific name."},
-                },
-                RPCResult{
-                    RPCResult::Type::OBJ, "", "", {
-                        {
-                            RPCResult::Type::OBJ, "name", "The name of the index",
-                            {
-                                {RPCResult::Type::BOOL, "synced", "Whether the index is synced or not"},
-                                {RPCResult::Type::NUM, "best_block_height", "The block height to which the index is synced"},
-                            }
-                        },
-                    },
-                },
-                RPCExamples{
-                    HelpExampleCli("getindexinfo", "")
-                  + HelpExampleRpc("getindexinfo", "")
-                  + HelpExampleCli("getindexinfo", "txindex")
-                  + HelpExampleRpc("getindexinfo", "txindex")
-                },
-                [&](const RPCHelpMan& self, const JSONRPCRequest& request) -> UniValue
-{
-    UniValue result(UniValue::VOBJ);
-    const std::string index_name = request.params[0].isNull() ? "" : request.params[0].get_str();
-
-    if (g_txindex) {
-        result.pushKVs(SummaryToJSON(g_txindex->GetSummary(), index_name));
-    }
-
-    ForEachBlockFilterIndex([&result, &index_name](const BlockFilterIndex& index) {
-        result.pushKVs(SummaryToJSON(index.GetSummary(), index_name));
-    });
-
-    return result;
-},
-    };
-}
-
 static const CRPCCommand commands[] =
 { //  category              name                      actor (function)         argNames
   //  --------------------- ------------------------  -----------------------  ----------
@@ -533,7 +477,6 @@ static const CRPCCommand commands[] =
     { "util",               "createmultisig",         &createmultisig,         {"nrequired","keys","address_type"} },
     { "util",               "verifymessage",          &verifymessage,          {"address","signature","message"} },
     { "util",               "signmessagewithprivkey", &signmessagewithprivkey, {"privkey","message"} },
-        { "util",               "getindexinfo",       &getindexinfo,           {"index_name"} },
 
     /* Not shown in help */
     { "hidden",             "setmocktime",            &setmocktime,            {"timestamp"}},
