@@ -29,16 +29,16 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>Litecoin-Qt</string>
+  <string>PricecoinX-Qt</string>
 
   <key>CFBundleName</key>
-  <string>Litecoin-Qt</string>
+  <string>PricecoinX-Qt</string>
 
   <key>LSHasLocalizedDisplayName</key>
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>org.pricecoinx.Litecoin-Qt</string>
+  <string>org.pricecoinx.PricecoinX-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -46,7 +46,7 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>org.pricecoinx.LitecoinPayment</string>
+      <string>org.pricecoinx.PricecoinXPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
         <string>pricecoinx</string>

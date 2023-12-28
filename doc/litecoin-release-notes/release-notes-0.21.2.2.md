@@ -1,4 +1,4 @@
-Litecoin Core version 0.21.2.2 is now available from:
+PricecoinX Core version 0.21.2.2 is now available from:
 
  <https://download.pricecoinx.org/pricecoinx-0.21.2.2/>.
 
