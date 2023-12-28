@@ -1,4 +1,4 @@
-// Copyright (c) 2011-2018 The Bitcoin Core developers
+// Copyright (c) 2011-2019 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -8,7 +8,6 @@
 
 #include <qt/walletmodeltransaction.h>
 
-#include <interfaces/node.h>
 #include <policy/policy.h>
 
 WalletModelTransaction::WalletModelTransaction(const QList<SendCoinsRecipient> &_recipients) :
@@ -22,14 +21,14 @@ QList<SendCoinsRecipient> WalletModelTransaction::getRecipients() const
     return recipients;
 }
 
-std::unique_ptr<interfaces::PendingWalletTx>& WalletModelTransaction::getWtx()
+CTransactionRef& WalletModelTransaction::getWtx()
 {
     return wtx;
 }
 
 unsigned int WalletModelTransaction::getTransactionSize()
 {
-    return wtx ? wtx->getVirtualSize() : 0;
+    return wtx ? GetVirtualTransactionSize(*wtx) : 0;
 }
 
 CAmount WalletModelTransaction::getTransactionFee() const
@@ -42,36 +41,30 @@ void WalletModelTransaction::setTransactionFee(const CAmount& newFee)
     fee = newFee;
 }
 
-void WalletModelTransaction::reassignAmounts(int nChangePosRet)
+void WalletModelTransaction::reassignAmounts(interfaces::Wallet& wallet, int nChangePosRet)
 {
-    const CTransaction* walletTransaction = &wtx->get();
-    int i = 0;
+    std::vector<CTxOutput> outputs = wtx->GetOutputs();
+    std::vector<PegOutCoin> pegouts = wtx->mweb_tx.GetPegOuts();
+
+    size_t i = 0;
     for (QList<SendCoinsRecipient>::iterator it = recipients.begin(); it != recipients.end(); ++it)
     {
         SendCoinsRecipient& rcp = (*it);
-
-#ifdef ENABLE_BIP70
-        if (rcp.paymentRequest.IsInitialized())
         {
-            CAmount subtotal = 0;
-            const payments::PaymentDetails& details = rcp.paymentRequest.getDetails();
-            for (int j = 0; j < details.outputs_size(); j++)
-            {
-                const payments::Output& out = details.outputs(j);
-                if (out.amount() <= 0) continue;
-                if (i == nChangePosRet)
+            while (i < outputs.size()) {
+                if (wallet.isChange(outputs[i]) || (!outputs[i].IsMWEB() && outputs[i].GetScriptPubKey().IsMWEBPegin())) {
                     i++;
-                subtotal += walletTransaction->vout[i].nValue;
-                i++;
+                } else {
+                    break;
+                }
             }
-            rcp.amount = subtotal;
-        }
-        else // normal recipient (no payment request)
-#endif
-        {
-            if (i == nChangePosRet)
-                i++;
-            rcp.amount = walletTransaction->vout[i].nValue;
+
+            if (i < outputs.size()) {
+                rcp.amount = wallet.getValue(outputs[i]);
+            } else if (pegouts.size() > (i - outputs.size())) {
+                rcp.amount = pegouts[i - outputs.size()].GetAmount();
+            }
+
             i++;
         }
     }

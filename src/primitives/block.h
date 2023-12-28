@@ -9,7 +9,7 @@
 #include <primitives/transaction.h>
 #include <serialize.h>
 #include <uint256.h>
-#include <crypto/allium/allium.h>
+#include <mweb/mweb_models.h>
 
 /** Nodes collect new transactions into a block, hash them into a hash tree,
  * and scan through nonce values to make the block's hash satisfy proof-of-work
@@ -34,17 +34,7 @@ public:
         SetNull();
     }
 
-    ADD_SERIALIZE_METHODS;
-
-    template <typename Stream, typename Operation>
-    inline void SerializationOp(Stream& s, Operation ser_action) {
-        READWRITE(this->nVersion);
-        READWRITE(hashPrevBlock);
-        READWRITE(hashMerkleRoot);
-        READWRITE(nTime);
-        READWRITE(nBits);
-        READWRITE(nNonce);
-    }
+    SERIALIZE_METHODS(CBlockHeader, obj) { READWRITE(obj.nVersion, obj.hashPrevBlock, obj.hashMerkleRoot, obj.nTime, obj.nBits, obj.nNonce); }
 
     void SetNull()
     {
@@ -81,6 +71,8 @@ public:
     // memory only
     mutable bool fChecked;
 
+    MWEB::Block mweb_block;
+
     CBlock()
     {
         SetNull();
@@ -92,12 +84,15 @@ public:
         *(static_cast<CBlockHeader*>(this)) = header;
     }
 
-    ADD_SERIALIZE_METHODS;
-
-    template <typename Stream, typename Operation>
-    inline void SerializationOp(Stream& s, Operation ser_action) {
-        READWRITEAS(CBlockHeader, *this);
-        READWRITE(vtx);
+    SERIALIZE_METHODS(CBlock, obj)
+    {
+        READWRITEAS(CBlockHeader, obj);
+        READWRITE(obj.vtx);
+        if (!(s.GetVersion() & SERIALIZE_NO_MWEB)) {
+            if (obj.vtx.size() >= 2 && obj.vtx.back()->IsHogEx()) {
+                READWRITE(obj.mweb_block);
+            }
+        }
     }
 
     void SetNull()
@@ -105,6 +100,7 @@ public:
         CBlockHeader::SetNull();
         vtx.clear();
         fChecked = false;
+        mweb_block.SetNull();
     }
 
     CBlockHeader GetBlockHeader() const
@@ -120,6 +116,9 @@ public:
     }
 
     std::string ToString() const;
+
+    // Returns the hogex (integrating) transaction, if it exists.
+    CTransactionRef GetHogEx() const noexcept;
 };
 
 /** Describes a place in the block chain to another node such that if the
@@ -134,14 +133,12 @@ struct CBlockLocator
 
     explicit CBlockLocator(const std::vector<uint256>& vHaveIn) : vHave(vHaveIn) {}
 
-    ADD_SERIALIZE_METHODS;
-
-    template <typename Stream, typename Operation>
-    inline void SerializationOp(Stream& s, Operation ser_action) {
+    SERIALIZE_METHODS(CBlockLocator, obj)
+    {
         int nVersion = s.GetVersion();
         if (!(s.GetType() & SER_GETHASH))
             READWRITE(nVersion);
-        READWRITE(vHave);
+        READWRITE(obj.vHave);
     }
 
     void SetNull()

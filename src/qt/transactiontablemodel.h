@@ -17,7 +17,7 @@ class Handler;
 }
 
 class PlatformStyle;
-class TransactionRecord;
+class WalletTxRecord;
 class TransactionTablePriv;
 class WalletModel;
 
@@ -70,17 +70,17 @@ public:
         ConfirmedRole,
         /** Formatted amount, without brackets when unconfirmed */
         FormattedAmountRole,
-        /** Transaction status (TransactionRecord::Status) */
+        /** Transaction status (WalletTxRecord::Status) */
         StatusRole,
         /** Unprocessed icon */
         RawDecorationRole,
     };
 
-    int rowCount(const QModelIndex &parent) const;
-    int columnCount(const QModelIndex &parent) const;
-    QVariant data(const QModelIndex &index, int role) const;
-    QVariant headerData(int section, Qt::Orientation orientation, int role) const;
-    QModelIndex index(int row, int column, const QModelIndex & parent = QModelIndex()) const;
+    int rowCount(const QModelIndex &parent) const override;
+    int columnCount(const QModelIndex &parent) const override;
+    QVariant data(const QModelIndex &index, int role) const override;
+    QVariant headerData(int section, Qt::Orientation orientation, int role) const override;
+    QModelIndex index(int row, int column, const QModelIndex & parent = QModelIndex()) const override;
     bool processingQueuedTransactions() const { return fProcessingQueuedTransactions; }
 
 private:
@@ -96,16 +96,16 @@ private:
     void unsubscribeFromCoreSignals();
 
     QString lookupAddress(const std::string &address, bool tooltip) const;
-    QVariant addressColor(const TransactionRecord *wtx) const;
-    QString formatTxStatus(const TransactionRecord *wtx) const;
-    QString formatTxDate(const TransactionRecord *wtx) const;
-    QString formatTxType(const TransactionRecord *wtx) const;
-    QString formatTxToAddress(const TransactionRecord *wtx, bool tooltip) const;
-    QString formatTxAmount(const TransactionRecord *wtx, bool showUnconfirmed=true, BitcoinUnits::SeparatorStyle separators=BitcoinUnits::separatorStandard) const;
-    QString formatTooltip(const TransactionRecord *rec) const;
-    QVariant txStatusDecoration(const TransactionRecord *wtx) const;
-    QVariant txWatchonlyDecoration(const TransactionRecord *wtx) const;
-    QVariant txAddressDecoration(const TransactionRecord *wtx) const;
+    QVariant addressColor(const WalletTxRecord *wtx) const;
+    QString formatTxStatus(const WalletTxRecord *wtx) const;
+    QString formatTxDate(const WalletTxRecord *wtx) const;
+    QString formatTxType(const WalletTxRecord *wtx) const;
+    QString formatTxToAddress(const WalletTxRecord *wtx, bool tooltip) const;
+    QString formatTxAmount(const WalletTxRecord *wtx, bool showUnconfirmed=true, BitcoinUnits::SeparatorStyle separators=BitcoinUnits::SeparatorStyle::STANDARD) const;
+    QString formatTooltip(const WalletTxRecord *rec) const;
+    QVariant txStatusDecoration(const WalletTxRecord *wtx) const;
+    QVariant txWatchonlyDecoration(const WalletTxRecord *wtx) const;
+    QVariant txAddressDecoration(const WalletTxRecord *wtx) const;
 
 public Q_SLOTS:
     /* New transaction, or transaction changed status */
