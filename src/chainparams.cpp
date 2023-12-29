@@ -83,18 +83,18 @@ public:
         consensus.nRuleChangeActivationThreshold = 6048; // 75% of 8064
         consensus.nMinerConfirmationWindow = 8064; // nPowTargetTimespan / nPowTargetSpacing * 4
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
-        consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 1199145601; //These were originally different values
-        consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; //These were originally different values
+        consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 1709971200; //August 8 2024
+        consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1709459200; //December 1st 2024
 
         // Deployment of Taproot (BIPs 340-342)
         consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].bit = 0;
-        consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].nStartHeight = 1640995200; // End November 2021
-        consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].nTimeoutHeight = 1678416000; // 364 days later
+        consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].nStartHeight = 1709971200; // August 8 2024
+        consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].nTimeoutHeight = 1709459200; // December 1st 2024
 
         // Deployment of MWEB (LIP-0002, LIP-0003, and LIP-0004)
         consensus.vDeployments[Consensus::DEPLOYMENT_MWEB].bit = 1;
-        consensus.vDeployments[Consensus::DEPLOYMENT_MWEB].nStartHeight = 1640995200; // End Feb 2022
-        consensus.vDeployments[Consensus::DEPLOYMENT_MWEB].nTimeoutHeight = 1678416000; // 364 days later
+        consensus.vDeployments[Consensus::DEPLOYMENT_MWEB].nStartHeight = 1709971200; // August 8 2024
+        consensus.vDeployments[Consensus::DEPLOYMENT_MWEB].nTimeoutHeight = 1709459200; // December 1st 2024
 
 
 
