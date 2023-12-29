@@ -12,7 +12,7 @@ from test_framework.prcx_util import make_utxo
 from test_framework.script_util import DUMMY_P2WPKH_SCRIPT
 
 
-class LtcReplaceByFeeTest(BitcoinTestFramework):
+class PrcxReplaceByFeeTest(BitcoinTestFramework):
     def set_test_params(self):
         self.num_nodes = 2
         self.extra_args = [
@@ -99,4 +99,4 @@ class LtcReplaceByFeeTest(BitcoinTestFramework):
         rbf_node.sendrawtransaction(tx3c_hex, 0)
 
 if __name__ == '__main__':
-    LtcReplaceByFeeTest().main()
+    PrcxReplaceByFeeTest().main()
