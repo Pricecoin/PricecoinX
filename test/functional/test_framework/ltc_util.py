@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (c) 2014-2022 The PricecoinX Core developers
+# Copyright (c) 2014-2022 The Litecoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Random assortment of utility functions"""
@@ -120,7 +120,7 @@ def create_non_hd_wallet(chain, options):
         rpchost=None,
         timewait=60,
         timeout_factor=1.0,
-        bitcoind=os.path.join(bin_dir, 'pricecoinxd'),
+        bitcoind=os.path.join(bin_dir, 'litecoind'),
         bitcoin_cli=os.path.join(bin_dir, 'pricecoinx-cli'),
         version=version,
         coverage_dir=None,

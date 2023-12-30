@@ -1,6 +1,6 @@
 # libmw
 
-Modular library for supporting PricecoinX's implementation of the MWEB (Mimblewimble Extension Block). 
+Modular library for supporting Litecoin's implementation of the MWEB (Mimblewimble Extension Block). 
 
 [Build instructions](doc/build.md)
 
@@ -36,7 +36,7 @@ which was built on top of https://github.com/bitcoin/bitcoin/tree/master/src/sec
 
 Before releasing, we should see if the latest version of https://github.com/elementsproject/secp256k1-zkp contains all of the modules we need,
 since it gets a lot of attention from cryptographers. Additionally, it would be wise to remove this from the deps directory,
-and just replace the more-limited secp256k1 dependency that's already included in PricecoinX.
+and just replace the more-limited secp256k1 dependency that's already included in Litecoin.
 Otherwise, we'll have 2 versions to maintain, and will very likely have namespace clashes to deal with.
 
 ## include/

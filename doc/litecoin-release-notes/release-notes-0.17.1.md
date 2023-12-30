@@ -1,4 +1,4 @@
-PricecoinX Core version 0.17.1 is now available from:
+Litecoin Core version 0.17.1 is now available from:
 
   <https://download.pricecoinx.org/pricecoinx-0.17.1/>
 
@@ -18,8 +18,8 @@ How to Upgrade
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
-installer (on Windows) or just copy over `/Applications/PricecoinX-Qt` (on Mac)
-or `pricecoinxd`/`pricecoinx-qt` (on Linux).
+installer (on Windows) or just copy over `/Applications/Litecoin-Qt` (on Mac)
+or `litecoind`/`pricecoinx-qt` (on Linux).
 
 If your node has a txindex, the txindex db will be migrated the first time you run 0.17.0 or newer, which may take up to a few hours. Your node will not be functional until this migration completes.
 
@@ -46,10 +46,10 @@ processing the entire blockchain.
 Compatibility
 ==============
 
-PricecoinX Core is extensively tested on multiple operating systems using
+Litecoin Core is extensively tested on multiple operating systems using
 the Linux kernel, macOS 10.10+, and Windows 7 and newer (Windows XP is not supported).
 
-PricecoinX Core should also work on most other Unix-like systems but is not
+Litecoin Core should also work on most other Unix-like systems but is not
 frequently tested on them.
 
 From 0.17.0 onwards macOS <10.10 is no longer supported. 0.17.0 is built using Qt 5.9.x, which doesn't
@@ -174,7 +174,7 @@ outside of sections.
 
 A new 'label' API has been introduced for the wallet. This is intended as a
 replacement for the deprecated 'account' API. The 'account' can continue to
-be used in V0.17 by starting pricecoinxd with the '-deprecatedrpc=accounts'
+be used in V0.17 by starting litecoind with the '-deprecatedrpc=accounts'
 argument, and will be fully removed in V0.18.
 
 The label RPC methods mirror the account functionality, with the following functional differences:
@@ -207,21 +207,21 @@ Here are the changes to RPC methods:
 | `listtransactions`     | The `account` named parameter has been renamed to `dummy`. If provided, the `dummy` parameter must be set to the string `*`, unless running with the `-deprecatedrpc=accounts` argument (in which case functionality is unchanged). |
 | `getbalance`           | `account`, `minconf` and `include_watchonly` parameters are deprecated, and can only be used if running with '-deprecatedrpc=accounts' |
 
-BIP 174 Partially Signed PricecoinX Transactions support
+BIP 174 Partially Signed Litecoin Transactions support
 -----------------------------------------------------
 
-[BIP 174 PSBT](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki) is an interchange format for PricecoinX transactions that are not fully signed
+[BIP 174 PSBT](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki) is an interchange format for Litecoin transactions that are not fully signed
 yet, together with relevant metadata to help entities work towards signing it.
 It is intended to simplify workflows where multiple parties need to cooperate to
 produce a transaction. Examples include hardware wallets, multisig setups, and
 [CoinJoin](https://bitcointalk.org/?topic=279249) transactions.
 
-For backend RPC convenience, the PricecoinX devs have supported to keep the acronym `PSBT`
+For backend RPC convenience, the Litecoin devs have supported to keep the acronym `PSBT`
 instead of `PSLT` to make crosschain application support easier.
 
 ### Overall workflow
 
-Overall, the construction of a fully signed PricecoinX transaction goes through the
+Overall, the construction of a fully signed Litecoin transaction goes through the
 following steps:
 
 - A **Creator** proposes a particular transaction to be created. He constructs
@@ -236,7 +236,7 @@ following steps:
   partial signature for the inputs for which they have relevant key(s).
 - A **Finalizer** is run for each input to convert the partial signatures and
   possibly script information into a final `scriptSig` and/or `scriptWitness`.
-- An **Extractor** produces a valid PricecoinX transaction (in network format)
+- An **Extractor** produces a valid Litecoin transaction (in network format)
   from a PSBT for which all inputs are finalized.
 
 Generally, each of the above (excluding Creator and Extractor) will simply
@@ -282,7 +282,7 @@ hardware implementations will typically implement multiple roles simultaneously.
 Upgrading non-HD wallets to HD wallets
 --------------------------------------
 
-Since PricecoinX Core 0.13.0, creating new BIP 32 Hierarchical Deterministic wallets has been supported by PricecoinX Core but old non-HD wallets could not be upgraded to HD. Now non-HD wallets can be upgraded to HD using the `-upgradewallet` command line option. This upgrade will result in the all keys in the keypool being marked as used and a new keypool generated. **A new backup must be made when this upgrade is performed.**
+Since Litecoin Core 0.13.0, creating new BIP 32 Hierarchical Deterministic wallets has been supported by Litecoin Core but old non-HD wallets could not be upgraded to HD. Now non-HD wallets can be upgraded to HD using the `-upgradewallet` command line option. This upgrade will result in the all keys in the keypool being marked as used and a new keypool generated. **A new backup must be made when this upgrade is performed.**
 
 Additionally, `-upgradewallet` can be used to upgraded from a non-split HD chain (all keys generated with `m/0'/0'/i'`) to a split HD chain (receiving keys generated with `'m/0'/0'/i'` and change keys generated with `m'/0'/1'/i'`). When this upgrade occurs, all keys already in the keypool will remain in the keypool to be used until all keys from before the upgrade are exhausted. This is to avoid issues with backups and downgrades when some keys may come from the change key keypool. Users can begin using the new split HD chain keypools by using the `newkeypool` RPC to mark all keys in the keypool as used and begin using a new keypool generated from the split HD chain.
 
@@ -348,7 +348,7 @@ Low-level RPC changes
   `pubkeys`, `sigsrequired`, `pubkey`, `addresses`, `embedded`, `iscompressed`,
   `account`, `timestamp`, `hdkeypath`, `hdmasterkeyid`.
 - `signrawtransaction` is deprecated and will be fully removed in v0.18. To use
-  `signrawtransaction` in v0.17, restart pricecoinxd with
+  `signrawtransaction` in v0.17, restart litecoind with
   `-deprecatedrpc=signrawtransaction`. Projects should transition to using
   `signrawtransactionwithkey` and `signrawtransactionwithwallet` before
   upgrading to v0.18.
@@ -362,7 +362,7 @@ Other API changes
 
 - The log timestamp format is now ISO 8601 (e.g. "2018-02-28T12:34:56Z").
 
-- When running pricecoinxd with `-debug` but without `-daemon`, logging to stdout
+- When running litecoind with `-debug` but without `-daemon`, logging to stdout
   is now the default behavior. Setting `-printtoconsole=1` no longer implicitly
   disables logging to debug.log. Instead, logging to file can be explicitly disabled
   by setting `-debuglogfile=0`.
@@ -371,7 +371,7 @@ Transaction index changes
 -------------------------
 
 The transaction index is now built separately from the main node procedure,
-meaning the `-txindex` flag can be toggled without a full reindex. If pricecoinxd
+meaning the `-txindex` flag can be toggled without a full reindex. If litecoind
 is run with `-txindex` on a node that is already partially or fully synced
 without one, the transaction index will be built in the background and become
 available once caught up. When switching from running `-txindex` to running

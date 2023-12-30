@@ -1,5 +1,5 @@
-Building PricecoinX
+Building Litecoin
 ================
 
 See doc/build-*.md for instructions on building the various
-elements of the PricecoinX Core reference implementation of PricecoinX.
+elements of the Litecoin Core reference implementation of Litecoin.

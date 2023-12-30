@@ -1,4 +1,4 @@
-// Copyright(C) 2011 - 2020 The PricecoinX Core developers
+// Copyright(C) 2011 - 2020 The Litecoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
