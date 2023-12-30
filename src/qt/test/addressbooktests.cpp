@@ -1,24 +1,21 @@
-// Copyright (c) 2017-2020 The Bitcoin Core developers
-// Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
 #include <qt/test/addressbooktests.h>
 #include <qt/test/util.h>
-#include <test/util/setup_common.h>
+#include <test/test_bitcoin.h>
 
-#include <interfaces/chain.h>
 #include <interfaces/node.h>
-#include <qt/clientmodel.h>
+#include <qt/addressbookpage.h>
+#include <qt/addresstablemodel.h>
 #include <qt/editaddressdialog.h>
+#include <qt/callback.h>
 #include <qt/optionsmodel.h>
 #include <qt/platformstyle.h>
 #include <qt/qvalidatedlineedit.h>
 #include <qt/walletmodel.h>
 
 #include <key.h>
+#include <pubkey.h>
 #include <key_io.h>
 #include <wallet/wallet.h>
-#include <walletinitinterface.h>
 
 #include <QApplication>
 #include <QTimer>
@@ -57,12 +54,10 @@ void EditAddressAndSubmit(
  * In each case, verify the resulting state of the address book and optionally
  * the warning message presented to the user.
  */
-void TestAddAddressesToSendBook(interfaces::Node& node)
+void TestAddAddressesToSendBook()
 {
     TestChain100Setup test;
-    node.setContext(&test.m_node);
-    std::shared_ptr<CWallet> wallet = std::make_shared<CWallet>(node.context()->chain.get(), "", CreateMockWalletDatabase());
-    wallet->SetupLegacyScriptPubKeyMan();
+    std::shared_ptr<CWallet> wallet = std::make_shared<CWallet>("mock", WalletDatabase::CreateMock());
     bool firstRun;
     wallet->LoadWallet(firstRun);
 
@@ -70,7 +65,7 @@ void TestAddAddressesToSendBook(interfaces::Node& node)
         CKey key;
         key.MakeNewKey(true);
         CTxDestination dest(GetDestinationForKey(
-            key.GetPubKey(), wallet->m_default_address_type, wallet->GetLegacyScriptPubKeyMan()->GetScanSecret()));
+            key.GetPubKey(), wallet->m_default_address_type));
 
         return std::make_pair(dest, QString::fromStdString(EncodeDestination(dest)));
     };
@@ -99,8 +94,7 @@ void TestAddAddressesToSendBook(interfaces::Node& node)
     }
 
     auto check_addbook_size = [&wallet](int expected_size) {
-        LOCK(wallet->cs_wallet);
-        QCOMPARE(static_cast<int>(wallet->m_address_book.size()), expected_size);
+        QCOMPARE(static_cast<int>(wallet->mapAddressBook.size()), expected_size);
     };
 
     // We should start with the two addresses we added earlier and nothing else.
@@ -108,11 +102,11 @@ void TestAddAddressesToSendBook(interfaces::Node& node)
 
     // Initialize relevant QT models.
     std::unique_ptr<const PlatformStyle> platformStyle(PlatformStyle::instantiate("other"));
-    OptionsModel optionsModel;
-    ClientModel clientModel(node, &optionsModel);
+    auto node = interfaces::MakeNode();
+    OptionsModel optionsModel(*node);
     AddWallet(wallet);
-    WalletModel walletModel(interfaces::MakeWallet(wallet), clientModel, platformStyle.get());
-    RemoveWallet(wallet, nullopt);
+    WalletModel walletModel(std::move(node->getWallets()[0]), *node, platformStyle.get(), &optionsModel);
+    RemoveWallet(wallet);
     EditAddressDialog editAddressDialog(EditAddressDialog::NewSendingAddress);
     editAddressDialog.setModel(walletModel.getAddressTableModel());
 
@@ -153,9 +147,9 @@ void AddressBookTests::addressBookTests()
         // and fails to handle returned nulls
         // (https://bugreports.qt.io/browse/QTBUG-49686).
         QWARN("Skipping AddressBookTests on mac build with 'minimal' platform set due to Qt bugs. To run AppTests, invoke "
-              "with 'QT_QPA_PLATFORM=cocoa test_pricecoinx-qt' on mac, or else use a linux or windows build.");
+              "with 'test_bitcoin-qt -platform cocoa' on mac, or else use a linux or windows build.");
         return;
     }
 #endif
-    TestAddAddressesToSendBook(m_node);
+    TestAddAddressesToSendBook();
 }

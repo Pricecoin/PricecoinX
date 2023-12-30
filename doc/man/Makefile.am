@@ -8,16 +8,6 @@ if ENABLE_QT
   dist_man1_MANS+=pricecoinx-qt.1
 endif
 
-if BUILD_BITCOIN_CLI
-  dist_man1_MANS+=pricecoinx-cli.1
-endif
-
-if BUILD_BITCOIN_TX
-  dist_man1_MANS+=pricecoinx-tx.1
-endif
-
-if ENABLE_WALLET
-if BUILD_BITCOIN_WALLET
-  dist_man1_MANS+=pricecoinx-wallet.1
-endif
+if BUILD_BITCOIN_UTILS
+  dist_man1_MANS+=pricecoinx-cli.1 pricecoinx-tx.1
 endif

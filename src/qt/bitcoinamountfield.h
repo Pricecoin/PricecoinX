@@ -26,19 +26,10 @@ class BitcoinAmountField: public QWidget
     Q_PROPERTY(qint64 value READ value WRITE setValue NOTIFY valueChanged USER true)
 
 public:
-    explicit BitcoinAmountField(QWidget *parent = nullptr);
+    explicit BitcoinAmountField(QWidget *parent = 0);
 
-    CAmount value(bool *value=nullptr) const;
+    CAmount value(bool *value=0) const;
     void setValue(const CAmount& value);
-
-    /** If allow empty is set to false the field will be set to the minimum allowed value if left empty. **/
-    void SetAllowEmpty(bool allow);
-
-    /** Set the minimum value in satoshis **/
-    void SetMinValue(const CAmount& value);
-
-    /** Set the maximum value in satoshis **/
-    void SetMaxValue(const CAmount& value);
 
     /** Set single step in satoshis **/
     void setSingleStep(const CAmount& step);
@@ -70,7 +61,7 @@ Q_SIGNALS:
 
 protected:
     /** Intercept focus-in event and ',' key presses */
-    bool eventFilter(QObject *object, QEvent *event) override;
+    bool eventFilter(QObject *object, QEvent *event);
 
 private:
     AmountSpinBox *amount;
