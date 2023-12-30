@@ -6,7 +6,6 @@
 #define BITCOIN_QT_COINCONTROLDIALOG_H
 
 #include <amount.h>
-#include <wallet/coinselection.h>
 
 #include <QAbstractButton>
 #include <QAction>
@@ -32,9 +31,10 @@ class CCoinControlWidgetItem : public QTreeWidgetItem
 {
 public:
     explicit CCoinControlWidgetItem(QTreeWidget *parent, int type = Type) : QTreeWidgetItem(parent, type) {}
+    explicit CCoinControlWidgetItem(int type = Type) : QTreeWidgetItem(type) {}
     explicit CCoinControlWidgetItem(QTreeWidgetItem *parent, int type = Type) : QTreeWidgetItem(parent, type) {}
 
-    bool operator<(const QTreeWidgetItem &other) const override;
+    bool operator<(const QTreeWidgetItem &other) const;
 };
 
 
@@ -43,18 +43,20 @@ class CoinControlDialog : public QDialog
     Q_OBJECT
 
 public:
-    explicit CoinControlDialog(CCoinControl& coin_control, WalletModel* model, const PlatformStyle *platformStyle, QWidget *parent = nullptr);
+    explicit CoinControlDialog(const PlatformStyle *platformStyle, QWidget *parent = nullptr);
     ~CoinControlDialog();
 
+    void setModel(WalletModel *model);
+
     // static because also called from sendcoinsdialog
-    static void updateLabels(CCoinControl& m_coin_control, WalletModel*, QDialog*);
+    static void updateLabels(WalletModel*, QDialog*);
 
     static QList<CAmount> payAmounts;
+    static CCoinControl *coinControl();
     static bool fSubtractFeeFromAmount;
 
 private:
     Ui::CoinControlDialog *ui;
-    CCoinControl& m_coin_control;
     WalletModel *model;
     int sortColumn;
     Qt::SortOrder sortOrder;
@@ -66,12 +68,6 @@ private:
     QAction *unlockAction;
 
     const PlatformStyle *platformStyle;
-
-    CInputCoin BuildInputCoin(QTreeWidgetItem* item);
-    OutputIndex BuildOutputIndex(QTreeWidgetItem* item);
-
-    bool IsMWEB(QTreeWidgetItem* item);
-    bool IsCanonical(QTreeWidgetItem* item);
 
     void sortView(int, Qt::SortOrder);
     void updateView();
@@ -89,9 +85,7 @@ private:
     enum
     {
         TxHashRole = Qt::UserRole,
-        VOutRole,
-        PubKeyRole,
-        MWEBOutRole
+        VOutRole
     };
 
     friend class CCoinControlWidgetItem;

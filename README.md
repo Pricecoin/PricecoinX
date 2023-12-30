@@ -1,39 +1,34 @@
-Litecoin Core integration/staging tree
+Pricecoinx Core integration/staging tree
 =====================================
 
 [![Build Status](https://travis-ci.org/pricecoinx-project/pricecoinx.svg?branch=master)](https://travis-ci.org/pricecoinx-project/pricecoinx)
 
 https://pricecoinx.org
 
-What is Litecoin?
+What is Pricecoinx?
 ----------------
 
-Litecoin is an experimental digital currency that enables instant payments to
-anyone, anywhere in the world. Litecoin uses peer-to-peer technology to operate
+Pricecoinx is an experimental digital currency that enables instant payments to
+anyone, anywhere in the world. Pricecoinx uses peer-to-peer technology to operate
 with no central authority: managing transactions and issuing money are carried
-out collectively by the network. Litecoin Core is the name of open source
+out collectively by the network. Pricecoinx Core is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Litecoin Core software, see [https://pricecoinx.org](https://pricecoinx.org).
+the Pricecoinx Core software, see [https://pricecoinx.org](https://pricecoinx.org).
 
 License
 -------
 
-Litecoin Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
+Pricecoinx Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see https://opensource.org/licenses/MIT.
 
 Development Process
 -------------------
 
-The `master` branch is regularly built (see `doc/build-*.md` for instructions) and tested, but it is not guaranteed to be
+The `master` branch is regularly built and tested, but is not guaranteed to be
 completely stable. [Tags](https://github.com/pricecoinx-project/pricecoinx/tags) are created
-regularly from release branches to indicate new official, stable release versions of Litecoin Core.
-
-The https://github.com/pricecoinx-project/gui repository is used exclusively for the
-development of the GUI. Its master branch is identical in all monotree
-repositories. Release branches and tags do not exist, so please do not fork
-that repository unless it is for development reasons.
+regularly to indicate new official, stable release versions of Pricecoinx Core.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md)
 and useful hints for developers can be found in [doc/developer-notes.md](doc/developer-notes.md).
@@ -76,7 +71,7 @@ Translations
 ------------
 
 We only accept translation fixes that are submitted through [Bitcoin Core's Transifex page](https://www.transifex.com/projects/p/bitcoin/).
-Translations are converted to Litecoin periodically.
+Translations are converted to Pricecoinx periodically.
 
 Translations are periodically pulled from Transifex and merged into the git repository. See the
 [translation process](doc/translation_process.md) for details on how this works.
