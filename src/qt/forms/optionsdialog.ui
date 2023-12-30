@@ -121,7 +121,7 @@
          <item>
           <widget class="QLabel" name="databaseCacheUnitLabel">
            <property name="text">
-            <string>MiB</string>
+            <string>MB</string>
            </property>
            <property name="textFormat">
             <enum>Qt::PlainText</enum>
@@ -252,7 +252,7 @@
        <item>
         <widget class="QCheckBox" name="mapPortUpnp">
          <property name="toolTip">
-          <string>Automatically open the Pricecoinx client port on the router. This only works when your router supports UPnP and it is enabled.</string>
+          <string>Automatically open the PricecoinX client port on the router. This only works when your router supports UPnP and it is enabled.</string>
          </property>
          <property name="text">
           <string>Map port using &amp;UPnP</string>
@@ -272,7 +272,7 @@
        <item>
         <widget class="QCheckBox" name="connectSocks">
          <property name="toolTip">
-          <string>Connect to the Pricecoinx network through a SOCKS5 proxy.</string>
+          <string>Connect to the PricecoinX network through a SOCKS5 proxy.</string>
          </property>
          <property name="text">
           <string>&amp;Connect through SOCKS5 proxy (default proxy):</string>
@@ -459,7 +459,7 @@
        <item>
         <widget class="QCheckBox" name="connectSocksTor">
          <property name="toolTip">
-          <string>Connect to the Pricecoinx network through a separate SOCKS5 proxy for Tor hidden services.</string>
+          <string>Connect to the PricecoinX network through a separate SOCKS5 proxy for Tor hidden services.</string>
          </property>
          <property name="text">
           <string>Use separate SOCKS&amp;5 proxy to reach peers via Tor hidden services:</string>
@@ -714,7 +714,7 @@
         <item>
          <widget class="QLabel" name="overriddenByCommandLineInfoLabel">
           <property name="text">
-           <string>Options set in this dialog are overridden by the command line or in the configuration file:</string>
+           <string>Active command-line options that override above options:</string>
           </property>
           <property name="textFormat">
            <enum>Qt::PlainText</enum>

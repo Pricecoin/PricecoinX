@@ -7,7 +7,7 @@
 
 #include <policy/policy.h>
 #include <txmempool.h>
-#include <util/system.h>
+#include <util.h>
 #include <validation.h>
 #include <wallet/coincontrol.h>
 #include <wallet/wallet.h>
@@ -21,7 +21,13 @@ CAmount GetRequiredFee(const CWallet& wallet, unsigned int nTxBytes)
 
 CAmount GetMinimumFee(const CWallet& wallet, unsigned int nTxBytes, const CCoinControl& coin_control, const CTxMemPool& pool, const CBlockPolicyEstimator& estimator, FeeCalculation* feeCalc)
 {
-    return GetMinimumFeeRate(wallet, coin_control, pool, estimator, feeCalc).GetFee(nTxBytes);
+    CAmount fee_needed = GetMinimumFeeRate(wallet, coin_control, pool, estimator, feeCalc).GetFee(nTxBytes);
+    // Always obey the maximum
+    if (fee_needed > maxTxFee) {
+        fee_needed = maxTxFee;
+        if (feeCalc) feeCalc->reason = FeeReason::MAXTXFEE;
+    }
+    return fee_needed;
 }
 
 CFeeRate GetRequiredFeeRate(const CWallet& wallet)

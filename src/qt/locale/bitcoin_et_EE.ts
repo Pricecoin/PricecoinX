@@ -130,8 +130,12 @@
         <translation>Kõvakettal olevate plokkide reindekseerimine...</translation>
     </message>
     <message>
-        <source>Pricecoinx</source>
-        <translation>Pricecoinx</translation>
+        <source>PricecoinX</source>
+        <translation>PricecoinX</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Rahakott</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -261,8 +265,8 @@
         <translation>Tere tulemast</translation>
     </message>
     <message>
-        <source>Pricecoinx</source>
-        <translation>Pricecoinx</translation>
+        <source>PricecoinX</source>
+        <translation>PricecoinX</translation>
     </message>
     <message>
         <source>Error</source>
@@ -280,6 +284,10 @@
     <message>
         <source>Options</source>
         <translation>Valikud</translation>
+    </message>
+    <message>
+        <source>MB</source>
+        <translation>MB</translation>
     </message>
     <message>
         <source>&amp;Network</source>
@@ -729,9 +737,6 @@
     <name>UnitDisplayStatusBarControl</name>
     </context>
 <context>
-    <name>WalletController</name>
-    </context>
-<context>
     <name>WalletFrame</name>
     </context>
 <context>
@@ -755,8 +760,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Pricecoinx Core</source>
-        <translation>Pricecoinx Core</translation>
+        <source>PricecoinX Core</source>
+        <translation>PricecoinX Core</translation>
     </message>
     <message>
         <source>Information</source>

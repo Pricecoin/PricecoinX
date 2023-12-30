@@ -5,7 +5,7 @@ connections, inter-process communication, and shared-memory,
 providing various message-oriented semantics such as publish/subscribe,
 request/reply, and push/pull.
 
-The Pricecoinx Core daemon can be configured to act as a trusted "border
+The PricecoinX Core daemon can be configured to act as a trusted "border
 router", implementing the pricecoinx wire protocol and relay, making
 consensus decisions, maintaining the local blockchain database,
 broadcasting locally generated transactions into the network, and
@@ -33,10 +33,8 @@ buffering or reassembly.
 
 ## Prerequisites
 
-The ZeroMQ feature in Pricecoinx Core requires the ZeroMQ API >= 4.0.0
-[libzmq](https://github.com/zeromq/libzmq/releases).
-For version information, see [dependencies.md](dependencies.md).
-Typically, it is packaged by distributions as something like
+The ZeroMQ feature in PricecoinX Core requires ZeroMQ API version 4.x or
+newer. Typically, it is packaged by distributions as something like
 *libzmq3-dev*. The C++ wrapper for ZeroMQ is *not* needed.
 
 In order to run the example Python client scripts in contrib/ one must
@@ -66,21 +64,10 @@ Currently, the following notifications are supported:
 The socket type is PUB and the address must be a valid ZeroMQ socket
 address. The same address can be used in more than one notification.
 
-The option to set the PUB socket's outbound message high water mark
-(SNDHWM) may be set individually for each notification:
-
-    -zmqpubhashtxhwm=n
-    -zmqpubhashblockhwm=n
-    -zmqpubrawblockhwm=n
-    -zmqpubrawtxhwm=n
-
-The high water mark value must be an integer greater than or equal to 0.
-
 For instance:
 
     $ pricecoinxd -zmqpubhashtx=tcp://127.0.0.1:28332 \
-               -zmqpubrawtx=ipc:///tmp/pricecoinxd.tx.raw \
-               -zmqpubhashtxhwm=10000
+               -zmqpubrawtx=ipc:///tmp/pricecoinxd.tx.raw
 
 Each PUB notification has a topic and body, where the header
 corresponds to the notification type. For instance, for the
@@ -115,5 +102,5 @@ retrieve the chain from the last known block to the new tip.
 
 There are several possibilities that ZMQ notification can get lost
 during transmission depending on the communication type you are
-using. Pricecoinxd appends an up-counting sequence number to each
+using. PricecoinXd appends an up-counting sequence number to each
 notification which allows listeners to detect lost notifications.

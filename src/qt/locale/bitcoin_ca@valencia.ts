@@ -66,12 +66,12 @@
         <translation>S'estan rebent les adreces</translation>
     </message>
     <message>
-        <source>These are your Pricecoinx addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Estes són les vostres adreces de Pricecoinx per enviar els pagaments. Sempre reviseu l'import i l'adreça del destinatari abans de transferir monedes.</translation>
+        <source>These are your PricecoinX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Estes són les vostres adreces de PricecoinX per enviar els pagaments. Sempre reviseu l'import i l'adreça del destinatari abans de transferir monedes.</translation>
     </message>
     <message>
-        <source>These are your Pricecoinx addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Estes són les vostres adreces Pricecoinx per rebre pagaments. Es recomana utilitzar una adreça nova de recepció per a cada transacció.</translation>
+        <source>These are your PricecoinX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Estes són les vostres adreces PricecoinX per rebre pagaments. Es recomana utilitzar una adreça nova de recepció per a cada transacció.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -238,6 +238,10 @@
         <translation>&amp;Panorama general</translation>
     </message>
     <message>
+        <source>Node</source>
+        <translation>Node</translation>
+    </message>
+    <message>
         <source>Show general overview of wallet</source>
         <translation>Mostra el panorama general del moneder</translation>
     </message>
@@ -282,6 +286,14 @@
         <translation>&amp;Canvia la contrasenya...</translation>
     </message>
     <message>
+        <source>&amp;Sending addresses...</source>
+        <translation>Adreces d'e&amp;nviament...</translation>
+    </message>
+    <message>
+        <source>&amp;Receiving addresses...</source>
+        <translation>Adreces de &amp;recepció</translation>
+    </message>
+    <message>
         <source>Open &amp;URI...</source>
         <translation>Obri un &amp;URI...</translation>
     </message>
@@ -290,8 +302,8 @@
         <translation>S'estan reindexant els blocs al disc...</translation>
     </message>
     <message>
-        <source>Send coins to a Pricecoinx address</source>
-        <translation>Envia monedes a una adreça Pricecoinx</translation>
+        <source>Send coins to a PricecoinX address</source>
+        <translation>Envia monedes a una adreça PricecoinX</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -314,8 +326,12 @@
         <translation>&amp;Verifica el missatge...</translation>
     </message>
     <message>
-        <source>Pricecoinx</source>
-        <translation>Pricecoinx</translation>
+        <source>PricecoinX</source>
+        <translation>PricecoinX</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Moneder</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -338,12 +354,12 @@
         <translation>Encripta les claus privades pertanyents al moneder</translation>
     </message>
     <message>
-        <source>Sign messages with your Pricecoinx addresses to prove you own them</source>
-        <translation>Signa el missatges amb la seua adreça de Pricecoinx per provar que les poseeixes</translation>
+        <source>Sign messages with your PricecoinX addresses to prove you own them</source>
+        <translation>Signa el missatges amb la seua adreça de PricecoinX per provar que les poseeixes</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Pricecoinx addresses</source>
-        <translation>Verifiqueu els missatges per assegurar-vos que han estat signats amb una adreça Pricecoinx específica.</translation>
+        <source>Verify messages to ensure they were signed with specified PricecoinX addresses</source>
+        <translation>Verifiqueu els missatges per assegurar-vos que han estat signats amb una adreça PricecoinX específica.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -410,10 +426,6 @@
         <translation>Al dia</translation>
     </message>
     <message>
-        <source>&amp;Window</source>
-        <translation>&amp;Finestra</translation>
-    </message>
-    <message>
         <source>Catching up...</source>
         <translation>S'està posant al dia ...</translation>
     </message>
@@ -464,8 +476,8 @@
         <translation>El moneder està &lt;b&gt;encriptat&lt;/b&gt; i actualment &lt;b&gt;bloquejat&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Pricecoinx can no longer continue safely and will quit.</source>
-        <translation>Ha tingut lloc un error fatal. Pricecoinx no pot continuar executant-se de manera segura i es tancará.</translation>
+        <source>A fatal error occurred. PricecoinX can no longer continue safely and will quit.</source>
+        <translation>Ha tingut lloc un error fatal. PricecoinX no pot continuar executant-se de manera segura i es tancará.</translation>
     </message>
 </context>
 <context>
@@ -650,8 +662,8 @@
         <translation>Edita les adreces d'enviament</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Pricecoinx address.</source>
-        <translation>L'adreça introduïda «%1» no és una adreça de Pricecoinx vàlida.</translation>
+        <source>The entered address "%1" is not a valid PricecoinX address.</source>
+        <translation>L'adreça introduïda «%1» no és una adreça de PricecoinX vàlida.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -715,8 +727,8 @@
         <translation>Utilitza un directori de dades personalitzat:</translation>
     </message>
     <message>
-        <source>Pricecoinx</source>
-        <translation>Pricecoinx</translation>
+        <source>PricecoinX</source>
+        <translation>PricecoinX</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -780,6 +792,10 @@
         <translation>Mida de la memòria cau de la base de &amp;dades</translation>
     </message>
     <message>
+        <source>MB</source>
+        <translation>MB</translation>
+    </message>
+    <message>
         <source>Number of script &amp;verification threads</source>
         <translation>Nombre de fils de &amp;verificació d'scripts</translation>
     </message>
@@ -794,6 +810,10 @@
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
         <translation>URL de terceres parts (p. ex. explorador de blocs) que apareix en la pestanya de transaccions com elements del menú contextual. %s en l'URL es reemplaçat pel resum de la transacció. Diferents URL estan separades per una barra vertical |.</translation>
+    </message>
+    <message>
+        <source>Active command-line options that override above options:</source>
+        <translation>Opcions de línies d'orde active que sobreescriuen les opcions de dalt:</translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
@@ -832,16 +852,16 @@
         <translation>&amp;Gasta el canvi sense confirmar</translation>
     </message>
     <message>
-        <source>Automatically open the Pricecoinx client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Obri el port del client de Pricecoinx al router de forma automàtica. Això només funciona quan el router implementa UPnP i l'opció està activada.</translation>
+        <source>Automatically open the PricecoinX client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Obri el port del client de PricecoinX al router de forma automàtica. Això només funciona quan el router implementa UPnP i l'opció està activada.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Port obert amb &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Pricecoinx network through a SOCKS5 proxy.</source>
-        <translation>Connecta a la xarxa Pricecoinx a través d'un proxy SOCKS5.</translation>
+        <source>Connect to the PricecoinX network through a SOCKS5 proxy.</source>
+        <translation>Connecta a la xarxa PricecoinX a través d'un proxy SOCKS5.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -943,8 +963,8 @@
         <translation>Formulari</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Pricecoinx network after a connection is established, but this process has not completed yet.</source>
-        <translation>La informació mostrada pot no estar al día. El teu moneder es sincronitza automàticament amb la xarxa Pricecoinx un cop s'ha establit connexió, però este proces no s'ha completat encara.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the PricecoinX network after a connection is established, but this process has not completed yet.</source>
+        <translation>La informació mostrada pot no estar al día. El teu moneder es sincronitza automàticament amb la xarxa PricecoinX un cop s'ha establit connexió, però este proces no s'ha completat encara.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1034,8 +1054,8 @@
         <translation>Adreça de pagament no vàlida %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Pricecoinx address or malformed URI parameters.</source>
-        <translation>L'URI no pot ser analitzat! Això pot ser a causa d'una adreça de Pricecoinx no vàlida o per paràmetres URI amb mal format.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid PricecoinX address or malformed URI parameters.</source>
+        <translation>L'URI no pot ser analitzat! Això pot ser a causa d'una adreça de PricecoinX no vàlida o per paràmetres URI amb mal format.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1128,8 +1148,8 @@
         <translation>Import</translation>
     </message>
     <message>
-        <source>Enter a Pricecoinx address (e.g. %1)</source>
-        <translation>Introduïu una adreça de Pricecoinx (p. ex. %1)</translation>
+        <source>Enter a PricecoinX address (e.g. %1)</source>
+        <translation>Introduïu una adreça de PricecoinX (p. ex. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1396,8 +1416,8 @@
         <translation>&amp;Missatge:</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Pricecoinx network.</source>
-        <translation>Un missatge opcional que s'adjuntarà a la sol·licitud de pagament, que es mostrarà quan s'òbriga la sol·licitud. Nota: El missatge no s'enviarà amb el pagament per la xarxa Pricecoinx.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the PricecoinX network.</source>
+        <translation>Un missatge opcional que s'adjuntarà a la sol·licitud de pagament, que es mostrarà quan s'òbriga la sol·licitud. Nota: El missatge no s'enviarà amb el pagament per la xarxa PricecoinX.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -1613,6 +1633,14 @@
         <translation>Amaga</translation>
     </message>
     <message>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for pricecoinx transactions than the network can process.</source>
+        <translation>No hi ha cap problema en pagar només la comissió mínima sempre que hi haja menys volum de transacció que espai en els blocs. Però tingueu present que això pot acabar en una transacció que mai es confirme una vegada hi haja més demanda de transaccions de pricecoinxs que la xarxa puga processar.</translation>
+    </message>
+    <message>
+        <source>(read the tooltip)</source>
+        <translation>(llegiu l'indicador de funció)</translation>
+    </message>
+    <message>
         <source>Recommended:</source>
         <translation>Recomanada:</translation>
     </message>
@@ -1737,8 +1765,8 @@
         <translation>La sol·licitud de pagament ha vençut.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Pricecoinx address</source>
-        <translation>Avís: adreça Pricecoinx no vàlida</translation>
+        <source>Warning: Invalid PricecoinX address</source>
+        <translation>Avís: adreça PricecoinX no vàlida</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -1772,8 +1800,8 @@
         <translation>Això és un pagament normal.</translation>
     </message>
     <message>
-        <source>The Pricecoinx address to send the payment to</source>
-        <translation>L'adreça Pricecoinx on enviar el pagament</translation>
+        <source>The PricecoinX address to send the payment to</source>
+        <translation>L'adreça PricecoinX on enviar el pagament</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1816,8 +1844,8 @@
         <translation>Introduïu una etiqueta per a esta adreça per afegir-la a la llista d'adreces utilitzades</translation>
     </message>
     <message>
-        <source>A message that was attached to the pricecoinx: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Pricecoinx network.</source>
-        <translation>Un missatge que s'ha adjuntat al pricecoinx: URI que s'emmagatzemarà amb la transacció per a la vostra referència. Nota: el missatge no s'enviarà a través de la xarxa Pricecoinx.</translation>
+        <source>A message that was attached to the pricecoinx: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the PricecoinX network.</source>
+        <translation>Un missatge que s'ha adjuntat al pricecoinx: URI que s'emmagatzemarà amb la transacció per a la vostra referència. Nota: el missatge no s'enviarà a través de la xarxa PricecoinX.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -1861,8 +1889,8 @@
         <translation>Podeu signar missatges/acords amb les vostres adreces per provar que rebeu les pricecoinxs que s'hi envien. Aneu amb compte no signar res que siga vague o aleatori, perquè en alguns atacs de suplantació es pot provar que hi signeu la vostra identitat. Només signeu aquelles declaracions completament detallades en què hi esteu d'acord. </translation>
     </message>
     <message>
-        <source>The Pricecoinx address to sign the message with</source>
-        <translation>L'adreça Pricecoinx amb què signar el missatge</translation>
+        <source>The PricecoinX address to sign the message with</source>
+        <translation>L'adreça PricecoinX amb què signar el missatge</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1893,8 +1921,8 @@
         <translation>Copia la signatura actual al porta-retalls del sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Pricecoinx address</source>
-        <translation>Signa el missatge per provar que ets propietari d'esta adreça Pricecoinx</translation>
+        <source>Sign the message to prove you own this PricecoinX address</source>
+        <translation>Signa el missatge per provar que ets propietari d'esta adreça PricecoinX</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1917,12 +1945,12 @@
         <translation>Introduïu l'adreça del receptor, el missatge (assegureu-vos de copiar els salts de línia, espais, tabuladors, etc. exactament) i signatura de sota per verificar el missatge. Tingueu cura de no llegir més en la signatura del que està al missatge signat, per evitar ser enganyat per un atac d'home-en-el-mig. Tingueu en compte que això només demostra que la part que signa rep amb l'adreça, i no es pot provar l'enviament de qualsevol transacció!</translation>
     </message>
     <message>
-        <source>The Pricecoinx address the message was signed with</source>
-        <translation>L'adreça Pricecoinx amb què va ser signat el missatge</translation>
+        <source>The PricecoinX address the message was signed with</source>
+        <translation>L'adreça PricecoinX amb què va ser signat el missatge</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Pricecoinx address</source>
-        <translation>Verificar el missatge per assegurar-se que ha estat signat amb una adreça Pricecoinx específica</translation>
+        <source>Verify the message to ensure it was signed with the specified PricecoinX address</source>
+        <translation>Verificar el missatge per assegurar-se que ha estat signat amb una adreça PricecoinX específica</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2379,9 +2407,6 @@
     </message>
 </context>
 <context>
-    <name>WalletController</name>
-    </context>
-<context>
     <name>WalletFrame</name>
     <message>
         <source>No wallet has been loaded.</source>
@@ -2441,8 +2466,8 @@
         <translation>S'està podant l'emmagatzemament de blocs...</translation>
     </message>
     <message>
-        <source>Pricecoinx Core</source>
-        <translation>Pricecoinx Core</translation>
+        <source>PricecoinX Core</source>
+        <translation>PricecoinX Core</translation>
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>

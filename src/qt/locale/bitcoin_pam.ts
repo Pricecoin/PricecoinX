@@ -122,8 +122,12 @@
         <translation>&amp;Alilan ing Passphrase...</translation>
     </message>
     <message>
-        <source>Send coins to a Pricecoinx address</source>
-        <translation>Magpadalang barya king Pricecoinx address</translation>
+        <source>&amp;Receiving addresses...</source>
+        <translation>Address king pamag-Tanggap</translation>
+    </message>
+    <message>
+        <source>Send coins to a PricecoinX address</source>
+        <translation>Magpadalang barya king PricecoinX address</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -146,8 +150,12 @@
         <translation>&amp;Beripikan ing message...</translation>
     </message>
     <message>
-        <source>Pricecoinx</source>
-        <translation>Pricecoinx</translation>
+        <source>PricecoinX</source>
+        <translation>PricecoinX</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Wallet</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -200,10 +208,6 @@
     <message>
         <source>Up to date</source>
         <translation>Makatuki ya king aldo</translation>
-    </message>
-    <message>
-        <source>&amp;Window</source>
-        <translation>&amp;Awang</translation>
     </message>
     <message>
         <source>Catching up...</source>
@@ -281,8 +285,8 @@
         <translation>Malaus ka</translation>
     </message>
     <message>
-        <source>Pricecoinx</source>
-        <translation>Pricecoinx</translation>
+        <source>PricecoinX</source>
+        <translation>PricecoinX</translation>
     </message>
     <message>
         <source>Error</source>
@@ -318,8 +322,8 @@
         <translation>&amp;Network</translation>
     </message>
     <message>
-        <source>Automatically open the Pricecoinx client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Ibuklat yang antimanu ing Pricecoinx client port king router. Gagana yamu ini istung ing router mu susuporta yang UPnP at magsilbi ya.</translation>
+        <source>Automatically open the PricecoinX client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Ibuklat yang antimanu ing PricecoinX client port king router. Gagana yamu ini istung ing router mu susuporta yang UPnP at magsilbi ya.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -397,8 +401,8 @@
         <translation>Form</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Pricecoinx network after a connection is established, but this process has not completed yet.</source>
-        <translation>Ing makaltong impormasion mapalyaring luma ne. Ing kekang wallet otomatiku yang mag-synchronize keng Pricecoinx network istung mekakonekta ne king network, oneng ing prosesung ini ali ya pa kumpletu.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the PricecoinX network after a connection is established, but this process has not completed yet.</source>
+        <translation>Ing makaltong impormasion mapalyaring luma ne. Ing kekang wallet otomatiku yang mag-synchronize keng PricecoinX network istung mekakonekta ne king network, oneng ing prosesung ini ali ya pa kumpletu.</translation>
     </message>
     <message>
         <source>Your current spendable balance</source>
@@ -659,8 +663,8 @@
         <translation>Kopyan ing kasalungsungan pirma king system clipboard</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Pricecoinx address</source>
-        <translation>Pirman ing mensayi ban patune na keka ya ining Pricecoinx address</translation>
+        <source>Sign the message to prove you own this PricecoinX address</source>
+        <translation>Pirman ing mensayi ban patune na keka ya ining PricecoinX address</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -679,8 +683,8 @@
         <translation>&amp;Beripikan ing Mensayi</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Pricecoinx address</source>
-        <translation>Beripikan ing mensayi ban asiguradu a me pirma ya ini gamit ing mepiling Pricecoinx address</translation>
+        <source>Verify the message to ensure it was signed with the specified PricecoinX address</source>
+        <translation>Beripikan ing mensayi ban asiguradu a me pirma ya ini gamit ing mepiling PricecoinX address</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -721,9 +725,6 @@
     <name>UnitDisplayStatusBarControl</name>
     </context>
 <context>
-    <name>WalletController</name>
-    </context>
-<context>
     <name>WalletFrame</name>
     </context>
 <context>
@@ -735,8 +736,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Pricecoinx Core</source>
-        <translation>Kapilubluban ning Pricecoinx</translation>
+        <source>PricecoinX Core</source>
+        <translation>Kapilubluban ning PricecoinX</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>

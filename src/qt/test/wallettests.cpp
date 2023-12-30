@@ -1,11 +1,9 @@
 #include <qt/test/wallettests.h>
 #include <qt/test/util.h>
 
-#include <init.h>
-#include <interfaces/chain.h>
 #include <interfaces/node.h>
-#include <base58.h>
 #include <qt/bitcoinamountfield.h>
+#include <qt/callback.h>
 #include <qt/optionsmodel.h>
 #include <qt/platformstyle.h>
 #include <qt/qvalidatedlineedit.h>
@@ -41,7 +39,7 @@ namespace
 //! Press "Yes" or "Cancel" buttons in modal send confirmation dialog.
 void ConfirmSend(QString* text = nullptr, bool cancel = false)
 {
-    QTimer::singleShot(0, [text, cancel]() {
+    QTimer::singleShot(0, makeCallback([text, cancel](Callback* callback) {
         for (QWidget* widget : QApplication::topLevelWidgets()) {
             if (widget->inherits("SendConfirmationDialog")) {
                 SendConfirmationDialog* dialog = qobject_cast<SendConfirmationDialog*>(widget);
@@ -51,7 +49,8 @@ void ConfirmSend(QString* text = nullptr, bool cancel = false)
                 button->click();
             }
         }
-    });
+        delete callback;
+    }), SLOT(call()));
 }
 
 //! Send coins to address and return txid.
@@ -72,8 +71,7 @@ uint256 SendCoins(CWallet& wallet, SendCoinsDialog& sendCoinsDialog, const CTxDe
         if (status == CT_NEW) txid = hash;
     }));
     ConfirmSend();
-    bool invoked = QMetaObject::invokeMethod(&sendCoinsDialog, "on_sendButton_clicked");
-    assert(invoked);
+    QMetaObject::invokeMethod(&sendCoinsDialog, "on_sendButton_clicked");
     return txid;
 }
 
@@ -92,7 +90,7 @@ QModelIndex FindTx(const QAbstractItemModel& model, const uint256& txid)
 }
 
 //! Invoke bumpfee on txid and check results.
-/* Pricecoinx: Disable RBF
+/* PricecoinX: Disable RBF
 void BumpFee(TransactionView& view, const uint256& txid, bool expectDisabled, std::string expectError, bool cancel)
 {
     QTableView* table = view.findChild<QTableView*>("transactionView");
@@ -139,8 +137,7 @@ void TestGUI()
     for (int i = 0; i < 5; ++i) {
         test.CreateAndProcessBlock({}, GetScriptForRawPubKey(test.coinbaseKey.GetPubKey()));
     }
-    auto chain = interfaces::MakeChain();
-    std::shared_ptr<CWallet> wallet = std::make_shared<CWallet>(*chain, WalletLocation(), WalletDatabase::CreateMock());
+    std::shared_ptr<CWallet> wallet = std::make_shared<CWallet>("mock", WalletDatabase::CreateMock());
     bool firstRun;
     wallet->LoadWallet(firstRun);
     {
@@ -149,13 +146,10 @@ void TestGUI()
         wallet->AddKeyPubKey(test.coinbaseKey, test.coinbaseKey.GetPubKey());
     }
     {
-        auto locked_chain = wallet->chain().lock();
+        LOCK(cs_main);
         WalletRescanReserver reserver(wallet.get());
         reserver.reserve();
-        CWallet::ScanResult result = wallet->ScanForWalletTransactions(locked_chain->getBlockHash(0), {} /* stop_block */, reserver, true /* fUpdate */);
-        QCOMPARE(result.status, CWallet::ScanResult::SUCCESS);
-        QCOMPARE(result.last_scanned_block, chainActive.Tip()->GetBlockHash());
-        QVERIFY(result.last_failed_block.IsNull());
+        wallet->ScanForWalletTransactions(chainActive.Genesis(), nullptr, reserver, true);
     }
     wallet->SetBroadcastTransactions(true);
 
@@ -181,7 +175,7 @@ void TestGUI()
     QVERIFY(FindTx(*transactionTableModel, txid2).isValid());
 
     // Call bumpfee. Test disabled, canceled, enabled, then failing cases.
-    // Pricecoinx: Disable BumpFee tests
+    // PricecoinX: Disable BumpFee tests
     // BumpFee(transactionView, txid1, true /* expect disabled */, "not BIP 125 replaceable" /* expected error */, false /* cancel */);
     // BumpFee(transactionView, txid2, false /* expect disabled */, {} /* expected error */, true /* cancel */);
     // BumpFee(transactionView, txid2, false /* expect disabled */, {} /* expected error */, false /* cancel */);

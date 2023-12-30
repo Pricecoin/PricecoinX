@@ -66,12 +66,12 @@
         <translation>Adreces de recepció</translation>
     </message>
     <message>
-        <source>These are your Pricecoinx addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Aquestes són les vostres adreces de Pricecoinx per enviar els pagaments. Sempre reviseu l'import i l'adreça del destinatari abans de transferir monedes.</translation>
+        <source>These are your PricecoinX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Aquestes són les vostres adreces de PricecoinX per enviar els pagaments. Sempre reviseu l'import i l'adreça del destinatari abans de transferir monedes.</translation>
     </message>
     <message>
-        <source>These are your Pricecoinx addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Aquestes són les vostres adreces Pricecoinx per rebre pagaments. Es recomana utilitzar una adreça nova de recepció per a cada transacció.</translation>
+        <source>These are your PricecoinX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Aquestes són les vostres adreces PricecoinX per rebre pagaments. Es recomana utilitzar una adreça nova de recepció per a cada transacció.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -188,6 +188,10 @@
         <translation>Moneder encriptat</translation>
     </message>
     <message>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your pricecoinxs from being stolen by malware infecting your computer.</source>
+        <translation>Ara es tancarà el %1 per finalitzar el procés d'encriptació. Recordeu que encriptar el vostre moneder no garanteix que les vostres pricecoinxs no puguin ser robades per programari maliciós que infecti l'ordinador.</translation>
+    </message>
+    <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
         <translation>IMPORTANT: Tota copia de seguretat que hàgiu realitzat hauria de ser reemplaçada pel, recentment generat, fitxer encriptat del moneder. Per motius de seguretat, les còpies de seguretat anteriors del fitxer de moneder no encriptat esdevindran inusables tan aviat com començar a utilitzar el nou moneder encriptat.</translation>
     </message>
@@ -250,6 +254,10 @@
         <translation>&amp;Panorama general</translation>
     </message>
     <message>
+        <source>Node</source>
+        <translation>Node</translation>
+    </message>
+    <message>
         <source>Show general overview of wallet</source>
         <translation>Mostra el panorama general del moneder</translation>
     </message>
@@ -306,12 +314,24 @@
         <translation>&amp;Canvia la contrasenya...</translation>
     </message>
     <message>
+        <source>&amp;Sending addresses...</source>
+        <translation>Adreces d'e&amp;nviament...</translation>
+    </message>
+    <message>
+        <source>&amp;Receiving addresses...</source>
+        <translation>Adreces de &amp;recepció...</translation>
+    </message>
+    <message>
         <source>Open &amp;URI...</source>
         <translation>Obre un &amp;URI...</translation>
     </message>
     <message>
         <source>Wallet:</source>
         <translation>Moneder:</translation>
+    </message>
+    <message>
+        <source>default wallet</source>
+        <translation>moneder per defecte</translation>
     </message>
     <message>
         <source>Click to disable network activity.</source>
@@ -338,8 +358,8 @@
         <translation>El servidor proxy està &lt;b&gt;activat&lt;/b&gt;: %1</translation>
     </message>
     <message>
-        <source>Send coins to a Pricecoinx address</source>
-        <translation>Envia monedes a una adreça Pricecoinx</translation>
+        <source>Send coins to a PricecoinX address</source>
+        <translation>Envia monedes a una adreça PricecoinX</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -362,8 +382,12 @@
         <translation>&amp;Verifica el missatge...</translation>
     </message>
     <message>
-        <source>Pricecoinx</source>
-        <translation>Pricecoinx</translation>
+        <source>PricecoinX</source>
+        <translation>PricecoinX</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Moneder</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -386,12 +410,12 @@
         <translation>Encripta les claus privades pertanyents al moneder</translation>
     </message>
     <message>
-        <source>Sign messages with your Pricecoinx addresses to prove you own them</source>
-        <translation>Signa el missatges amb la seva adreça de Pricecoinx per provar que les poseeixes</translation>
+        <source>Sign messages with your PricecoinX addresses to prove you own them</source>
+        <translation>Signa el missatges amb la seva adreça de PricecoinX per provar que les poseeixes</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Pricecoinx addresses</source>
-        <translation>Verifiqueu els missatges per assegurar-vos que han estat signats amb una adreça Pricecoinx específica.</translation>
+        <source>Verify messages to ensure they were signed with specified PricecoinX addresses</source>
+        <translation>Verifiqueu els missatges per assegurar-vos que han estat signats amb una adreça PricecoinX específica.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -429,6 +453,10 @@
         <source>&amp;Command-line options</source>
         <translation>Opcions de la &amp;línia d'ordres</translation>
     </message>
+    <message numerus="yes">
+        <source>%n active connection(s) to PricecoinX network</source>
+        <translation><numerusform>%n connexió activa a la xarxa PricecoinX</numerusform><numerusform>%n connexions actives a la xarxa PricecoinX</numerusform></translation>
+    </message>
     <message>
         <source>Indexing blocks on disk...</source>
         <translation>S'estan indexant els blocs al disc...</translation>
@@ -436,6 +464,10 @@
     <message>
         <source>Processing blocks on disk...</source>
         <translation>S'estan processant els blocs al disc...</translation>
+    </message>
+    <message numerus="yes">
+        <source>Processed %n block(s) of transaction history.</source>
+        <translation><numerusform>Processat %n bloc de l'històric de transaccions.</numerusform><numerusform>Processats %n blocs de l'històric de transaccions.</numerusform></translation>
     </message>
     <message>
         <source>%1 behind</source>
@@ -466,20 +498,8 @@
         <translation>Al dia</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Pricecoinx command-line options</source>
-        <translation>Mostra el missatge d'ajuda del %1 per obtenir una llista amb les possibles opcions de línia d'ordres de Pricecoinx</translation>
-    </message>
-    <message>
-        <source>default wallet</source>
-        <translation>moneder per defecte</translation>
-    </message>
-    <message>
-        <source>&amp;Window</source>
-        <translation>&amp;Finestra</translation>
-    </message>
-    <message>
-        <source>Minimize</source>
-        <translation>Minimitza</translation>
+        <source>Show the %1 help message to get a list with possible PricecoinX command-line options</source>
+        <translation>Mostra el missatge d'ajuda del %1 per obtenir una llista amb les possibles opcions de línia d'ordres de PricecoinX</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -554,8 +574,8 @@
         <translation>El moneder està &lt;b&gt;encriptat&lt;/b&gt; i actualment &lt;b&gt;bloquejat&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Pricecoinx can no longer continue safely and will quit.</source>
-        <translation>S'ha produït un error fatal. Pricecoinx no pot continuar amb seguretat i finalitzarà.</translation>
+        <source>A fatal error occurred. PricecoinX can no longer continue safely and will quit.</source>
+        <translation>S'ha produït un error fatal. PricecoinX no pot continuar amb seguretat i finalitzarà.</translation>
     </message>
 </context>
 <context>
@@ -744,8 +764,8 @@
         <translation>Edita l'adreça d'enviament</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Pricecoinx address.</source>
-        <translation>L'adreça introduïda «%1» no és una adreça de Pricecoinx vàlida.</translation>
+        <source>The entered address "%1" is not a valid PricecoinX address.</source>
+        <translation>L'adreça introduïda «%1» no és una adreça de PricecoinX vàlida.</translation>
     </message>
     <message>
         <source>Address "%1" already exists as a receiving address with label "%2" and so cannot be added as a sending address.</source>
@@ -841,8 +861,8 @@
         <translation>Utilitza un directori de dades personalitzat:</translation>
     </message>
     <message>
-        <source>Pricecoinx</source>
-        <translation>Pricecoinx</translation>
+        <source>PricecoinX</source>
+        <translation>PricecoinX</translation>
     </message>
     <message>
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
@@ -853,8 +873,8 @@
         <translation>Aproximadament %1 GB de dades s'emmagatzemaran en aquest directori.</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Pricecoinx block chain.</source>
-        <translation>%1 descarregarà i emmagatzemarà una còpia de la cadena de blocs Pricecoinx.</translation>
+        <source>%1 will download and store a copy of the PricecoinX block chain.</source>
+        <translation>%1 descarregarà i emmagatzemarà una còpia de la cadena de blocs PricecoinX.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -868,7 +888,15 @@
         <source>Error</source>
         <translation>Error</translation>
     </message>
-    </context>
+    <message numerus="yes">
+        <source>%n GB of free space available</source>
+        <translation><numerusform>%n GB d'espai lliure disponible</numerusform><numerusform>%n GB d'espai lliure disponibles</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <source>(of %n GB needed)</source>
+        <translation><numerusform>(de %n GB necessari)</numerusform><numerusform>(de %n GB necessaris)</numerusform></translation>
+    </message>
+</context>
 <context>
     <name>ModalOverlay</name>
     <message>
@@ -915,7 +943,11 @@
         <source>Hide</source>
         <translation>Amaga</translation>
     </message>
-    </context>
+    <message>
+        <source>Unknown. Syncing Headers (%1)...</source>
+        <translation>Desconegut. Sincronització de les capçaleres (%1)...</translation>
+    </message>
+</context>
 <context>
     <name>OpenURIDialog</name>
     <message>
@@ -962,6 +994,10 @@
         <translation>Mida de la memòria cau de la base de &amp;dades</translation>
     </message>
     <message>
+        <source>MB</source>
+        <translation>MB</translation>
+    </message>
+    <message>
         <source>Number of script &amp;verification threads</source>
         <translation>Nombre de fils de &amp;verificació d'scripts</translation>
     </message>
@@ -992,6 +1028,10 @@
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
         <translation>URL de terceres parts (p. ex. explorador de blocs) que apareix en la pestanya de transaccions com elements del menú contextual. %s en l'URL es reemplaçat pel resum de la transacció. Diferents URL estan separades per una barra vertical |.</translation>
+    </message>
+    <message>
+        <source>Active command-line options that override above options:</source>
+        <translation>Opcions de línies d'ordre active que sobreescriuen les opcions de dalt:</translation>
     </message>
     <message>
         <source>Open the %1 configuration file from the working directory.</source>
@@ -1054,8 +1094,8 @@
         <translation>&amp;Gasta el canvi sense confirmar</translation>
     </message>
     <message>
-        <source>Automatically open the Pricecoinx client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Obre el port del client de Pricecoinx al router de forma automàtica. Això només funciona quan el router implementa UPnP i l'opció està activada.</translation>
+        <source>Automatically open the PricecoinX client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Obre el port del client de PricecoinX al router de forma automàtica. Això només funciona quan el router implementa UPnP i l'opció està activada.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1070,8 +1110,8 @@
         <translation>Permet connexions entrants</translation>
     </message>
     <message>
-        <source>Connect to the Pricecoinx network through a SOCKS5 proxy.</source>
-        <translation>Connecta a la xarxa Pricecoinx a través d'un proxy SOCKS5.</translation>
+        <source>Connect to the PricecoinX network through a SOCKS5 proxy.</source>
+        <translation>Connecta a la xarxa PricecoinX a través d'un proxy SOCKS5.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1106,8 +1146,8 @@
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the Pricecoinx network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Conectar a la red de Pricecoinx a través de un proxy SOCKS5 per als serveis ocults de Tor</translation>
+        <source>Connect to the PricecoinX network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>Conectar a la red de PricecoinX a través de un proxy SOCKS5 per als serveis ocults de Tor</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -1213,8 +1253,8 @@
         <translation>Formulari</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Pricecoinx network after a connection is established, but this process has not completed yet.</source>
-        <translation>La informació mostrada pot no estar al día. El teu moneder es sincronitza automàticament amb la xarxa Pricecoinx un cop s'ha establert connexió, però aquest proces no s'ha completat encara.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the PricecoinX network after a connection is established, but this process has not completed yet.</source>
+        <translation>La informació mostrada pot no estar al día. El teu moneder es sincronitza automàticament amb la xarxa PricecoinX un cop s'ha establert connexió, però aquest proces no s'ha completat encara.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1308,8 +1348,8 @@
         <translation>Adreça de pagament no vàlida %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Pricecoinx address or malformed URI parameters.</source>
-        <translation>L'URI no pot ser analitzat! Això pot ser a causa d'una adreça de Pricecoinx no vàlida o per paràmetres URI amb mal format.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid PricecoinX address or malformed URI parameters.</source>
+        <translation>L'URI no pot ser analitzat! Això pot ser a causa d'una adreça de PricecoinX no vàlida o per paràmetres URI amb mal format.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1410,8 +1450,8 @@
         <translation>Import</translation>
     </message>
     <message>
-        <source>Enter a Pricecoinx address (e.g. %1)</source>
-        <translation>Introduïu una adreça de Pricecoinx (p. ex. %1)</translation>
+        <source>Enter a PricecoinX address (e.g. %1)</source>
+        <translation>Introduïu una adreça de PricecoinX (p. ex. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1441,9 +1481,33 @@
         <source>%1 ms</source>
         <translation>%1 ms</translation>
     </message>
+    <message numerus="yes">
+        <source>%n second(s)</source>
+        <translation><numerusform>%n segon</numerusform><numerusform>%n segons</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <source>%n minute(s)</source>
+        <translation><numerusform>%n minut</numerusform><numerusform>%n minuts</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <source>%n hour(s)</source>
+        <translation><numerusform>%n hora</numerusform><numerusform>%n hores</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <source>%n day(s)</source>
+        <translation><numerusform>%n dia</numerusform><numerusform>%n dies</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <source>%n week(s)</source>
+        <translation><numerusform>%n setmana</numerusform><numerusform>%n setmanes</numerusform></translation>
+    </message>
     <message>
         <source>%1 and %2</source>
         <translation>%1 i %2</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n year(s)</source>
+        <translation><numerusform>%n any</numerusform><numerusform>%n anys</numerusform></translation>
     </message>
     <message>
         <source>%1 B</source>
@@ -1751,6 +1815,10 @@
         <translation>Desbandeja per</translation>
     </message>
     <message>
+        <source>default wallet</source>
+        <translation>moneder per defecte</translation>
+    </message>
+    <message>
         <source>Welcome to the %1 RPC console.</source>
         <translation>Benvingut a la consola RPC de %1.</translation>
     </message>
@@ -1830,8 +1898,8 @@
         <translation>&amp;Missatge:</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Pricecoinx network.</source>
-        <translation>Un missatge opcional que s'adjuntarà a la sol·licitud de pagament, que es mostrarà quan s'obri la sol·licitud. Nota: El missatge no s'enviarà amb el pagament per la xarxa Pricecoinx.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the PricecoinX network.</source>
+        <translation>Un missatge opcional que s'adjuntarà a la sol·licitud de pagament, que es mostrarà quan s'obri la sol·licitud. Nota: El missatge no s'enviarà amb el pagament per la xarxa PricecoinX.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2083,6 +2151,14 @@ Nota: Com que la comissió es calcula en funció dels bytes, una comissió de "1
         <translation>Amaga</translation>
     </message>
     <message>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for pricecoinx transactions than the network can process.</source>
+        <translation>No hi ha cap problema en pagar només la comissió mínima sempre que hi hagi menys volum de transacció que espai en els blocs. Però tingueu present que això pot acabar en una transacció que mai es confirmi una vegada hi hagi més demanda de transaccions de pricecoinxs que la xarxa pugui processar.</translation>
+    </message>
+    <message>
+        <source>(read the tooltip)</source>
+        <translation>(llegiu l'indicador de funció)</translation>
+    </message>
+    <message>
         <source>Recommended:</source>
         <translation>Recomanada:</translation>
     </message>
@@ -2231,8 +2307,12 @@ Nota: Com que la comissió es calcula en funció dels bytes, una comissió de "1
         <translation>La sol·licitud de pagament ha vençut.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Pricecoinx address</source>
-        <translation>Avís: adreça Pricecoinx no vàlida</translation>
+        <source>Pay only the required fee of %1</source>
+        <translation>Paga només la comissió necessària de %1</translation>
+    </message>
+    <message>
+        <source>Warning: Invalid PricecoinX address</source>
+        <translation>Avís: adreça PricecoinX no vàlida</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2274,8 +2354,8 @@ Nota: Com que la comissió es calcula en funció dels bytes, una comissió de "1
         <translation>Això és un pagament normal.</translation>
     </message>
     <message>
-        <source>The Pricecoinx address to send the payment to</source>
-        <translation>L'adreça Pricecoinx on enviar el pagament</translation>
+        <source>The PricecoinX address to send the payment to</source>
+        <translation>L'adreça PricecoinX on enviar el pagament</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2318,8 +2398,8 @@ Nota: Com que la comissió es calcula en funció dels bytes, una comissió de "1
         <translation>Introduïu una etiqueta per a aquesta adreça per afegir-la a la llista d'adreces utilitzades</translation>
     </message>
     <message>
-        <source>A message that was attached to the pricecoinx: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Pricecoinx network.</source>
-        <translation>Un missatge que s'ha adjuntat al pricecoinx: URI que s'emmagatzemarà amb la transacció per a la vostra referència. Nota: el missatge no s'enviarà a través de la xarxa Pricecoinx.</translation>
+        <source>A message that was attached to the pricecoinx: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the PricecoinX network.</source>
+        <translation>Un missatge que s'ha adjuntat al pricecoinx: URI que s'emmagatzemarà amb la transacció per a la vostra referència. Nota: el missatge no s'enviarà a través de la xarxa PricecoinX.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2367,8 +2447,8 @@ Nota: Com que la comissió es calcula en funció dels bytes, una comissió de "1
         <translation>Podeu signar missatges/acords amb les vostres adreces per provar que rebeu les pricecoinxs que s'hi envien. Aneu amb compte no signar res que sigui vague o aleatori, perquè en alguns atacs de suplantació es pot provar que hi signeu la vostra identitat. Només signeu aquelles declaracions completament detallades en què hi esteu d'acord. </translation>
     </message>
     <message>
-        <source>The Pricecoinx address to sign the message with</source>
-        <translation>L'adreça Pricecoinx amb què signar el missatge</translation>
+        <source>The PricecoinX address to sign the message with</source>
+        <translation>L'adreça PricecoinX amb què signar el missatge</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2399,8 +2479,8 @@ Nota: Com que la comissió es calcula en funció dels bytes, una comissió de "1
         <translation>Copia la signatura actual al porta-retalls del sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Pricecoinx address</source>
-        <translation>Signa el missatge per provar que ets propietari d'aquesta adreça Pricecoinx</translation>
+        <source>Sign the message to prove you own this PricecoinX address</source>
+        <translation>Signa el missatge per provar que ets propietari d'aquesta adreça PricecoinX</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2423,12 +2503,12 @@ Nota: Com que la comissió es calcula en funció dels bytes, una comissió de "1
         <translation>Introduïu l'adreça del receptor, el missatge (assegureu-vos de copiar els salts de línia, espais, tabuladors, etc. exactament) i signatura de sota per verificar el missatge. Tingueu cura de no llegir més en la signatura del que està al missatge signat, per evitar ser enganyat per un atac d'home-en-el-mig. Tingueu en compte que això només demostra que la part que signa rep amb l'adreça, i no es pot provar l'enviament de qualsevol transacció!</translation>
     </message>
     <message>
-        <source>The Pricecoinx address the message was signed with</source>
-        <translation>L'adreça Pricecoinx amb què va ser signat el missatge</translation>
+        <source>The PricecoinX address the message was signed with</source>
+        <translation>L'adreça PricecoinX amb què va ser signat el missatge</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Pricecoinx address</source>
-        <translation>Verificar el missatge per assegurar-se que ha estat signat amb una adreça Pricecoinx específica</translation>
+        <source>Verify the message to ensure it was signed with the specified PricecoinX address</source>
+        <translation>Verificar el missatge per assegurar-se que ha estat signat amb una adreça PricecoinX específica</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2937,9 +3017,6 @@ Nota: Com que la comissió es calcula en funció dels bytes, una comissió de "1
     </message>
 </context>
 <context>
-    <name>WalletController</name>
-    </context>
-<context>
     <name>WalletFrame</name>
     <message>
         <source>No wallet has been loaded.</source>
@@ -2987,10 +3064,6 @@ Nota: Com que la comissió es calcula en funció dels bytes, una comissió de "1
     <message>
         <source>Could not commit transaction</source>
         <translation>No s'ha pogut confirmar la transacció</translation>
-    </message>
-    <message>
-        <source>default wallet</source>
-        <translation>moneder per defecte</translation>
     </message>
 </context>
 <context>
@@ -3059,8 +3132,8 @@ Nota: Com que la comissió es calcula en funció dels bytes, una comissió de "1
         <translation>No s'ha pogut iniciar el servidor HTTP. Vegeu debug.log per a més detalls.</translation>
     </message>
     <message>
-        <source>Pricecoinx Core</source>
-        <translation>Pricecoinx Core</translation>
+        <source>PricecoinX Core</source>
+        <translation>PricecoinX Core</translation>
     </message>
     <message>
         <source>The %s developers</source>
@@ -3243,6 +3316,18 @@ Nota: Com que la comissió es calcula en funció dels bytes, una comissió de "1
         <translation>No es pot enllaçar a %s en aquest ordinador. %s probablement ja s'estigui executant.</translation>
     </message>
     <message>
+        <source>Unsupported argument -benchmark ignored, use -debug=bench.</source>
+        <translation>S'ha ignorat l'argument no admès -benchmark , feu servir -debug=bench.</translation>
+    </message>
+    <message>
+        <source>Unsupported argument -debugnet ignored, use -debug=net.</source>
+        <translation>S'ha ignorat l'argument no admès -debugnet, feu servir -debug=net.</translation>
+    </message>
+    <message>
+        <source>Unsupported argument -tor found, use -onion.</source>
+        <translation>S'ha trobat un argument -tor no acceptat. Feu servir -onion.</translation>
+    </message>
+    <message>
         <source>Unsupported logging category %s=%s.</source>
         <translation>Categoria de registre no admesa %s=%s.</translation>
     </message>
@@ -3277,6 +3362,10 @@ Nota: Com que la comissió es calcula en funció dels bytes, una comissió de "1
     <message>
         <source>You need to rebuild the database using -reindex to go back to unpruned mode.  This will redownload the entire blockchain</source>
         <translation>Cal que torneu a construir la base de dades fent servir -reindex per tornar al mode no podat. Això tornarà a baixar la cadena de blocs sencera</translation>
+    </message>
+    <message>
+        <source>Error loading %s: You can't disable HD on an already existing HD wallet</source>
+        <translation>S'ha produït un error en carregar %s: no es pot desactivar HD en un moneder HD ja existent</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>
@@ -3363,6 +3452,10 @@ Nota: Com que la comissió es calcula en funció dels bytes, una comissió de "1
         <translation>-maxtxfee especificat molt alt! Comissions tan grans podrien pagar-se en una única transacció.</translation>
     </message>
     <message>
+        <source>Error loading %s: You can't enable HD on an already existing non-HD wallet</source>
+        <translation>S'ha produït un error en carregar %s: no es pot activar HD en un moneder existent que no sigui HD</translation>
+    </message>
+    <message>
         <source>This is the transaction fee you may pay when fee estimates are not available.</source>
         <translation>Aquesta és la tarifa de transacció que podeu pagar quan les estimacions de tarifes no estan disponibles.</translation>
     </message>
@@ -3373,6 +3466,18 @@ Nota: Com que la comissió es calcula en funció dels bytes, una comissió de "1
     <message>
         <source>Total length of network version string (%i) exceeds maximum length (%i). Reduce the number or size of uacomments.</source>
         <translation>La longitud total de la cadena de la versió de xarxa (%i) supera la longitud màxima (%i). Redueix el nombre o la mida de uacomments.</translation>
+    </message>
+    <message>
+        <source>Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
+        <translation>S'ha trobat l'argument -socks no compatible. L'establiment de la versió SOCKS ja no és possible, només es permeten els servidors proxy SOCKS5.</translation>
+    </message>
+    <message>
+        <source>Unsupported argument -whitelistalwaysrelay ignored, use -whitelistrelay and/or -whitelistforcerelay.</source>
+        <translation>S'ha ignorat l'argument no acceptat -whitelistalways, utilitza -whitelistrelay i/o -whitelistforcerelay.</translation>
+    </message>
+    <message>
+        <source>Warning: Unknown block versions being mined! It's possible unknown rules are in effect</source>
+        <translation>Advertència: s'està minant versions de blocs desconegudes. És possible que s'estiguin aplicant regles desconegudes</translation>
     </message>
     <message>
         <source>Warning: Wallet file corrupt, data salvaged! Original %s saved as %s in %s; if your balance or transactions are incorrect you should restore from a backup.</source>

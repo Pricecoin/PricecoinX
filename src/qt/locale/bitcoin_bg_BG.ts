@@ -62,12 +62,12 @@
         <translation>Адрес за получаване</translation>
     </message>
     <message>
-        <source>These are your Pricecoinx addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Тези са вашите Pricecoinx адреси за изпращане на монети. Винаги проверявайте количеството и получаващия адрес преди изпращане. </translation>
+        <source>These are your PricecoinX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Тези са вашите PricecoinX адреси за изпращане на монети. Винаги проверявайте количеството и получаващия адрес преди изпращане. </translation>
     </message>
     <message>
-        <source>These are your Pricecoinx addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Това са вашите Pricecoinx адреси за получаване на монети. Препоръчително е да ползвате нов адрес на всяка транзакция.</translation>
+        <source>These are your PricecoinX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Това са вашите PricecoinX адреси за получаване на монети. Препоръчително е да ползвате нов адрес на всяка транзакция.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -202,6 +202,10 @@
         <translation>Преглед</translation>
     </message>
     <message>
+        <source>Node</source>
+        <translation>Възел</translation>
+    </message>
+    <message>
         <source>Show general overview of wallet</source>
         <translation>Покажи общ преглед на портфейла</translation>
     </message>
@@ -258,12 +262,24 @@
         <translation>Промени паролата...</translation>
     </message>
     <message>
+        <source>&amp;Sending addresses...</source>
+        <translation>Адреси за пращане...</translation>
+    </message>
+    <message>
+        <source>&amp;Receiving addresses...</source>
+        <translation>Адреси за получаване...</translation>
+    </message>
+    <message>
         <source>Open &amp;URI...</source>
         <translation>Отвори URI</translation>
     </message>
     <message>
         <source>Reindexing blocks on disk...</source>
         <translation>Повторно индексиране на блоковете на диска...</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>портфейл</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -859,9 +875,6 @@
     <name>UnitDisplayStatusBarControl</name>
     </context>
 <context>
-    <name>WalletController</name>
-    </context>
-<context>
     <name>WalletFrame</name>
     </context>
 <context>
@@ -881,8 +894,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Pricecoinx Core</source>
-        <translation>Pricecoinx ядро</translation>
+        <source>PricecoinX Core</source>
+        <translation>PricecoinX ядро</translation>
     </message>
     <message>
         <source>Information</source>

@@ -68,12 +68,12 @@ Alihkan fail data ke dalam tab semasa</translation>
         <translation>alamat-alamat penerimaan</translation>
     </message>
     <message>
-        <source>These are your Pricecoinx addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Ini adalah alamat Pricecoinx anda untuk pembayaran. Periksa jumlah dan alamat penerima sebelum membuat penghantaran koin sentiasa.</translation>
+        <source>These are your PricecoinX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Ini adalah alamat PricecoinX anda untuk pembayaran. Periksa jumlah dan alamat penerima sebelum membuat penghantaran koin sentiasa.</translation>
     </message>
     <message>
-        <source>These are your Pricecoinx addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Ini adalah alamat Pricecoinx anda untuk menerima pembayaraan.  Anda disyorkan untuk menguna alamat menerima untuk setiap transaksi.</translation>
+        <source>These are your PricecoinX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Ini adalah alamat PricecoinX anda untuk menerima pembayaraan.  Anda disyorkan untuk menguna alamat menerima untuk setiap transaksi.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -191,6 +191,10 @@ Alihkan fail data ke dalam tab semasa</translation>
         <translation>Dompet dienkripsi</translation>
     </message>
     <message>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your pricecoinxs from being stolen by malware infecting your computer.</source>
+        <translation>%1 akan tutup untuk menyelesaikan proses enkripsi. Ingat bahawa enkripsi tidak boleh melidungi sepenuhnya pricecoinxs anda daripada dicuri oleh malware yang menjangkiti komputer anda.</translation>
+    </message>
+    <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
         <translation>PENTING: Apa-apa sandaran yang anda buat sebelum ini untuk fail dompet anda hendaklah digantikan dengan fail dompet enkripsi yang dijana baru. Untuk sebab-sebab keselamatan , sandaran fail dompet yang belum dibuat enkripsi sebelum ini akan menjadi tidak berguna secepat anda mula guna dompet enkripsi baru.</translation>
     </message>
@@ -253,6 +257,10 @@ Alihkan fail data ke dalam tab semasa</translation>
         <translation>&amp;Gambaran Keseluruhan</translation>
     </message>
     <message>
+        <source>Node</source>
+        <translation>Nod</translation>
+    </message>
+    <message>
         <source>Show general overview of wallet</source>
         <translation>Tunjuk gambaran keseluruhan umum dompet</translation>
     </message>
@@ -309,12 +317,25 @@ Alihkan fail data ke dalam tab semasa</translation>
         <translation>&amp;Menukar frasa-laluan</translation>
     </message>
     <message>
+        <source>&amp;Sending addresses...</source>
+        <translation>&amp;Menghantar frasa-laluan</translation>
+    </message>
+    <message>
+        <source>&amp;Receiving addresses...</source>
+        <translation>&amp;Menerima frasa-laluan...</translation>
+    </message>
+    <message>
         <source>Open &amp;URI...</source>
         <translation>Buka &amp;URI...</translation>
     </message>
     <message>
         <source>Wallet:</source>
         <translation>dompet</translation>
+    </message>
+    <message>
+        <source>default wallet</source>
+        <translation>dompet lalai
+</translation>
     </message>
     <message>
         <source>Click to disable network activity.</source>
@@ -337,8 +358,8 @@ Alihkan fail data ke dalam tab semasa</translation>
         <translation>Reindexi blok pada cakera...</translation>
     </message>
     <message>
-        <source>Send coins to a Pricecoinx address</source>
-        <translation>Menghantar koin kepada alamat Pricecoinx</translation>
+        <source>Send coins to a PricecoinX address</source>
+        <translation>Menghantar koin kepada alamat PricecoinX</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -361,8 +382,12 @@ Alihkan fail data ke dalam tab semasa</translation>
         <translation>sahkan mesej</translation>
     </message>
     <message>
-        <source>Pricecoinx</source>
-        <translation>Pricecoinx</translation>
+        <source>PricecoinX</source>
+        <translation>PricecoinX</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>dompet</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -385,12 +410,12 @@ Alihkan fail data ke dalam tab semasa</translation>
         <translation>sulitkan kata laluan milik peribadi anda </translation>
     </message>
     <message>
-        <source>Sign messages with your Pricecoinx addresses to prove you own them</source>
+        <source>Sign messages with your PricecoinX addresses to prove you own them</source>
         <translation>sahkan mesej bersama alamat pricecoinx anda untuk menunjukkan alamat ini anda punya</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Pricecoinx addresses</source>
-        <translation>Sahkan mesej untuk memastikan mereka telah ditandatangani dengan alamat Pricecoinx yang ditentukan</translation>
+        <source>Verify messages to ensure they were signed with specified PricecoinX addresses</source>
+        <translation>Sahkan mesej untuk memastikan mereka telah ditandatangani dengan alamat PricecoinX yang ditentukan</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -418,43 +443,6 @@ Alihkan fail data ke dalam tab semasa</translation>
         <source>Show the list of used sending addresses and labels</source>
         <translation>Tunjukkan senarai alamat dan label yang digunakan
 </translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>Ralat</translation>
-    </message>
-    <message>
-        <source>Warning</source>
-        <translation>Amaran</translation>
-    </message>
-    <message>
-        <source>Information</source>
-        <translation>Notis</translation>
-    </message>
-    <message>
-        <source>Up to date</source>
-        <translation>Terkini</translation>
-    </message>
-    <message>
-        <source>Open Wallet</source>
-        <translation>Buka Wallet</translation>
-    </message>
-    <message>
-        <source>Close Wallet...</source>
-        <translation>Tutup Wallet...</translation>
-    </message>
-    <message>
-        <source>Close wallet</source>
-        <translation>Tutup Wallet</translation>
-    </message>
-    <message>
-        <source>default wallet</source>
-        <translation>dompet lalai
-</translation>
-    </message>
-    <message>
-        <source>Opening Wallet &lt;b&gt;%1&lt;/b&gt;...</source>
-        <translation>Buka sedang Wallet &lt;b&gt;%1&lt;/b&gt;...</translation>
     </message>
     </context>
 <context>
@@ -484,12 +472,8 @@ Alihkan fail data ke dalam tab semasa</translation>
 <context>
     <name>Intro</name>
     <message>
-        <source>Pricecoinx</source>
-        <translation>Pricecoinx</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>Ralat</translation>
+        <source>PricecoinX</source>
+        <translation>PricecoinX</translation>
     </message>
     </context>
 <context>
@@ -500,10 +484,6 @@ Alihkan fail data ke dalam tab semasa</translation>
     </context>
 <context>
     <name>OptionsDialog</name>
-    <message>
-        <source>Error</source>
-        <translation>Ralat</translation>
-    </message>
     </context>
 <context>
     <name>OverviewPage</name>
@@ -525,6 +505,11 @@ Alihkan fail data ke dalam tab semasa</translation>
     </context>
 <context>
     <name>RPCConsole</name>
+    <message>
+        <source>default wallet</source>
+        <translation>dompet lalai
+</translation>
+    </message>
     </context>
 <context>
     <name>ReceiveCoinsDialog</name>
@@ -628,23 +613,11 @@ Alihkan fail data ke dalam tab semasa</translation>
     <name>UnitDisplayStatusBarControl</name>
     </context>
 <context>
-    <name>WalletController</name>
-    <message>
-        <source>Close wallet</source>
-        <translation>Tutup Wallet</translation>
-    </message>
-    </context>
-<context>
     <name>WalletFrame</name>
     </context>
 <context>
     <name>WalletModel</name>
-    <message>
-        <source>default wallet</source>
-        <translation>dompet lalai
-</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>WalletView</name>
     <message>
@@ -655,25 +628,5 @@ Alihkan fail data ke dalam tab semasa</translation>
     </context>
 <context>
     <name>bitcoin-core</name>
-    <message>
-        <source>Information</source>
-        <translation>Notis</translation>
-    </message>
-    <message>
-        <source>Warning</source>
-        <translation>Amaran</translation>
-    </message>
-    <message>
-        <source>Loading wallet...</source>
-        <translation>Sedang baca wallet...</translation>
-    </message>
-    <message>
-        <source>Done loading</source>
-        <translation>Baca Selesai</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>Ralat</translation>
-    </message>
-</context>
+    </context>
 </TS>

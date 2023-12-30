@@ -66,12 +66,12 @@
         <translation>адрасы Прымання</translation>
     </message>
     <message>
-        <source>These are your Pricecoinx addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Тут знаходзяцца Pricecoinx-адрасы для высылання плацяжоў. Заўсёды спраўджвайце колькасць і адрас прызначэння перад здзяйсненнем транзакцыі.</translation>
+        <source>These are your PricecoinX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Тут знаходзяцца PricecoinX-адрасы для высылання плацяжоў. Заўсёды спраўджвайце колькасць і адрас прызначэння перад здзяйсненнем транзакцыі.</translation>
     </message>
     <message>
-        <source>These are your Pricecoinx addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Тут знаходзяцца Pricecoinx-адрасы для прымання плацяжоў. Пажадана выкарыстоўваць новы адрас для кожнай транзакцыі.</translation>
+        <source>These are your PricecoinX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Тут знаходзяцца PricecoinX-адрасы для прымання плацяжоў. Пажадана выкарыстоўваць новы адрас для кожнай транзакцыі.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -238,6 +238,10 @@
         <translation>Агляд</translation>
     </message>
     <message>
+        <source>Node</source>
+        <translation>Вузел</translation>
+    </message>
+    <message>
         <source>Show general overview of wallet</source>
         <translation>Паказвае агульныя звесткі аб гаманцы</translation>
     </message>
@@ -282,6 +286,14 @@
         <translation>&amp;Change Passphrase...</translation>
     </message>
     <message>
+        <source>&amp;Sending addresses...</source>
+        <translation>Адрасы дасылання...</translation>
+    </message>
+    <message>
+        <source>&amp;Receiving addresses...</source>
+        <translation>Адрасы прымання...</translation>
+    </message>
+    <message>
         <source>Open &amp;URI...</source>
         <translation>Адчыниць &amp;URI...</translation>
     </message>
@@ -290,8 +302,8 @@
         <translation>Пераіндэксацыя блокаў на дыску...</translation>
     </message>
     <message>
-        <source>Send coins to a Pricecoinx address</source>
-        <translation>Даслаць манеты на Pricecoinx-адрас</translation>
+        <source>Send coins to a PricecoinX address</source>
+        <translation>Даслаць манеты на PricecoinX-адрас</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -314,8 +326,12 @@
         <translation>Праверыць паведамленне...</translation>
     </message>
     <message>
-        <source>Pricecoinx</source>
-        <translation>Pricecoinx</translation>
+        <source>PricecoinX</source>
+        <translation>PricecoinX</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Гаманец</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -338,12 +354,12 @@
         <translation>Зашыфраваць прыватныя ключы, якия належаць вашаму гаманцу</translation>
     </message>
     <message>
-        <source>Sign messages with your Pricecoinx addresses to prove you own them</source>
-        <translation>Падпісаць паведамленне з дапамогай Pricecoinx-адраса каб даказаць, што яно належыць вам</translation>
+        <source>Sign messages with your PricecoinX addresses to prove you own them</source>
+        <translation>Падпісаць паведамленне з дапамогай PricecoinX-адраса каб даказаць, што яно належыць вам</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Pricecoinx addresses</source>
-        <translation>Спраўдзіць паведамленне з дапамогай Pricecoinx-адраса каб даказаць, што яно належыць вам</translation>
+        <source>Verify messages to ensure they were signed with specified PricecoinX addresses</source>
+        <translation>Спраўдзіць паведамленне з дапамогай PricecoinX-адраса каб даказаць, што яно належыць вам</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -643,8 +659,8 @@
         <translation>Вітаем</translation>
     </message>
     <message>
-        <source>Pricecoinx</source>
-        <translation>Pricecoinx</translation>
+        <source>PricecoinX</source>
+        <translation>PricecoinX</translation>
     </message>
     <message>
         <source>Error</source>
@@ -670,6 +686,10 @@
     <message>
         <source>Options</source>
         <translation>Опцыі</translation>
+    </message>
+    <message>
+        <source>MB</source>
+        <translation>Мб</translation>
     </message>
     <message>
         <source>W&amp;allet</source>
@@ -1183,9 +1203,6 @@
     <name>UnitDisplayStatusBarControl</name>
     </context>
 <context>
-    <name>WalletController</name>
-    </context>
-<context>
     <name>WalletFrame</name>
     </context>
 <context>
@@ -1209,8 +1226,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Pricecoinx Core</source>
-        <translation>Pricecoinx Core</translation>
+        <source>PricecoinX Core</source>
+        <translation>PricecoinX Core</translation>
     </message>
     <message>
         <source>Do you want to rebuild the block database now?</source>

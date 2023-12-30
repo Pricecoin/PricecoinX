@@ -1,5 +1,5 @@
 ---
-name: "pricecoinx-win-0.18"
+name: "pricecoinx-win-0.17"
 enable_cache: true
 suites:
 - "bionic"
@@ -23,12 +23,10 @@ packages:
 - "python"
 - "rename"
 remotes:
-- "url": "https://github.com/pricecoinx-project/pricecoinx.git"
+- "url": "https://github.com/ZachChan105/pricecoinx.git"
   "dir": "pricecoinx"
 files: []
 script: |
-  set -e -o pipefail
-
   WRAP_DIR=$HOME/wrapped
   HOSTS="i686-w64-mingw32 x86_64-w64-mingw32"
   CONFIGFLAGS="--enable-reduce-exports --disable-bench --disable-gui-tests"
@@ -164,10 +162,10 @@ script: |
     mv ${DISTNAME}/bin/*.dll ${DISTNAME}/lib/
     find . -name "lib*.la" -delete
     find . -name "lib*.a" -delete
-    # Pricecoinx: Delete libbitcoin from binary distribution for now, see #192
+    # PricecoinX: Delete libbitcoin from binary distribution for now, see #192
     rm -rf ${DISTNAME}/lib/
     rm -rf ${DISTNAME}/include/
-    # Pricecoinx: ends
+    # PricecoinX: ends
     rm -rf ${DISTNAME}/lib/pkgconfig
     find ${DISTNAME}/bin -type f -executable -exec ${i}-objcopy --only-keep-debug {} {}.dbg \; -exec ${i}-strip -s {} \; -exec ${i}-objcopy --add-gnu-debuglink={}.dbg {} \;
     # Litecon: find ${DISTNAME}/lib -type f -exec ${i}-objcopy --only-keep-debug {} {}.dbg \; -exec ${i}-strip -s {} \; -exec ${i}-objcopy --add-gnu-debuglink={}.dbg {} \;

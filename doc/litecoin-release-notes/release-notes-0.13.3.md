@@ -1,13 +1,13 @@
-Pricecoinx Core version 0.13.3 is now available from:
+PricecoinX Core version 0.13.3 is now available from:
 
-  <https://download.pricecoinx.org/pricecoinx-0.13.3/>
+  <https://download.pricecoincrypto.com/pricecoinx-0.13.3/>
 
 This is a new minor version release, including new features, various bugfixes and performance improvements.
 It is recommended to upgrade to this version.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/pricecoinx-project/pricecoinx/issues>
+  <https://github.com/ZachChan105/pricecoinx/issues>
 
 Compatibility
 ==============
@@ -41,7 +41,7 @@ Notable changes
 New Multisig Address Prefix
 ---------------------------
 
-Pricecoinx Core now supports P2SH addresses beginning with M on mainnet and Q on testnet.
+PricecoinX Core now supports P2SH addresses beginning with M on mainnet and Q on testnet.
 P2SH addresses beginning with 3 on mainnet and m or n on testnet will continue to be valid.
 Old and new addresses can be used interchangeably.
 
@@ -50,7 +50,7 @@ miniupnp CVE-2017-8798
 
 Bundled miniupnpc was updated to 2.0.20170509. This fixes an integer signedness error (present in MiniUPnPc v1.4.20101221 through v2.0) that allows remote attackers (within the LAN) to cause a denial of service or possibly have unspecified other impact.
 
-This only affects users that have explicitly enabled UPnP through the GUI setting or through the -upnp option, as since the last UPnP vulnerability (in Pricecoinx Core 0.10.4) it has been disabled by default.
+This only affects users that have explicitly enabled UPnP through the GUI setting or through the -upnp option, as since the last UPnP vulnerability (in PricecoinX Core 0.10.4) it has been disabled by default.
 
 If you use this option, it is recommended to upgrade to this version as soon as possible.
 
@@ -58,13 +58,13 @@ Reset Testnet
 -------------
 
 Testnet3 has been deprecated and replaced with Testnet4. The server port has been changed to 19335 however the RPC port remains
-the same (19332).
+the same (12332).
 
 Testnet faucets can be located at:
 - http://testnet.pricecoinxtools.com
 - http://testnet.thrasher.io
 
-Developers who require the new testnet blockchain paramaters can find them [here](https://github.com/pricecoinx-project/pricecoinx/blob/0.13/src/chainparams.cpp#L214).
+Developers who require the new testnet blockchain paramaters can find them [here](https://github.com/ZachChan105/pricecoinx/blob/0.13/src/chainparams.cpp#L214).
 
 Credits
 =======

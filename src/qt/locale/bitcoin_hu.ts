@@ -66,12 +66,12 @@
         <translation>Fogadási cím</translation>
     </message>
     <message>
-        <source>These are your Pricecoinx addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Ezek a Pricecoinx címeid kifizetések küldéséhez. Mindíg ellenőrizd az összeget és a fogadó címet mielőtt coinokat küldenél.</translation>
+        <source>These are your PricecoinX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Ezek a PricecoinX címeid kifizetések küldéséhez. Mindíg ellenőrizd az összeget és a fogadó címet mielőtt coinokat küldenél.</translation>
     </message>
     <message>
-        <source>These are your Pricecoinx addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Ezek a Pricecoinx címeid kifizetések fogadásához. Ajánlott új címet használni minden új fogadáshoz.</translation>
+        <source>These are your PricecoinX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Ezek a PricecoinX címeid kifizetések fogadásához. Ajánlott új címet használni minden új fogadáshoz.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -185,6 +185,10 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
         <translation>Tárca titkosítva</translation>
     </message>
     <message>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your pricecoinxs from being stolen by malware infecting your computer.</source>
+        <translation>A %1 most bezár, hogy befejezze a titkosítást. Ne feledje, hogy a tárca titkosítása nem nyújt teljes védelmet azzal szemben, hogy kártékony programok megfertőzzék a számítógépét és ellopják a pricecoinxjait.</translation>
+    </message>
+    <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
         <translation>FONTOS: A tárca-fájl minden korábbi biztonsági mentését cserélje le ezzel az újonnan generált, titkosított tárca-fájllal. Biztonsági okokból a tárca-fájl korábbi, titkosítás nélküli mentései használhatatlanná válnak, amint elkezdi használni az új, titkosított tárcát.</translation>
     </message>
@@ -247,6 +251,10 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
         <translation>&amp;Áttekintés</translation>
     </message>
     <message>
+        <source>Node</source>
+        <translation>Csomópont</translation>
+    </message>
+    <message>
         <source>Show general overview of wallet</source>
         <translation>Tárca általános áttekintése</translation>
     </message>
@@ -303,6 +311,14 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
         <translation>Jelszó &amp;megváltoztatása...</translation>
     </message>
     <message>
+        <source>&amp;Sending addresses...</source>
+        <translation>&amp;Küldési címek...</translation>
+    </message>
+    <message>
+        <source>&amp;Receiving addresses...</source>
+        <translation>&amp;Fogadó címek...</translation>
+    </message>
+    <message>
         <source>Open &amp;URI...</source>
         <translation>&amp;URI azonosító megnyitása...</translation>
     </message>
@@ -327,8 +343,8 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
         <translation>Lemezen lévő blokkok újraindexelése...</translation>
     </message>
     <message>
-        <source>Send coins to a Pricecoinx address</source>
-        <translation>Pricecoinx küldése megadott címre</translation>
+        <source>Send coins to a PricecoinX address</source>
+        <translation>PricecoinX küldése megadott címre</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -351,8 +367,12 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
         <translation>Üzenet &amp;valódiságának ellenőrzése</translation>
     </message>
     <message>
-        <source>Pricecoinx</source>
-        <translation>Pricecoinx</translation>
+        <source>PricecoinX</source>
+        <translation>PricecoinX</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Tárca</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -375,12 +395,12 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
         <translation>A tárcádhoz tartozó privát kulcsok titkosítása</translation>
     </message>
     <message>
-        <source>Sign messages with your Pricecoinx addresses to prove you own them</source>
-        <translation>Üzenetek aláírása a Pricecoinx-címmeiddel, amivel bizonyítod, hogy a cím a sajátod</translation>
+        <source>Sign messages with your PricecoinX addresses to prove you own them</source>
+        <translation>Üzenetek aláírása a PricecoinX-címmeiddel, amivel bizonyítod, hogy a cím a sajátod</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Pricecoinx addresses</source>
-        <translation>Üzenetek ellenőrzése, hogy valóban a megjelölt Pricecoinx-címekkel vannak-e aláírva</translation>
+        <source>Verify messages to ensure they were signed with specified PricecoinX addresses</source>
+        <translation>Üzenetek ellenőrzése, hogy valóban a megjelölt PricecoinX-címekkel vannak-e aláírva</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -419,8 +439,8 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
         <translation>Paran&amp;cssor kapcsolók</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Pricecoinx network</source>
-        <translation><numerusform>%n aktív kapcsolat a Pricecoinx hálózathoz</numerusform><numerusform>%n aktív kapcsolat a Pricecoinx hálózathoz</numerusform></translation>
+        <source>%n active connection(s) to PricecoinX network</source>
+        <translation><numerusform>%n aktív kapcsolat a PricecoinX hálózathoz</numerusform><numerusform>%n aktív kapcsolat a PricecoinX hálózathoz</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -463,16 +483,8 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
         <translation>Naprakész</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Pricecoinx command-line options</source>
-        <translation>A %1 súgó megjelenítése a Pricecoinx lehetséges parancssori kapcsolóinak listájával</translation>
-    </message>
-    <message>
-        <source>&amp;Window</source>
-        <translation>&amp;Ablak</translation>
-    </message>
-    <message>
-        <source>Minimize</source>
-        <translation>Kicsinyítés</translation>
+        <source>Show the %1 help message to get a list with possible PricecoinX command-line options</source>
+        <translation>A %1 súgó megjelenítése a PricecoinX lehetséges parancssori kapcsolóinak listájával</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -541,8 +553,8 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
         <translation>Tárca &lt;b&gt;kódolva&lt;/b&gt; és jelenleg &lt;b&gt;zárva&lt;/b&gt;.</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Pricecoinx can no longer continue safely and will quit.</source>
-        <translation>Végzetes hiba történt. A Pricecoinx működése nem biztonságos és hamarosan leáll.</translation>
+        <source>A fatal error occurred. PricecoinX can no longer continue safely and will quit.</source>
+        <translation>Végzetes hiba történt. A PricecoinX működése nem biztonságos és hamarosan leáll.</translation>
     </message>
 </context>
 <context>
@@ -731,8 +743,8 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
         <translation>Küldő cím szerkesztése</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Pricecoinx address.</source>
-        <translation>A megadott "%1" cím nem egy érvényes Pricecoinx-cím.</translation>
+        <source>The entered address "%1" is not a valid PricecoinX address.</source>
+        <translation>A megadott "%1" cím nem egy érvényes PricecoinX-cím.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -816,8 +828,8 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
         <translation>Saját adatkönyvtár használata:</translation>
     </message>
     <message>
-        <source>Pricecoinx</source>
-        <translation>Pricecoinx</translation>
+        <source>PricecoinX</source>
+        <translation>PricecoinX</translation>
     </message>
     <message>
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
@@ -828,8 +840,8 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
         <translation>Hozzávetőlegesen %1 GB adatot fogunk ebben a könyvtárban tárolni.</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Pricecoinx block chain.</source>
-        <translation>%1 le fog töltődni és a Pricecoinx blokk lánc egy másolatát fogja tárolni.</translation>
+        <source>%1 will download and store a copy of the PricecoinX block chain.</source>
+        <translation>%1 le fog töltődni és a PricecoinX blokk lánc egy másolatát fogja tárolni.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -894,7 +906,11 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
         <source>Hide</source>
         <translation>Elrejtés</translation>
     </message>
-    </context>
+    <message>
+        <source>Unknown. Syncing Headers (%1)...</source>
+        <translation>Ismeretlen. Fejlécek szinkronizálása (%1)...</translation>
+    </message>
+</context>
 <context>
     <name>OpenURIDialog</name>
     <message>
@@ -941,6 +957,10 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
         <translation>A&amp;datbázis gyorsítótár mérete</translation>
     </message>
     <message>
+        <source>MB</source>
+        <translation>MB</translation>
+    </message>
+    <message>
         <source>Number of script &amp;verification threads</source>
         <translation>A szkript &amp;igazolási szálak száma</translation>
     </message>
@@ -963,6 +983,10 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
         <translation>Harmadik féltől származó URL-ek (pl. egy blokk felfedező) amelyek a tranzakciós fülön jelennek meg mint a környezetérzékeny menü tételei. %s az URL-ben helyettesítve a tranzakciós hash-el. Több URL esetén, függőleges vonal választja el őket.</translation>
+    </message>
+    <message>
+        <source>Active command-line options that override above options:</source>
+        <translation>Aktív parancssori beállítások, melyek felülírják a fenti beállításokat:</translation>
     </message>
     <message>
         <source>Open the %1 configuration file from the working directory.</source>
@@ -1009,8 +1033,8 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
         <translation>&amp;Költése a a jóváhagyatlan visszajárónak</translation>
     </message>
     <message>
-        <source>Automatically open the Pricecoinx client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>A Pricecoinx-kliens portjának automatikus megnyitása a routeren. Ez csak akkor működik, ha a routered támogatja az UPnP-t és az engedélyezve is van rajta.</translation>
+        <source>Automatically open the PricecoinX client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>A PricecoinX-kliens portjának automatikus megnyitása a routeren. Ez csak akkor működik, ha a routered támogatja az UPnP-t és az engedélyezve is van rajta.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1025,8 +1049,8 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
         <translation>Bejövő kapcsolatok engedélyezése.</translation>
     </message>
     <message>
-        <source>Connect to the Pricecoinx network through a SOCKS5 proxy.</source>
-        <translation>Csatlakozás a Pricecoinx hálózatához SOCKS5 proxyn keresztül</translation>
+        <source>Connect to the PricecoinX network through a SOCKS5 proxy.</source>
+        <translation>Csatlakozás a PricecoinX hálózatához SOCKS5 proxyn keresztül</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1061,8 +1085,8 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the Pricecoinx network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Csatlakozás a Pricecoinx hálózathoz külön SOCKS5 proxy használatával a Tor rejtett szolgáltatásainak eléréséhez.</translation>
+        <source>Connect to the PricecoinX network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>Csatlakozás a PricecoinX hálózathoz külön SOCKS5 proxy használatával a Tor rejtett szolgáltatásainak eléréséhez.</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -1168,8 +1192,8 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
         <translation>Űrlap</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Pricecoinx network after a connection is established, but this process has not completed yet.</source>
-        <translation>A kijelzett információ lehet, hogy elavult. A pénztárcája automatikusan szinkronizálja magát a Pricecoinx hálózattal miután a kapcsolat létrejön, de ez e folyamat még nem fejeződött be.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the PricecoinX network after a connection is established, but this process has not completed yet.</source>
+        <translation>A kijelzett információ lehet, hogy elavult. A pénztárcája automatikusan szinkronizálja magát a PricecoinX hálózattal miután a kapcsolat létrejön, de ez e folyamat még nem fejeződött be.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1255,8 +1279,8 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
         <translation>Érvénytelen fizetési cím %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Pricecoinx address or malformed URI parameters.</source>
-        <translation>Nem sikerült az URI elemzése! Ezt okozhatja érvénytelen Pricecoinx cím, vagy rossz URI paraméterezés.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid PricecoinX address or malformed URI parameters.</source>
+        <translation>Nem sikerült az URI elemzése! Ezt okozhatja érvénytelen PricecoinX cím, vagy rossz URI paraméterezés.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1353,8 +1377,8 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
         <translation>Összeg</translation>
     </message>
     <message>
-        <source>Enter a Pricecoinx address (e.g. %1)</source>
-        <translation>Ad meg egy Pricecoinx címet (pl: %1)</translation>
+        <source>Enter a PricecoinX address (e.g. %1)</source>
+        <translation>Ad meg egy PricecoinX címet (pl: %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1765,8 +1789,8 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
         <translation>&amp;Üzenet:</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Pricecoinx network.</source>
-        <translation>Egy opcionális üzenet csatolása a fizetési kérelemhez, amely megjelenik a kérelem megnyitásakor. Megjegyzés: Az üzenet nem lesz elküldve a fizetséggel a Pricecoinx hálózaton keresztül.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the PricecoinX network.</source>
+        <translation>Egy opcionális üzenet csatolása a fizetési kérelemhez, amely megjelenik a kérelem megnyitásakor. Megjegyzés: Az üzenet nem lesz elküldve a fizetséggel a PricecoinX hálózaton keresztül.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2010,6 +2034,14 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
         <translation>Elrejtés</translation>
     </message>
     <message>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for pricecoinx transactions than the network can process.</source>
+        <translation>Alacsony díj is megfelelő, ha nincs több tranzakció mint amennyi hely a blokkokban. Figyelem! Ha a hálózat túlterhelt, lehetséges, hogy a tranzakció nem lesz megerősítve.</translation>
+    </message>
+    <message>
+        <source>(read the tooltip)</source>
+        <translation>(olvasd el a gyorstippet)</translation>
+    </message>
+    <message>
         <source>Recommended:</source>
         <translation>Ajánlott:</translation>
     </message>
@@ -2142,8 +2174,12 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
         <translation>A fizetési kérelem lejárt.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Pricecoinx address</source>
-        <translation>Figyelmeztetés: Érvénytelen Pricecoinx cím</translation>
+        <source>Pay only the required fee of %1</source>
+        <translation>Csak a szükséges %1 díj fizetése</translation>
+    </message>
+    <message>
+        <source>Warning: Invalid PricecoinX address</source>
+        <translation>Figyelmeztetés: Érvénytelen PricecoinX cím</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2185,8 +2221,8 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
         <translation>Ez normál fizetés.</translation>
     </message>
     <message>
-        <source>The Pricecoinx address to send the payment to</source>
-        <translation>Erre a Pricecoinx címre küldje az összeget</translation>
+        <source>The PricecoinX address to send the payment to</source>
+        <translation>Erre a PricecoinX címre küldje az összeget</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2270,8 +2306,8 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
         <translation>Üzenet aláírása...</translation>
     </message>
     <message>
-        <source>The Pricecoinx address to sign the message with</source>
-        <translation>Pricecoinx cím, amivel alá kívánja írni az üzenetet</translation>
+        <source>The PricecoinX address to sign the message with</source>
+        <translation>PricecoinX cím, amivel alá kívánja írni az üzenetet</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2302,7 +2338,7 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
         <translation>A jelenleg kiválasztott aláírás másolása a rendszer-vágólapra</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Pricecoinx address</source>
+        <source>Sign the message to prove you own this PricecoinX address</source>
         <translation>Üzenet </translation>
     </message>
     <message>
@@ -2318,12 +2354,12 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
         <translation>Üzenet ellenőrzése</translation>
     </message>
     <message>
-        <source>The Pricecoinx address the message was signed with</source>
-        <translation>Pricecoinx cím, amivel aláírta az üzenetet</translation>
+        <source>The PricecoinX address the message was signed with</source>
+        <translation>PricecoinX cím, amivel aláírta az üzenetet</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Pricecoinx address</source>
-        <translation>Ellenőrizze az üzenetet, hogy valóban a megjelölt Pricecoinx címmel van-e aláírva</translation>
+        <source>Verify the message to ensure it was signed with the specified PricecoinX address</source>
+        <translation>Ellenőrizze az üzenetet, hogy valóban a megjelölt PricecoinX címmel van-e aláírva</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2780,9 +2816,6 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
     <name>UnitDisplayStatusBarControl</name>
     </context>
 <context>
-    <name>WalletController</name>
-    </context>
-<context>
     <name>WalletFrame</name>
     <message>
         <source>No wallet has been loaded.</source>
@@ -2823,7 +2856,7 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
         <source>Could not commit transaction</source>
         <translation>A tranzakciót nem lehet elküldeni</translation>
     </message>
-    </context>
+</context>
 <context>
     <name>WalletView</name>
     <message>
@@ -2870,8 +2903,8 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
         <translation>HTTP szerver indítása sikertelen. A részleteket lásd: debug log.</translation>
     </message>
     <message>
-        <source>Pricecoinx Core</source>
-        <translation>Pricecoinx Core</translation>
+        <source>PricecoinX Core</source>
+        <translation>PricecoinX Core</translation>
     </message>
     <message>
         <source>The %s developers</source>
@@ -3024,6 +3057,10 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
     <message>
         <source>Warning</source>
         <translation>Figyelem</translation>
+    </message>
+    <message>
+        <source>Warning: Unknown block versions being mined! It's possible unknown rules are in effect</source>
+        <translation>Figyelem: Ismeretlen blokkokat bányásznak! Lehetséges, hogy ismeretlen szabályok érvényesek.</translation>
     </message>
     <message>
         <source>%s is set very high!</source>

@@ -66,12 +66,12 @@
         <translation>Mottaksadresser</translation>
     </message>
     <message>
-        <source>These are your Pricecoinx addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dette er dine Pricecoinx-adresser for sending av betalinger. Sjekk alltid beløpet og mottakeradressen før sending av mynter.</translation>
+        <source>These are your PricecoinX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dette er dine PricecoinX-adresser for sending av betalinger. Sjekk alltid beløpet og mottakeradressen før sending av mynter.</translation>
     </message>
     <message>
-        <source>These are your Pricecoinx addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dette er dine Pricecoinx-adresser for å sende betalinger med. Det er anbefalt å bruke en ny mottaksadresse for hver transaksjon.</translation>
+        <source>These are your PricecoinX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Dette er dine PricecoinX-adresser for å sende betalinger med. Det er anbefalt å bruke en ny mottaksadresse for hver transaksjon.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -188,6 +188,10 @@
         <translation>Lommebok kryptert</translation>
     </message>
     <message>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your pricecoinxs from being stolen by malware infecting your computer.</source>
+        <translation>%1 vil nå lukkes for å fullføre krypteringsprosessen. Husk at kryptering av lommeboken ikke fullt ut kan beskytte dine pricecoinxs fra å bli stjålet om skadevare infiserer datamaskinen din.</translation>
+    </message>
+    <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
         <translation>VIKTIG: Tidligere sikkerhetskopier av din lommebokfil bør erstattes med den nylig genererte og krypterte filen, da de blir ugyldiggjort av sikkerhetshensyn så snart du begynner å bruke den nye krypterte lommeboken.</translation>
     </message>
@@ -250,6 +254,10 @@
         <translation>&amp;Oversikt</translation>
     </message>
     <message>
+        <source>Node</source>
+        <translation>Node</translation>
+    </message>
+    <message>
         <source>Show general overview of wallet</source>
         <translation>Vis generell oversikt over lommeboken</translation>
     </message>
@@ -306,12 +314,16 @@
         <translation>&amp;Endre Adgangsfrase...</translation>
     </message>
     <message>
-        <source>Open &amp;URI...</source>
-        <translation>Åpne &amp;URI...</translation>
+        <source>&amp;Sending addresses...</source>
+        <translation>&amp;Utsendingsadresser...</translation>
     </message>
     <message>
-        <source>Wallet:</source>
-        <translation>Lommebok:</translation>
+        <source>&amp;Receiving addresses...</source>
+        <translation>&amp;Mottaksadresser...</translation>
+    </message>
+    <message>
+        <source>Open &amp;URI...</source>
+        <translation>Åpne &amp;URI...</translation>
     </message>
     <message>
         <source>Click to disable network activity.</source>
@@ -334,8 +346,8 @@
         <translation>Reindekserer blokker på harddisk...</translation>
     </message>
     <message>
-        <source>Send coins to a Pricecoinx address</source>
-        <translation>Send til en Pricecoinx-adresse</translation>
+        <source>Send coins to a PricecoinX address</source>
+        <translation>Send til en PricecoinX-adresse</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -358,8 +370,12 @@
         <translation>&amp;Verifiser melding...</translation>
     </message>
     <message>
-        <source>Pricecoinx</source>
-        <translation>Pricecoinx</translation>
+        <source>PricecoinX</source>
+        <translation>PricecoinX</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Lommebok</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -382,12 +398,12 @@
         <translation>Krypter de private nøklene som tilhører lommeboken din</translation>
     </message>
     <message>
-        <source>Sign messages with your Pricecoinx addresses to prove you own them</source>
-        <translation>Signer en melding med Pricecoinx-adressene dine for å bevise at du eier dem</translation>
+        <source>Sign messages with your PricecoinX addresses to prove you own them</source>
+        <translation>Signer en melding med PricecoinX-adressene dine for å bevise at du eier dem</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Pricecoinx addresses</source>
-        <translation>Bekreft meldinger for å være sikker på at de ble signert av en angitt Pricecoinx-adresse</translation>
+        <source>Verify messages to ensure they were signed with specified PricecoinX addresses</source>
+        <translation>Bekreft meldinger for å være sikker på at de ble signert av en angitt PricecoinX-adresse</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -419,15 +435,15 @@
     </message>
     <message>
         <source>Open a pricecoinx: URI or payment request</source>
-        <translation>Åpne en Pricecoinx: URI eller betalingsetterspørring</translation>
+        <translation>Åpne en PricecoinX: URI eller betalingsetterspørring</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Kommandolinjevalg</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Pricecoinx network</source>
-        <translation><numerusform>%n aktiv forbindelse til Pricecoinx-nettverket</numerusform><numerusform>%n aktive forbindelser til Pricecoinx-nettverket</numerusform></translation>
+        <source>%n active connection(s) to PricecoinX network</source>
+        <translation><numerusform>%n aktiv forbindelse til PricecoinX-nettverket</numerusform><numerusform>%n aktive forbindelser til PricecoinX-nettverket</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -470,64 +486,8 @@
         <translation>Oppdatert</translation>
     </message>
     <message>
-        <source>&amp;Sending addresses</source>
-        <translation>&amp;Utsendingsadresser</translation>
-    </message>
-    <message>
-        <source>&amp;Receiving addresses</source>
-        <translation>&amp;Mottaksadresser</translation>
-    </message>
-    <message>
-        <source>Open Wallet</source>
-        <translation>Åpne Lommebok</translation>
-    </message>
-    <message>
-        <source>Open a wallet</source>
-        <translation>Åpne en lommebok</translation>
-    </message>
-    <message>
-        <source>Close Wallet...</source>
-        <translation>Lukk Lommebok...</translation>
-    </message>
-    <message>
-        <source>Close wallet</source>
-        <translation>Lukk lommebok</translation>
-    </message>
-    <message>
-        <source>Show the %1 help message to get a list with possible Pricecoinx command-line options</source>
-        <translation>Vis %1 hjelpemeldingen for å få en liste med mulige Pricecoinx kommandolinjevalg.</translation>
-    </message>
-    <message>
-        <source>default wallet</source>
-        <translation>standard lommebok</translation>
-    </message>
-    <message>
-        <source>Opening Wallet &lt;b&gt;%1&lt;/b&gt;...</source>
-        <translation>Åpner Lommebok &lt;b&gt;%1&lt;/b&gt;...</translation>
-    </message>
-    <message>
-        <source>Open Wallet Failed</source>
-        <translation>Åpning av Lommebok Feilet</translation>
-    </message>
-    <message>
-        <source>&amp;Window</source>
-        <translation>&amp;Vindu</translation>
-    </message>
-    <message>
-        <source>Minimize</source>
-        <translation>Minimer</translation>
-    </message>
-    <message>
-        <source>Zoom</source>
-        <translation>Zoom</translation>
-    </message>
-    <message>
-        <source>Restore</source>
-        <translation>Gjenopprett</translation>
-    </message>
-    <message>
-        <source>Main Window</source>
-        <translation>Hovedvindu</translation>
+        <source>Show the %1 help message to get a list with possible PricecoinX command-line options</source>
+        <translation>Vis %1 hjelpemeldingen for å få en liste med mulige PricecoinX kommandolinjevalg.</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -551,12 +511,6 @@
         <source>Amount: %1
 </source>
         <translation>Beløp: %1:
-</translation>
-    </message>
-    <message>
-        <source>Wallet: %1
-</source>
-        <translation>Lommebok: %1
 </translation>
     </message>
     <message>
@@ -594,10 +548,6 @@
         <translation>HD nøkkelgenerering er&lt;b&gt;deaktivert&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>Private key &lt;b&gt;disabled&lt;/b&gt;</source>
-        <translation>Privat nøkkel &lt;b&gt;deaktivert&lt;/b&gt;</translation>
-    </message>
-    <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
         <translation>Lommeboken er &lt;b&gt;kryptert&lt;/b&gt; og for tiden &lt;b&gt;låst opp&lt;/b&gt;</translation>
     </message>
@@ -606,8 +556,8 @@
         <translation>Lommeboken er &lt;b&gt;kryptert&lt;/b&gt; og for tiden &lt;b&gt;låst&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Pricecoinx can no longer continue safely and will quit.</source>
-        <translation>En fatal feil har inntruffet. Pricecoinx kan ikke lenger trygt fortsette, og må derfor avslutte.</translation>
+        <source>A fatal error occurred. PricecoinX can no longer continue safely and will quit.</source>
+        <translation>En fatal feil har inntruffet. PricecoinX kan ikke lenger trygt fortsette, og må derfor avslutte.</translation>
     </message>
 </context>
 <context>
@@ -796,8 +746,8 @@
         <translation>Rediger utsendingsadresse</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Pricecoinx address.</source>
-        <translation>Den angitte adressen "%1" er ikke en gyldig Pricecoinx-adresse.</translation>
+        <source>The entered address "%1" is not a valid PricecoinX address.</source>
+        <translation>Den angitte adressen "%1" er ikke en gyldig PricecoinX-adresse.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -885,8 +835,8 @@
         <translation>Bruk en egendefinert datamappe:</translation>
     </message>
     <message>
-        <source>Pricecoinx</source>
-        <translation>Pricecoinx</translation>
+        <source>PricecoinX</source>
+        <translation>PricecoinX</translation>
     </message>
     <message>
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
@@ -897,8 +847,8 @@
         <translation>Omtrent %1GB data vil bli lagret i denne mappen.</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Pricecoinx block chain.</source>
-        <translation>%1 vil laste ned og lagre en kopi av Pricecoinx blokkjeden.</translation>
+        <source>%1 will download and store a copy of the PricecoinX block chain.</source>
+        <translation>%1 vil laste ned og lagre en kopi av PricecoinX blokkjeden.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -967,7 +917,11 @@
         <source>Hide</source>
         <translation>Skjul</translation>
     </message>
-    </context>
+    <message>
+        <source>Unknown. Syncing Headers (%1)...</source>
+        <translation>Ukjent. Synkroniserer hoder (%1)…</translation>
+    </message>
+</context>
 <context>
     <name>OpenURIDialog</name>
     <message>
@@ -1014,6 +968,10 @@
         <translation>Størrelse på &amp;database hurtigbuffer</translation>
     </message>
     <message>
+        <source>MB</source>
+        <translation>MB</translation>
+    </message>
+    <message>
         <source>Number of script &amp;verification threads</source>
         <translation>Antall script &amp;verifikasjonstråder</translation>
     </message>
@@ -1046,6 +1004,10 @@
         <translation>Tredjepart URLer (f. eks. en blokkutforsker) som dukker opp i transaksjonsfanen som kontekst meny elementer. %s i URLen er erstattet med transaksjonen sin hash. Flere URLer er separert av en vertikal linje |.</translation>
     </message>
     <message>
+        <source>Active command-line options that override above options:</source>
+        <translation>Aktive kommandolinjevalg som overstyrer valgene ovenfor:</translation>
+    </message>
+    <message>
         <source>Open the %1 configuration file from the working directory.</source>
         <translation>Åpne %1-oppsettsfila fra arbeidsmappen.</translation>
     </message>
@@ -1064,14 +1026,6 @@
     <message>
         <source>&amp;Network</source>
         <translation>&amp;Nettverk</translation>
-    </message>
-    <message>
-        <source>GB</source>
-        <translation>GB</translation>
-    </message>
-    <message>
-        <source>MiB</source>
-        <translation>MiB</translation>
     </message>
     <message>
         <source>(0 = auto, &lt;0 = leave that many cores free)</source>
@@ -1098,8 +1052,8 @@
         <translation>&amp;Bruk ubekreftet veksel</translation>
     </message>
     <message>
-        <source>Automatically open the Pricecoinx client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Åpne automatisk Pricecoinx klientporten på ruteren. Dette virker kun om din ruter støtter UPnP og dette er påslått.</translation>
+        <source>Automatically open the PricecoinX client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Åpne automatisk PricecoinX klientporten på ruteren. Dette virker kun om din ruter støtter UPnP og dette er påslått.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1114,8 +1068,8 @@
         <translation>Tillatt innkommend&amp;e tilkoblinger</translation>
     </message>
     <message>
-        <source>Connect to the Pricecoinx network through a SOCKS5 proxy.</source>
-        <translation>Koble til Pricecoinx-nettverket gjennom en SOCKS5 proxy.</translation>
+        <source>Connect to the PricecoinX network through a SOCKS5 proxy.</source>
+        <translation>Koble til PricecoinX-nettverket gjennom en SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1150,8 +1104,8 @@
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the Pricecoinx network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Koble til Pricecoinx-nettverket gjennom en separat SOCKS5 mellomtjener for Tor skjulte tjenester.</translation>
+        <source>Connect to the PricecoinX network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>Koble til PricecoinX-nettverket gjennom en separat SOCKS5 mellomtjener for Tor skjulte tjenester.</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -1257,8 +1211,8 @@
         <translation>Skjema</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Pricecoinx network after a connection is established, but this process has not completed yet.</source>
-        <translation>Informasjonen som vises kan være foreldet. Din lommebok synkroniseres automatisk med Pricecoinx-nettverket etter at tilkobling er opprettet, men denne prosessen er ikke ferdig enda.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the PricecoinX network after a connection is established, but this process has not completed yet.</source>
+        <translation>Informasjonen som vises kan være foreldet. Din lommebok synkroniseres automatisk med PricecoinX-nettverket etter at tilkobling er opprettet, men denne prosessen er ikke ferdig enda.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1348,7 +1302,7 @@
         <translation>Ugyldig betalingsadresse %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Pricecoinx address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid PricecoinX address or malformed URI parameters.</source>
         <translation>URI kan ikke fortolkes! Dette kan være forårsaket av en ugyldig pricecoinx-adresse eller feilformede URI-parametre.</translation>
     </message>
     <message>
@@ -1450,8 +1404,8 @@
         <translation>Beløp</translation>
     </message>
     <message>
-        <source>Enter a Pricecoinx address (e.g. %1)</source>
-        <translation>Oppgi en Pricecoinx-adresse (f.eks. %1)</translation>
+        <source>Enter a PricecoinX address (e.g. %1)</source>
+        <translation>Oppgi en PricecoinX-adresse (f.eks. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1629,14 +1583,6 @@
     <message>
         <source>Memory usage</source>
         <translation>Minnebruk</translation>
-    </message>
-    <message>
-        <source>Wallet: </source>
-        <translation>Lommebok:</translation>
-    </message>
-    <message>
-        <source>(none)</source>
-        <translation>(ingen)</translation>
     </message>
     <message>
         <source>&amp;Reset</source>
@@ -1878,8 +1824,8 @@
         <translation>&amp;Melding:</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Pricecoinx network.</source>
-        <translation>En valgfri melding å tilknytte betalingsetterspørringen, som vil bli vist når forespørselen er åpnet. Meldingen vil ikke bli sendt med betalingen over Pricecoinx-nettverket.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the PricecoinX network.</source>
+        <translation>En valgfri melding å tilknytte betalingsetterspørringen, som vil bli vist når forespørselen er åpnet. Meldingen vil ikke bli sendt med betalingen over PricecoinX-nettverket.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2036,7 +1982,7 @@
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Send Pricecoinxs</translation>
+        <translation>Send PricecoinXs</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -2113,6 +2059,14 @@
     <message>
         <source>Hide</source>
         <translation>Skjul</translation>
+    </message>
+    <message>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for pricecoinx transactions than the network can process.</source>
+        <translation>Betaling av bare minimumsavgiften går helt fint så lenge det er mindre transaksjonsvolum enn plass i blokkene. Men vær klar over at dette kan ende opp i en transaksjon som aldri blir bekreftet når det er mer etterspørsel etter PricecoinX-transaksjoner enn nettverket kan behandle.</translation>
+    </message>
+    <message>
+        <source>(read the tooltip)</source>
+        <translation>(les verktøytipset)</translation>
     </message>
     <message>
         <source>Recommended:</source>
@@ -2219,24 +2173,12 @@
         <translation>Du kan øke gebyret senere (signaliserer Replace-By-Fee, BIP-125).</translation>
     </message>
     <message>
-        <source>from wallet %1</source>
-        <translation>fra lommebok %1</translation>
-    </message>
-    <message>
-        <source>Please, review your transaction.</source>
-        <translation>Vennligst se over transaksjonen din.</translation>
-    </message>
-    <message>
         <source>Transaction fee</source>
         <translation>Transaksjonsgebyr</translation>
     </message>
     <message>
         <source>Not signalling Replace-By-Fee, BIP-125.</source>
         <translation>Signaliserer ikke Replace-By-Fee, BIP-125</translation>
-    </message>
-    <message>
-        <source>Total Amount</source>
-        <translation>Totalbeløp</translation>
     </message>
     <message>
         <source>Confirm send coins</source>
@@ -2278,12 +2220,16 @@
         <source>Payment request expired.</source>
         <translation>Tidsavbrudd for betalingsforespørsel</translation>
     </message>
+    <message>
+        <source>Pay only the required fee of %1</source>
+        <translation>Kun betal påkrevd gebyr på %1</translation>
+    </message>
     <message numerus="yes">
         <source>Estimated to begin confirmation within %n block(s).</source>
         <translation><numerusform>Antatt bekreftelsesbegynnelse innen %n blokk.</numerusform><numerusform>Antatt bekreftelsesbegynnelse innen %n blokker.</numerusform></translation>
     </message>
     <message>
-        <source>Warning: Invalid Pricecoinx address</source>
+        <source>Warning: Invalid PricecoinX address</source>
         <translation>Advarsel Ugyldig pricecoinx-adresse</translation>
     </message>
     <message>
@@ -2326,8 +2272,8 @@
         <translation>Dette er en normal betaling.</translation>
     </message>
     <message>
-        <source>The Pricecoinx address to send the payment to</source>
-        <translation>Pricecoinx-adressen betalingen skal sendes til</translation>
+        <source>The PricecoinX address to send the payment to</source>
+        <translation>PricecoinX-adressen betalingen skal sendes til</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2374,8 +2320,8 @@
         <translation>Skriv inn en merkelapp for denne adressen for å legge den til listen av brukte adresser</translation>
     </message>
     <message>
-        <source>A message that was attached to the pricecoinx: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Pricecoinx network.</source>
-        <translation>En melding som var tilknyttet pricecoinxen: URI vil bli lagret med transaksjonen for din oversikt. Denne meldingen vil ikke bli sendt over Pricecoinx-nettverket.</translation>
+        <source>A message that was attached to the pricecoinx: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the PricecoinX network.</source>
+        <translation>En melding som var tilknyttet pricecoinxen: URI vil bli lagret med transaksjonen for din oversikt. Denne meldingen vil ikke bli sendt over PricecoinX-nettverket.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2423,8 +2369,8 @@
         <translation>Du kan signere meldinger/avtaler med adresser for å bevise at du kan motta pricecoinxs sendt til dem. Vær forsiktig med å signere noe vagt eller tilfeldig, siden phishing-angrep kan prøve å lure deg til å signere din identitet over til dem. Bare signer fullt detaljerte utsagn som du er enig i.</translation>
     </message>
     <message>
-        <source>The Pricecoinx address to sign the message with</source>
-        <translation>Pricecoinx-adressen meldingen skal signeres med</translation>
+        <source>The PricecoinX address to sign the message with</source>
+        <translation>PricecoinX-adressen meldingen skal signeres med</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2455,8 +2401,8 @@
         <translation>Kopier valgt signatur til utklippstavle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Pricecoinx address</source>
-        <translation>Signer meldingen for å bevise at du eier denne Pricecoinx-adressen</translation>
+        <source>Sign the message to prove you own this PricecoinX address</source>
+        <translation>Signer meldingen for å bevise at du eier denne PricecoinX-adressen</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2479,12 +2425,12 @@
         <translation>Skriv inn mottakerens adresse, melding (forsikre deg om at du kopier linjeskift, mellomrom, faner osv. nøyaktig) og underskrift nedenfor for å bekrefte meldingen. Vær forsiktig så du ikke leser mer ut av signaturen enn hva som er i den signerte meldingen i seg selv, for å unngå å bli lurt av et man-in-the-middle-angrep. Merk at dette bare beviser at den som signerer kan motta med adressen, dette beviser ikke hvem som har sendt transaksjoner!</translation>
     </message>
     <message>
-        <source>The Pricecoinx address the message was signed with</source>
-        <translation>Pricecoinx-adressen meldingen ble signert med</translation>
+        <source>The PricecoinX address the message was signed with</source>
+        <translation>PricecoinX-adressen meldingen ble signert med</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Pricecoinx address</source>
-        <translation>Verifiser meldingen for å være sikker på at den ble signert av den angitte Pricecoinx-adressen</translation>
+        <source>Verify the message to ensure it was signed with the specified PricecoinX address</source>
+        <translation>Verifiser meldingen for å være sikker på at den ble signert av den angitte PricecoinX-adressen</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2686,10 +2632,6 @@
     <message>
         <source>Transaction total size</source>
         <translation>Total transaksjonsstørrelse</translation>
-    </message>
-    <message>
-        <source>Transaction virtual size</source>
-        <translation>Virtuell transaksjonsstørrelse</translation>
     </message>
     <message>
         <source>Output index</source>
@@ -3013,13 +2955,6 @@
     </message>
 </context>
 <context>
-    <name>WalletController</name>
-    <message>
-        <source>Close wallet</source>
-        <translation>Lukk lommebok</translation>
-    </message>
-    </context>
-<context>
     <name>WalletFrame</name>
     <message>
         <source>No wallet has been loaded.</source>
@@ -3068,10 +3003,6 @@
         <source>Could not commit transaction</source>
         <translation>Kunne ikke sende inn transaksjon</translation>
     </message>
-    <message>
-        <source>default wallet</source>
-        <translation>standard lommebok</translation>
-    </message>
 </context>
 <context>
     <name>WalletView</name>
@@ -3107,11 +3038,7 @@
         <source>The wallet data was successfully saved to %1.</source>
         <translation>Lommebokdata lagret til %1.</translation>
     </message>
-    <message>
-        <source>Cancel</source>
-        <translation>Avbryt</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>bitcoin-core</name>
     <message>
@@ -3143,8 +3070,8 @@
         <translation>Kunne ikke starte HTTP-tjener. Se feilrettingslogg for detaljer.</translation>
     </message>
     <message>
-        <source>Pricecoinx Core</source>
-        <translation>Pricecoinx Core</translation>
+        <source>PricecoinX Core</source>
+        <translation>PricecoinX Core</translation>
     </message>
     <message>
         <source>The %s developers</source>
@@ -3231,6 +3158,10 @@
         <translation>Ønsker du å gjenopprette blokkdatabasen nå?</translation>
     </message>
     <message>
+        <source>Error creating %s: You can't create non-HD wallets with this version.</source>
+        <translation>Feil under oppretting av %s: Du kan ikke lage en lommebok uten HD med denne versjonen.</translation>
+    </message>
+    <message>
         <source>Error initializing block database</source>
         <translation>Feil under initialisering av blokkdatabase</translation>
     </message>
@@ -3295,10 +3226,6 @@
         <translation>Ugyldig beløp for -fallbackfee=&lt;amount&gt;: "%s"</translation>
     </message>
     <message>
-        <source>Upgrading txindex database</source>
-        <translation>Oppgraderer txindex databasen</translation>
-    </message>
-    <message>
         <source>Loading P2P addresses...</source>
         <translation>Laster maskin-til-maskin -adresser…</translation>
     </message>
@@ -3339,8 +3266,16 @@
         <translation>Kan ikke binde til %s på denne datamaskinen. Sannsynligvis kjører %s allerede.</translation>
     </message>
     <message>
-        <source>Unable to generate keys</source>
-        <translation>Klarte ikke å lage nøkkel</translation>
+        <source>Unsupported argument -benchmark ignored, use -debug=bench.</source>
+        <translation>Ustøttet argument -benchmark ble ignorert, bruk -debug=bench.</translation>
+    </message>
+    <message>
+        <source>Unsupported argument -debugnet ignored, use -debug=net.</source>
+        <translation>Advarsel: Argumentet -debugnet er ikke støttet og ble ignorert, bruk -debug=net.</translation>
+    </message>
+    <message>
+        <source>Unsupported argument -tor found, use -onion.</source>
+        <translation>Feil: Argumentet -tor er ikke støttet, bruk -onion.</translation>
     </message>
     <message>
         <source>Unsupported logging category %s=%s.</source>
@@ -3379,16 +3314,16 @@
         <translation>Du må gjenoppbygge databasen ved hjelp av -reindex for å gå tilbake til ubeskåret modus. Dette vil laste ned hele blokkjeden på nytt.</translation>
     </message>
     <message>
+        <source>Error loading %s: You can't disable HD on an already existing HD wallet</source>
+        <translation>Feil ved innlasting av %s: Du kan ikke skru av HD på ei HD-lommebok som allerede finnes</translation>
+    </message>
+    <message>
         <source>Error reading from database, shutting down.</source>
         <translation>Feil ved lesing fra database, stenger ned.</translation>
     </message>
     <message>
         <source>Error upgrading chainstate database</source>
         <translation>Feil ved oppgradering av kjedetilstandsdatabase</translation>
-    </message>
-    <message>
-        <source>Error: Disk space is low for %s</source>
-        <translation>Feil: Ikke nok ledig diskplass for %s</translation>
     </message>
     <message>
         <source>Information</source>
@@ -3433,12 +3368,6 @@
     <message>
         <source>Specified -walletdir "%s" is not a directory</source>
         <translation>Oppgitt -walletdir "%s" er ikke en katalog</translation>
-    </message>
-    <message>
-        <source>The specified config file %s does not exist
-</source>
-        <translation>Konfigurasjonsfilen %s eksisterer ikke
-</translation>
     </message>
     <message>
         <source>The transaction amount is too small to pay the fee</source>
@@ -3493,6 +3422,10 @@
         <translation>-maxtxfee er satt veldig høyt! Så stort gebyr kan bli betalt ved en enkelt transaksjon.</translation>
     </message>
     <message>
+        <source>Error loading %s: You can't enable HD on an already existing non-HD wallet</source>
+        <translation>Feil ved innlasting av %s: Du kan ikke skru på HD på ei ikke-HD-lommebok som allerede finnes</translation>
+    </message>
+    <message>
         <source>This is the transaction fee you may pay when fee estimates are not available.</source>
         <translation>Dette er transaksjonsgebyret du kan betale når gebyranslag ikke er tilgjengelige.</translation>
     </message>
@@ -3503,6 +3436,18 @@
     <message>
         <source>Total length of network version string (%i) exceeds maximum length (%i). Reduce the number or size of uacomments.</source>
         <translation>Total lengde av nettverks-versionstreng (%i) er over maks lengde (%i). Reduser tallet eller størrelsen av uacomments.</translation>
+    </message>
+    <message>
+        <source>Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
+        <translation>Argumentet -socks er ikke støttet. Det er ikke lenger mulig å sette SOCKS-versjon; bare SOCKS5-proxyer er støttet.</translation>
+    </message>
+    <message>
+        <source>Unsupported argument -whitelistalwaysrelay ignored, use -whitelistrelay and/or -whitelistforcerelay.</source>
+        <translation>Argumentet -whitelistalwaysrelay støttes ikke, og blir ignorert, bruk -whitelistrelay og/eller -whitelistforcerelay.</translation>
+    </message>
+    <message>
+        <source>Warning: Unknown block versions being mined! It's possible unknown rules are in effect</source>
+        <translation>Advarsel: Ukjente blokkversjoner blir utvunnet! Det er mulig ukjente regler er i spill</translation>
     </message>
     <message>
         <source>Warning: Wallet file corrupt, data salvaged! Original %s saved as %s in %s; if your balance or transactions are incorrect you should restore from a backup.</source>

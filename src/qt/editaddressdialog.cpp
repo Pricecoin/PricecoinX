@@ -15,9 +15,9 @@
 EditAddressDialog::EditAddressDialog(Mode _mode, QWidget *parent) :
     QDialog(parent),
     ui(new Ui::EditAddressDialog),
-    mapper(nullptr),
+    mapper(0),
     mode(_mode),
-    model(nullptr)
+    model(0)
 {
     ui->setupUi(this);
 
@@ -108,7 +108,7 @@ void EditAddressDialog::accept()
             break;
         case AddressTableModel::INVALID_ADDRESS:
             QMessageBox::warning(this, windowTitle(),
-                tr("The entered address \"%1\" is not a valid Pricecoinx address.").arg(ui->addressEdit->text()),
+                tr("The entered address \"%1\" is not a valid PricecoinX address.").arg(ui->addressEdit->text()),
                 QMessageBox::Ok, QMessageBox::Ok);
             break;
         case AddressTableModel::DUPLICATE_ADDRESS:

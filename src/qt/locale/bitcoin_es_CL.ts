@@ -66,11 +66,11 @@
         <translation>Recibiendo direcciones</translation>
     </message>
     <message>
-        <source>These are your Pricecoinx addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Estas son tus direcciones de Pricecoinx para recibir pagos. Siempre revise el monto y la dirección de envío antes de enviar criptomonedas.</translation>
+        <source>These are your PricecoinX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Estas son tus direcciones de PricecoinX para recibir pagos. Siempre revise el monto y la dirección de envío antes de enviar criptomonedas.</translation>
     </message>
     <message>
-        <source>These are your Pricecoinx addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your PricecoinX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Estas son tus direcciones para recibir pagos. Es recomendable utilizar una nueva dirección para cada transacción.</translation>
     </message>
     <message>
@@ -188,6 +188,10 @@
         <translation>Billetera codificada</translation>
     </message>
     <message>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your pricecoinxs from being stolen by malware infecting your computer.</source>
+        <translation>%1 se cerrará para finalizar el proceso de encriptación. Recuerda que encriptar tu billetera no protege completamente a tus pricecoinxs de ser robados por virus y malwares en tu computadora.</translation>
+    </message>
+    <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
         <translation>IMPORTANTE: Cualquier respaldo anterior que hayas hecho del archivo de tu billetera debe ser reemplazado por el nuevo archivo encriptado que has generado. Por razones de seguridad, todos los respaldos realizados anteriormente serán inutilizables al momento de que utilices tu nueva billetera encriptada.</translation>
     </message>
@@ -250,6 +254,10 @@
         <translation>&amp;Vista general</translation>
     </message>
     <message>
+        <source>Node</source>
+        <translation>Nodo</translation>
+    </message>
+    <message>
         <source>Show general overview of wallet</source>
         <translation>Muestra una vista general de la billetera</translation>
     </message>
@@ -306,6 +314,14 @@
         <translation>&amp;Cambiar la contraseña...</translation>
     </message>
     <message>
+        <source>&amp;Sending addresses...</source>
+        <translation>Mandando direcciones</translation>
+    </message>
+    <message>
+        <source>&amp;Receiving addresses...</source>
+        <translation>Recibiendo direcciones</translation>
+    </message>
+    <message>
         <source>Open &amp;URI...</source>
         <translation>Abrir y url...</translation>
     </message>
@@ -330,7 +346,7 @@
         <translation>Cargando el index de bloques...</translation>
     </message>
     <message>
-        <source>Send coins to a Pricecoinx address</source>
+        <source>Send coins to a PricecoinX address</source>
         <translation>Enviar monedas a una dirección pricecoinx</translation>
     </message>
     <message>
@@ -354,8 +370,12 @@
         <translation>Verificar mensaje....</translation>
     </message>
     <message>
-        <source>Pricecoinx</source>
-        <translation>Pricecoinx</translation>
+        <source>PricecoinX</source>
+        <translation>PricecoinX</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Cartera</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -378,12 +398,12 @@
         <translation>Cifrar las claves privadas de su monedero</translation>
     </message>
     <message>
-        <source>Sign messages with your Pricecoinx addresses to prove you own them</source>
+        <source>Sign messages with your PricecoinX addresses to prove you own them</source>
         <translation>Firmar un mensaje para provar que usted es dueño de esta dirección</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Pricecoinx addresses</source>
-        <translation>Verificar mensajes comprobando que están firmados con direcciones Pricecoinx concretas</translation>
+        <source>Verify messages to ensure they were signed with specified PricecoinX addresses</source>
+        <translation>Verificar mensajes comprobando que están firmados con direcciones PricecoinX concretas</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -422,8 +442,8 @@
         <translation>&amp;Opciones de linea de comando</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Pricecoinx network</source>
-        <translation><numerusform>%n conexión activa hacia la red Pricecoinx</numerusform><numerusform>%n conexiones activas hacia la red Pricecoinx</numerusform></translation>
+        <source>%n active connection(s) to PricecoinX network</source>
+        <translation><numerusform>%n conexión activa hacia la red PricecoinX</numerusform><numerusform>%n conexiones activas hacia la red PricecoinX</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -466,13 +486,8 @@
         <translation>Actualizado</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Pricecoinx command-line options</source>
-        <translation>Mostrar el mensaje de ayuda %1 para obtener una lista de los posibles comandos de Pricecoinx</translation>
-    </message>
-    <message>
-        <source>&amp;Window</source>
-        <translation>y windows
-</translation>
+        <source>Show the %1 help message to get a list with possible PricecoinX command-line options</source>
+        <translation>Mostrar el mensaje de ayuda %1 para obtener una lista de los posibles comandos de PricecoinX</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -541,8 +556,8 @@
         <translation>La billetera esta &lt;b&gt;codificada&lt;/b&gt; y actualmente &lt;b&gt;bloqueda&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Pricecoinx can no longer continue safely and will quit.</source>
-        <translation>Ha ocurrido un error fatal. Pricecoinx no puede seguir seguro y se cerrará.</translation>
+        <source>A fatal error occurred. PricecoinX can no longer continue safely and will quit.</source>
+        <translation>Ha ocurrido un error fatal. PricecoinX no puede seguir seguro y se cerrará.</translation>
     </message>
 </context>
 <context>
@@ -732,8 +747,8 @@
         <translation>Editar dirección de envio</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Pricecoinx address.</source>
-        <translation>La dirección introducida "%1" no es una dirección Pricecoinx valida.</translation>
+        <source>The entered address "%1" is not a valid PricecoinX address.</source>
+        <translation>La dirección introducida "%1" no es una dirección PricecoinX valida.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -817,8 +832,8 @@
         <translation>usar un directorio de datos personalizado:</translation>
     </message>
     <message>
-        <source>Pricecoinx</source>
-        <translation>Pricecoinx</translation>
+        <source>PricecoinX</source>
+        <translation>PricecoinX</translation>
     </message>
     <message>
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
@@ -829,8 +844,8 @@
         <translation>Aproximadamente %1 GB de información será almacenado en este directorio.</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Pricecoinx block chain.</source>
-        <translation>%1 descargará y almacenará una copia del blockchain de Pricecoinx.</translation>
+        <source>%1 will download and store a copy of the PricecoinX block chain.</source>
+        <translation>%1 descargará y almacenará una copia del blockchain de PricecoinX.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -899,7 +914,11 @@
         <source>Hide</source>
         <translation>Ocultar</translation>
     </message>
-    </context>
+    <message>
+        <source>Unknown. Syncing Headers (%1)...</source>
+        <translation>Desconocido. Sincronizando cabeceras (%1)...</translation>
+    </message>
+</context>
 <context>
     <name>OpenURIDialog</name>
     <message>
@@ -946,6 +965,10 @@
         <translation>Tamaño del caché de la base de &amp;datos</translation>
     </message>
     <message>
+        <source>MB</source>
+        <translation>MB</translation>
+    </message>
+    <message>
         <source>Number of script &amp;verification threads</source>
         <translation>Número de hilos de &amp;verificación de scripts</translation>
     </message>
@@ -964,6 +987,10 @@
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
         <translation>URLs de terceros (por ejemplo, un explorador de bloques) que aparecen en la pestaña de transacciones como elementos del menú contextual. El %s en la URL es reemplazado por el valor hash de la transacción. Se pueden separar múltiples URLs por una barra vertical |.</translation>
+    </message>
+    <message>
+        <source>Active command-line options that override above options:</source>
+        <translation>Opciones activas de la terminal que tienen preferencia sobre las opciones anteriores:</translation>
     </message>
     <message>
         <source>Open the %1 configuration file from the working directory.</source>
@@ -1002,8 +1029,8 @@
         <translation>Gastar cambio sin confirmar</translation>
     </message>
     <message>
-        <source>Automatically open the Pricecoinx client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abre automáticamente el puerto del cliente Pricecoinx en el router. Esto funciona solo cuando tu router es compatible con UPnP y está habilitado.</translation>
+        <source>Automatically open the PricecoinX client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abre automáticamente el puerto del cliente PricecoinX en el router. Esto funciona solo cuando tu router es compatible con UPnP y está habilitado.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1014,8 +1041,8 @@
         <translation>Aceptar conexiones externas.</translation>
     </message>
     <message>
-        <source>Connect to the Pricecoinx network through a SOCKS5 proxy.</source>
-        <translation>Conectar a la red de Pricecoinx a través de un proxy SOCKS5</translation>
+        <source>Connect to the PricecoinX network through a SOCKS5 proxy.</source>
+        <translation>Conectar a la red de PricecoinX a través de un proxy SOCKS5</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1046,8 +1073,8 @@
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the Pricecoinx network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Conectar a la red de Pricecoinx a través de un proxy SOCKS5 diferente para los servicios anónimos de Tor.</translation>
+        <source>Connect to the PricecoinX network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>Conectar a la red de PricecoinX a través de un proxy SOCKS5 diferente para los servicios anónimos de Tor.</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -1146,8 +1173,8 @@
         <translation>Formulario</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Pricecoinx network after a connection is established, but this process has not completed yet.</source>
-        <translation>La información entregada puede estar desactualizada. Tu billetera se sincroniza automáticamente con la red de Pricecoinx después de establecer una conexión, pero este proceso aún no se ha completado.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the PricecoinX network after a connection is established, but this process has not completed yet.</source>
+        <translation>La información entregada puede estar desactualizada. Tu billetera se sincroniza automáticamente con la red de PricecoinX después de establecer una conexión, pero este proceso aún no se ha completado.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1303,8 +1330,8 @@
         <translation>Cantidad</translation>
     </message>
     <message>
-        <source>Enter a Pricecoinx address (e.g. %1)</source>
-        <translation>Ingresa una dirección de Pricecoinx (Ejemplo: %1)</translation>
+        <source>Enter a PricecoinX address (e.g. %1)</source>
+        <translation>Ingresa una dirección de PricecoinX (Ejemplo: %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1684,8 +1711,8 @@
         <translation>&amp;mensaje</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Pricecoinx network.</source>
-        <translation>Mensaje opcional adjunto a la solicitud de pago, que será mostrado cuando la solicitud sea abierta. Nota: Este mensaje no será enviado con el pago a través de la red Pricecoinx.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the PricecoinX network.</source>
+        <translation>Mensaje opcional adjunto a la solicitud de pago, que será mostrado cuando la solicitud sea abierta. Nota: Este mensaje no será enviado con el pago a través de la red PricecoinX.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -1902,6 +1929,10 @@
         <translation>Ocultar</translation>
     </message>
     <message>
+        <source>(read the tooltip)</source>
+        <translation>(leer la sugerencia)</translation>
+    </message>
+    <message>
         <source>Recommended:</source>
         <translation>Recomendado:</translation>
     </message>
@@ -2030,8 +2061,12 @@
         <translation>Solicitud de pago expirada</translation>
     </message>
     <message>
-        <source>Warning: Invalid Pricecoinx address</source>
-        <translation>Peligro: Dirección de Pricecoinx inválida</translation>
+        <source>Pay only the required fee of %1</source>
+        <translation>Pagar únicamente la comisión requerida de %1</translation>
+    </message>
+    <message>
+        <source>Warning: Invalid PricecoinX address</source>
+        <translation>Peligro: Dirección de PricecoinX inválida</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2073,8 +2108,8 @@
         <translation>Este es un pago normal</translation>
     </message>
     <message>
-        <source>The Pricecoinx address to send the payment to</source>
-        <translation>Dirección Pricecoinx a enviar el pago</translation>
+        <source>The PricecoinX address to send the payment to</source>
+        <translation>Dirección PricecoinX a enviar el pago</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2154,8 +2189,8 @@
         <translation>&amp;Firmar Mensaje</translation>
     </message>
     <message>
-        <source>The Pricecoinx address to sign the message with</source>
-        <translation>Dirección Pricecoinx con la que firmar el mensaje</translation>
+        <source>The PricecoinX address to sign the message with</source>
+        <translation>Dirección PricecoinX con la que firmar el mensaje</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2186,7 +2221,7 @@
         <translation>Copiar la firma actual al portapapeles del sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Pricecoinx address</source>
+        <source>Sign the message to prove you own this PricecoinX address</source>
         <translation>Firmar un mensjage para probar que usted es dueño de esta dirección</translation>
     </message>
     <message>
@@ -2206,12 +2241,12 @@
         <translation>&amp;Firmar Mensaje</translation>
     </message>
     <message>
-        <source>The Pricecoinx address the message was signed with</source>
-        <translation>La dirección Pricecoinx con la que se firmó el mensaje</translation>
+        <source>The PricecoinX address the message was signed with</source>
+        <translation>La dirección PricecoinX con la que se firmó el mensaje</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Pricecoinx address</source>
-        <translation>Verifica el mensaje para asegurar que fue firmado con la dirección de Pricecoinx especificada.</translation>
+        <source>Verify the message to ensure it was signed with the specified PricecoinX address</source>
+        <translation>Verifica el mensaje para asegurar que fue firmado con la dirección de PricecoinX especificada.</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2704,9 +2739,6 @@
     </message>
 </context>
 <context>
-    <name>WalletController</name>
-    </context>
-<context>
     <name>WalletFrame</name>
     <message>
         <source>No wallet has been loaded.</source>
@@ -2755,7 +2787,7 @@
         <source>Could not commit transaction</source>
         <translation>No se pudo confirmar la transacción</translation>
     </message>
-    </context>
+</context>
 <context>
     <name>WalletView</name>
     <message>
@@ -2818,7 +2850,7 @@
         <translation>No se ha podido iniciar el servidor HTTP. Ver debug log para detalles.</translation>
     </message>
     <message>
-        <source>Pricecoinx Core</source>
+        <source>PricecoinX Core</source>
         <translation>pricecoinx core</translation>
     </message>
     <message>
@@ -2946,12 +2978,28 @@
         <translation>El cálculo de la comisión de transacción y del cambio han fallado</translation>
     </message>
     <message>
+        <source>Unsupported argument -benchmark ignored, use -debug=bench.</source>
+        <translation>El argumento -benchmark no es soportado y ha sido ignorado, usa -debug=bench</translation>
+    </message>
+    <message>
+        <source>Unsupported argument -debugnet ignored, use -debug=net.</source>
+        <translation>El argumento -debugnet no es soportado, usa -debug=ned.</translation>
+    </message>
+    <message>
+        <source>Unsupported argument -tor found, use -onion.</source>
+        <translation>El argumento -tor no es soportado, usa -onion.</translation>
+    </message>
+    <message>
         <source>Upgrading UTXO database</source>
         <translation>Actualizando la base de datos UTXO</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
         <translation>Verificando bloques...</translation>
+    </message>
+    <message>
+        <source>Error loading %s: You can't disable HD on an already existing HD wallet</source>
+        <translation>Error cargando %s: No puedes deshabilitar HD en un monedero HD ya existente</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>
@@ -3030,12 +3078,28 @@
         <translation>-maxtxfee tiene un valor muy elevado! Comisiones muy grandes podrían ser pagadas en una única transacción.</translation>
     </message>
     <message>
+        <source>Error loading %s: You can't enable HD on an already existing non-HD wallet</source>
+        <translation>Error cargando %s: No puedes habilitar HD en un monedero no HD ya existente</translation>
+    </message>
+    <message>
         <source>This is the transaction fee you may pay when fee estimates are not available.</source>
         <translation>Impuesto por transacción que pagarás cuando la estimación de impuesto no esté disponible.</translation>
     </message>
     <message>
         <source>Total length of network version string (%i) exceeds maximum length (%i). Reduce the number or size of uacomments.</source>
         <translation>La longitud total de la cadena de versión de red ( %i ) supera la longitud máxima ( %i ) . Reducir el número o tamaño de uacomments .</translation>
+    </message>
+    <message>
+        <source>Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
+        <translation>Argumento -socks no soportado. La configuración de la versión SOCKS ya no es posible, sólo los proxies SOCKS5 son compatibles.</translation>
+    </message>
+    <message>
+        <source>Unsupported argument -whitelistalwaysrelay ignored, use -whitelistrelay and/or -whitelistforcerelay.</source>
+        <translation>Argumento -whitelistalwaysrelay no soportado ha sido ignorado, utiliza -whitelistrelay y/o -whitelistforcerelay</translation>
+    </message>
+    <message>
+        <source>Warning: Unknown block versions being mined! It's possible unknown rules are in effect</source>
+        <translation>Advertencia: Se están minando versiones de bloques desconocidas! Es posible que reglas desconocidas estén activas</translation>
     </message>
     <message>
         <source>Warning: Wallet file corrupt, data salvaged! Original %s saved as %s in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
