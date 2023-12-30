@@ -66,12 +66,12 @@
         <translation>Διευθύνσεις λήψης</translation>
     </message>
     <message>
-        <source>These are your Pricecoinx addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Αυτές είναι οι Pricecoinx διευθύνσεις σας για να στέλνετε πληρωμές. Να ελέγχετε πάντα το ποσό, καθώς και τη διεύθυνση παραλήπτη πριν στείλετε νομίσματα.</translation>
+        <source>These are your PricecoinX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Αυτές είναι οι PricecoinX διευθύνσεις σας για να στέλνετε πληρωμές. Να ελέγχετε πάντα το ποσό, καθώς και τη διεύθυνση παραλήπτη πριν στείλετε νομίσματα.</translation>
     </message>
     <message>
-        <source>These are your Pricecoinx addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Αυτές είναι οι Pricecoinx διευθύνσεις σας για να λαμβάνετε πληρωμές. Προτείνετε να χρησιμοποιείτε μια νέα διεύθυνση παραλήπτη για κάθε συναλλαγή.</translation>
+        <source>These are your PricecoinX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Αυτές είναι οι PricecoinX διευθύνσεις σας για να λαμβάνετε πληρωμές. Προτείνετε να χρησιμοποιείτε μια νέα διεύθυνση παραλήπτη για κάθε συναλλαγή.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -188,6 +188,10 @@
         <translation>Πορτοφόλι κρυπτογραφήθηκε</translation>
     </message>
     <message>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your pricecoinxs from being stolen by malware infecting your computer.</source>
+        <translation>%1 θα κλείσει τώρα για να τελειώσει η διαδικασία κρυπτογράφησης. Να θυμάστε ότι κρυπτογραφόντας το πορτοφόλι σας δεν μπορείτε να προστατεύσετε πλήρως τα pricecoinx σας απο κλοπή μέσω malware που μπορεί να προσβάλει τον υπολογιστή σας.</translation>
+    </message>
+    <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
         <translation>ΣΗΜΑΝΤΙΚΟ: Τα προηγούμενα αντίγραφα ασφαλείας που έχετε κάνει από το αρχείο του πορτοφόλιου σας θα πρέπει να αντικατασταθουν με το νέο που δημιουργείται, κρυπτογραφημένο αρχείο πορτοφόλιου. Για λόγους ασφαλείας, τα προηγούμενα αντίγραφα ασφαλείας του μη κρυπτογραφημένου αρχείου πορτοφόλιου θα καταστουν άχρηστα μόλις αρχίσετε να χρησιμοποιείτε το νέο κρυπτογραφημένο πορτοφόλι. </translation>
     </message>
@@ -230,11 +234,7 @@
         <source>IP/Netmask</source>
         <translation>IP/Netmask</translation>
     </message>
-    <message>
-        <source>Banned Until</source>
-        <translation>Απαγορευμένο έως</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>BitcoinGUI</name>
     <message>
@@ -248,6 +248,10 @@
     <message>
         <source>&amp;Overview</source>
         <translation>&amp;Επισκόπηση</translation>
+    </message>
+    <message>
+        <source>Node</source>
+        <translation>Κόμβος</translation>
     </message>
     <message>
         <source>Show general overview of wallet</source>
@@ -306,6 +310,14 @@
         <translation>&amp;Άλλαξε Φράση Πρόσβασης</translation>
     </message>
     <message>
+        <source>&amp;Sending addresses...</source>
+        <translation>Διευθύνσεις αποστολής</translation>
+    </message>
+    <message>
+        <source>&amp;Receiving addresses...</source>
+        <translation>Διευθύνσεις λήψης</translation>
+    </message>
+    <message>
         <source>Open &amp;URI...</source>
         <translation>'Ανοιγμα &amp;URI</translation>
     </message>
@@ -326,15 +338,11 @@
         <translation>Κάντε κλικ για να ενεργοποιήσετε τo δίκτυο ξανά.</translation>
     </message>
     <message>
-        <source>Syncing Headers (%1%)...</source>
-        <translation>Συγχρονισμός Επικεφαλίδων (%1%)...</translation>
-    </message>
-    <message>
         <source>Reindexing blocks on disk...</source>
         <translation>Φόρτωση ευρετηρίου μπλοκ στον σκληρό δίσκο...</translation>
     </message>
     <message>
-        <source>Send coins to a Pricecoinx address</source>
+        <source>Send coins to a PricecoinX address</source>
         <translation>Στείλε νομίσματα σε μια διεύθυνση pricecoinx</translation>
     </message>
     <message>
@@ -358,8 +366,12 @@
         <translation>&amp;Επιβεβαίωση μηνύματος</translation>
     </message>
     <message>
-        <source>Pricecoinx</source>
-        <translation>Pricecoinx</translation>
+        <source>PricecoinX</source>
+        <translation>PricecoinX</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Πορτοφόλι</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -382,12 +394,12 @@
         <translation>Κρυπτογραφήστε τα ιδιωτικά κλειδιά που ανήκουν στο πορτοφόλι σας </translation>
     </message>
     <message>
-        <source>Sign messages with your Pricecoinx addresses to prove you own them</source>
+        <source>Sign messages with your PricecoinX addresses to prove you own them</source>
         <translation>Υπογράψτε ένα μήνυμα για να βεβαιώσετε πως είστε ο κάτοχος αυτής της διεύθυνσης</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Pricecoinx addresses</source>
-        <translation>Υπογράψτε ένα μήνυμα για ν' αποδείξετε πως ανήκει μια συγκεκριμένη διεύθυνση Pricecoinx</translation>
+        <source>Verify messages to ensure they were signed with specified PricecoinX addresses</source>
+        <translation>Υπογράψτε ένα μήνυμα για ν' αποδείξετε πως ανήκει μια συγκεκριμένη διεύθυνση PricecoinX</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -462,18 +474,6 @@
         <translation>Ενημερωμένο</translation>
     </message>
     <message>
-        <source>default wallet</source>
-        <translation>Προεπιλεγμένο πορτοφόλι</translation>
-    </message>
-    <message>
-        <source>&amp;Window</source>
-        <translation>&amp;Παράθυρο</translation>
-    </message>
-    <message>
-        <source>Minimize</source>
-        <translation>Ελαχιστοποίηση</translation>
-    </message>
-    <message>
         <source>Catching up...</source>
         <translation>Ενημέρωση...</translation>
     </message>
@@ -487,12 +487,6 @@
         <source>Amount: %1
 </source>
         <translation>Ποσό: %1
-</translation>
-    </message>
-    <message>
-        <source>Wallet: %1
-</source>
-        <translation>Πορτοφόλι: %1
 </translation>
     </message>
     <message>
@@ -676,8 +670,8 @@
         <translation> Επεξεργασία διεύθυνσης αποστολής</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Pricecoinx address.</source>
-        <translation>Η διεύθυνση "%1" δεν είναι έγκυρη Pricecoinx διεύθυνση.</translation>
+        <source>The entered address "%1" is not a valid PricecoinX address.</source>
+        <translation>Η διεύθυνση "%1" δεν είναι έγκυρη PricecoinX διεύθυνση.</translation>
     </message>
     <message>
         <source>Address "%1" already exists as a receiving address with label "%2" and so cannot be added as a sending address.</source>
@@ -730,10 +724,6 @@
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About %1</source>
-        <translation>Σχετικά %1</translation>
-    </message>
-    <message>
         <source>Command-line options</source>
         <translation>Επιλογές γραμμής εντολών</translation>
     </message>
@@ -753,8 +743,8 @@
         <translation>Προσαρμογή του φακέλου δεδομένων: </translation>
     </message>
     <message>
-        <source>Pricecoinx</source>
-        <translation>Pricecoinx</translation>
+        <source>PricecoinX</source>
+        <translation>PricecoinX</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -826,6 +816,10 @@
         <translation>Μέγεθος κρυφής μνήμης βάσης δεδομένων.</translation>
     </message>
     <message>
+        <source>MB</source>
+        <translation>MB</translation>
+    </message>
+    <message>
         <source>Number of script &amp;verification threads</source>
         <translation>Αριθμός script και γραμμές επαλήθευσης </translation>
     </message>
@@ -842,6 +836,10 @@
         <translation>URLs από τρίτους (π.χ. ένας εξερευνητής μπλοκ) τα οποία εμφανίζονται στην καρτέλα συναλλαγών ως στοιχεία μενού. Το %s στα URL αντικαθίσταται από την τιμή της κατατεμαχισμένης συναλλαγής.</translation>
     </message>
     <message>
+        <source>Active command-line options that override above options:</source>
+        <translation>Ενεργές επιλογές γραμμής-εντολών που παρακάμπτουν τις παραπάνω επιλογές:</translation>
+    </message>
+    <message>
         <source>Open Configuration File</source>
         <translation>Άνοιγμα Αρχείου Ρυθμίσεων</translation>
     </message>
@@ -856,10 +854,6 @@
     <message>
         <source>&amp;Network</source>
         <translation>&amp;Δίκτυο</translation>
-    </message>
-    <message>
-        <source>GB</source>
-        <translation>GB</translation>
     </message>
     <message>
         <source>(0 = auto, &lt;0 = leave that many cores free)</source>
@@ -886,16 +880,16 @@
         <translation>&amp;Ξόδεμα μη επικυρωμένων ρέστων</translation>
     </message>
     <message>
-        <source>Automatically open the Pricecoinx client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Αυτόματο άνοιγμα των θυρών Pricecoinx στον δρομολογητή. Λειτουργεί μόνο αν ο δρομολογητής σας υποστηρίζει τη λειτουργία UPnP.</translation>
+        <source>Automatically open the PricecoinX client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Αυτόματο άνοιγμα των θυρών PricecoinX στον δρομολογητή. Λειτουργεί μόνο αν ο δρομολογητής σας υποστηρίζει τη λειτουργία UPnP.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Απόδοση θυρών με χρήστη &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Pricecoinx network through a SOCKS5 proxy.</source>
-        <translation>Σύνδεση στο δίκτυο Pricecoinx μέσω διαμεσολαβητή SOCKS5 (π.χ. για σύνδεση μέσω Tor)</translation>
+        <source>Connect to the PricecoinX network through a SOCKS5 proxy.</source>
+        <translation>Σύνδεση στο δίκτυο PricecoinX μέσω διαμεσολαβητή SOCKS5 (π.χ. για σύνδεση μέσω Tor)</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -912,18 +906,6 @@
     <message>
         <source>Port of the proxy (e.g. 9050)</source>
         <translation>Θύρα διαμεσολαβητή</translation>
-    </message>
-    <message>
-        <source>IPv4</source>
-        <translation>IPv4</translation>
-    </message>
-    <message>
-        <source>IPv6</source>
-        <translation>IPv6</translation>
-    </message>
-    <message>
-        <source>Tor</source>
-        <translation>Tor</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -1005,8 +987,8 @@
         <translation>Φόρμα</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Pricecoinx network after a connection is established, but this process has not completed yet.</source>
-        <translation>Οι πληροφορίες που εμφανίζονται μπορεί να είναι ξεπερασμένες. Το πορτοφόλι σας συγχρονίζεται αυτόματα με το δίκτυο Pricecoinx μετά από μια σύνδεση, αλλά αυτή η διαδικασία δεν έχει ακόμη ολοκληρωθεί. </translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the PricecoinX network after a connection is established, but this process has not completed yet.</source>
+        <translation>Οι πληροφορίες που εμφανίζονται μπορεί να είναι ξεπερασμένες. Το πορτοφόλι σας συγχρονίζεται αυτόματα με το δίκτυο PricecoinX μετά από μια σύνδεση, αλλά αυτή η διαδικασία δεν έχει ακόμη ολοκληρωθεί. </translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1114,8 +1096,8 @@
         <translation>Ποσό</translation>
     </message>
     <message>
-        <source>Enter a Pricecoinx address (e.g. %1)</source>
-        <translation>Εισάγετε μια διεύθυνση Pricecoinx (π.χ. %1)</translation>
+        <source>Enter a PricecoinX address (e.g. %1)</source>
+        <translation>Εισάγετε μια διεύθυνση PricecoinX (π.χ. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1227,10 +1209,6 @@
         <translation>Τρέχον αριθμός μπλοκ</translation>
     </message>
     <message>
-        <source>Memory usage</source>
-        <translation>χρήση Μνήμης</translation>
-    </message>
-    <message>
         <source>Received</source>
         <translation>Παραλήφθησαν</translation>
     </message>
@@ -1249,14 +1227,6 @@
     <message>
         <source>Version</source>
         <translation>Έκδοση</translation>
-    </message>
-    <message>
-        <source>Decrease font size</source>
-        <translation>Μείωση μεγέθους γραμματοσειράς</translation>
-    </message>
-    <message>
-        <source>Increase font size</source>
-        <translation>Αύξηση μεγέθους γραμματοσειράς</translation>
     </message>
     <message>
         <source>Services</source>
@@ -1319,22 +1289,6 @@
         <translation>Καθαρισμός κονσόλας</translation>
     </message>
     <message>
-        <source>1 &amp;hour</source>
-        <translation>1 &amp;ώρα</translation>
-    </message>
-    <message>
-        <source>1 &amp;day</source>
-        <translation>1 &amp;μέρα</translation>
-    </message>
-    <message>
-        <source>1 &amp;week</source>
-        <translation>1 &amp;εβδομάδα</translation>
-    </message>
-    <message>
-        <source>1 &amp;year</source>
-        <translation>1 &amp;χρόνος</translation>
-    </message>
-    <message>
         <source>via %1</source>
         <translation>μέσω %1</translation>
     </message>
@@ -1349,14 +1303,6 @@
     <message>
         <source>Outbound</source>
         <translation>Εξερχόμενα</translation>
-    </message>
-    <message>
-        <source>Yes</source>
-        <translation>Ναι</translation>
-    </message>
-    <message>
-        <source>No</source>
-        <translation>Όχι</translation>
     </message>
     <message>
         <source>Unknown</source>
@@ -1410,10 +1356,6 @@
         <translation>Αντιγραφή ετικέτας</translation>
     </message>
     <message>
-        <source>Copy message</source>
-        <translation>Αντιγραφή μηνύματος</translation>
-    </message>
-    <message>
         <source>Copy amount</source>
         <translation>Αντιγραφή ποσού</translation>
     </message>
@@ -1437,24 +1379,12 @@
         <translation>&amp;Αποθήκευση εικόνας...</translation>
     </message>
     <message>
-        <source>Payment information</source>
-        <translation>Πληροφορίες πληρωμής</translation>
-    </message>
-    <message>
         <source>Address</source>
         <translation>Διεύθυνση</translation>
     </message>
     <message>
-        <source>Amount</source>
-        <translation>Ποσό</translation>
-    </message>
-    <message>
         <source>Label</source>
         <translation>Ετικέτα</translation>
-    </message>
-    <message>
-        <source>Message</source>
-        <translation>Μήνυμα</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -1470,10 +1400,6 @@
     <message>
         <source>Label</source>
         <translation>Ετικέτα</translation>
-    </message>
-    <message>
-        <source>Message</source>
-        <translation>Μήνυμα</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1603,10 +1529,6 @@
         <translation>Αντιγραφή τελών</translation>
     </message>
     <message>
-        <source>or</source>
-        <translation>ή</translation>
-    </message>
-    <message>
         <source>Transaction fee</source>
         <translation>Κόστος συναλλαγής</translation>
     </message>
@@ -1638,8 +1560,8 @@
         <translation>Αυτή είναι μια απλή πληρωμή.</translation>
     </message>
     <message>
-        <source>The Pricecoinx address to send the payment to</source>
-        <translation>Η διεύθυνση Pricecoinx που θα σταλεί η πληρωμή</translation>
+        <source>The PricecoinX address to send the payment to</source>
+        <translation>Η διεύθυνση PricecoinX που θα σταλεί η πληρωμή</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1676,11 +1598,7 @@
     </context>
 <context>
     <name>SendConfirmationDialog</name>
-    <message>
-        <source>Yes</source>
-        <translation>Ναι</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>ShutdownWindow</name>
     <message>
@@ -1699,8 +1617,8 @@
         <translation>&amp;Υπογραφή Μηνύματος</translation>
     </message>
     <message>
-        <source>The Pricecoinx address to sign the message with</source>
-        <translation>Διεύθυνση Pricecoinx που θα σταλεί το μήνυμα</translation>
+        <source>The PricecoinX address to sign the message with</source>
+        <translation>Διεύθυνση PricecoinX που θα σταλεί το μήνυμα</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1731,8 +1649,8 @@
         <translation>Αντιγραφή της επιλεγμένης υπογραφής στο πρόχειρο του συστήματος</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Pricecoinx address</source>
-        <translation>Υπογράψτε το μήνυμα για να αποδείξετε πως σας ανήκει η συγκεκριμένη διεύθυνση Pricecoinx</translation>
+        <source>Sign the message to prove you own this PricecoinX address</source>
+        <translation>Υπογράψτε το μήνυμα για να αποδείξετε πως σας ανήκει η συγκεκριμένη διεύθυνση PricecoinX</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1751,12 +1669,12 @@
         <translation>&amp;Επιβεβαίωση Mηνύματος</translation>
     </message>
     <message>
-        <source>The Pricecoinx address the message was signed with</source>
-        <translation>Διεύθυνση Pricecoinx με την οποία έχει υπογραφεί το μήνυμα</translation>
+        <source>The PricecoinX address the message was signed with</source>
+        <translation>Διεύθυνση PricecoinX με την οποία έχει υπογραφεί το μήνυμα</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Pricecoinx address</source>
-        <translation>Επαληθεύστε το μήνυμα για να αποδείξετε πως υπογράφθηκε από τη συγκεκριμένη διεύθυνση Pricecoinx</translation>
+        <source>Verify the message to ensure it was signed with the specified PricecoinX address</source>
+        <translation>Επαληθεύστε το μήνυμα για να αποδείξετε πως υπογράφθηκε από τη συγκεκριμένη διεύθυνση PricecoinX</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1842,14 +1760,6 @@
     <message>
         <source>Transaction fee</source>
         <translation>Κόστος συναλλαγής</translation>
-    </message>
-    <message>
-        <source>Message</source>
-        <translation>Μήνυμα</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>Ποσό</translation>
     </message>
     </context>
 <context>
@@ -1937,38 +1847,19 @@
     </message>
 </context>
 <context>
-    <name>WalletController</name>
-    </context>
-<context>
     <name>WalletFrame</name>
     </context>
 <context>
     <name>WalletModel</name>
-    <message>
-        <source>Send Coins</source>
-        <translation>Αποστολή νομισμάτων</translation>
-    </message>
-    <message>
-        <source>Increase:</source>
-        <translation>Αύξηση:</translation>
-    </message>
-    <message>
-        <source>default wallet</source>
-        <translation>Προεπιλεγμένο πορτοφόλι</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>WalletView</name>
-    <message>
-        <source>Cancel</source>
-        <translation>Ακύρωση</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Pricecoinx Core</source>
-        <translation>Pricecoinx Core</translation>
+        <source>PricecoinX Core</source>
+        <translation>PricecoinX Core</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>

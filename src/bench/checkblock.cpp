@@ -17,13 +17,13 @@ namespace block_bench {
 // a block off the wire, but before we can relay the block on to peers using
 // compact block relay.
 
-// Pricecoinx uses block height 878439, hash 0babe680f55a55d54339511226755f0837261da89a4e78eba4d6436a63026df8
+// PricecoinX uses block height 878439, hash 0babe680f55a55d54339511226755f0837261da89a4e78eba4d6436a63026df8
 // which contains 3808 transactions.
 
 static void DeserializeBlockTest(benchmark::State& state)
 {
     CDataStream stream((const char*)block_bench::block413567,
-            (const char*)block_bench::block413567 + sizeof(block_bench::block413567),
+            (const char*)&block_bench::block413567[sizeof(block_bench::block413567)],
             SER_NETWORK, PROTOCOL_VERSION);
     char a = '\0';
     stream.write(&a, 1); // Prevent compaction
@@ -31,15 +31,14 @@ static void DeserializeBlockTest(benchmark::State& state)
     while (state.KeepRunning()) {
         CBlock block;
         stream >> block;
-        bool rewound = stream.Rewind(sizeof(block_bench::block413567));
-        assert(rewound);
+        assert(stream.Rewind(sizeof(block_bench::block413567)));
     }
 }
 
 static void DeserializeAndCheckBlockTest(benchmark::State& state)
 {
     CDataStream stream((const char*)block_bench::block413567,
-            (const char*)block_bench::block413567 + sizeof(block_bench::block413567),
+            (const char*)&block_bench::block413567[sizeof(block_bench::block413567)],
             SER_NETWORK, PROTOCOL_VERSION);
     char a = '\0';
     stream.write(&a, 1); // Prevent compaction
@@ -49,12 +48,10 @@ static void DeserializeAndCheckBlockTest(benchmark::State& state)
     while (state.KeepRunning()) {
         CBlock block; // Note that CBlock caches its checked state, so we need to recreate it here
         stream >> block;
-        bool rewound = stream.Rewind(sizeof(block_bench::block413567));
-        assert(rewound);
+        assert(stream.Rewind(sizeof(block_bench::block413567)));
 
         CValidationState validationState;
-        bool checked = CheckBlock(block, validationState, chainParams->GetConsensus());
-        assert(checked);
+        assert(CheckBlock(block, validationState, chainParams->GetConsensus()));
     }
 }
 

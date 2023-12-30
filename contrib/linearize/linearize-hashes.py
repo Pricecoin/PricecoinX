@@ -7,7 +7,11 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #
 
-from http.client import HTTPConnection
+from __future__ import print_function
+try: # Python 3
+    import http.client as httplib
+except ImportError: # Python 2
+    import httplib
 import json
 import re
 import base64
@@ -27,7 +31,7 @@ class BitcoinRPC:
         authpair = "%s:%s" % (username, password)
         authpair = authpair.encode('utf-8')
         self.authhdr = b"Basic " + base64.b64encode(authpair)
-        self.conn = HTTPConnection(host, port=port, timeout=30)
+        self.conn = httplib.HTTPConnection(host, port=port, timeout=30)
 
     def execute(self, obj):
         try:
@@ -120,7 +124,7 @@ if __name__ == '__main__':
     if 'host' not in settings:
         settings['host'] = '127.0.0.1'
     if 'port' not in settings:
-        settings['port'] = 9332
+        settings['port'] = 2332
     if 'min_height' not in settings:
         settings['min_height'] = 0
     if 'max_height' not in settings:

@@ -1,7 +1,7 @@
-Contributing to Pricecoinx Core
+Contributing to PricecoinX Core
 ============================
 
-The Pricecoinx Core project operates an open contributor model where anyone is
+The PricecoinX Core project operates an open contributor model where anyone is
 welcome to contribute towards development in the form of peer review, testing
 and patches. This document explains the practical process and guidelines for
 contributing.
@@ -17,7 +17,7 @@ release cycle, overall merging, moderation and appointment of maintainers.
 Communication Channels
 ----------------------
 
-Most communication about Pricecoinx Core development happens on IRC, in the
+Most communication about PricecoinX Core development happens on IRC, in the
 #pricecoinx-dev channel on Freenode. The easiest way to participate on IRC is
 with the web client, [webchat.freenode.net](https://webchat.freenode.net/).
 
@@ -60,8 +60,6 @@ your decisions. Further explanation [here](http://chris.beams.io/posts/git-commi
 If a particular commit references another issue, please add the reference. For
 example: `refs #1234` or `fixes #4321`. Using the `fixes` or `closes` keywords
 will cause the corresponding issue to be closed when the pull request is merged.
-
-Commit messages should never contain any `@` mentions.
 
 Please refer to the [Git manual](https://git-scm.com/doc) for more information
 about Git.
@@ -131,10 +129,6 @@ before it will be merged. The basic squashing workflow is shown below.
     # Save and quit.
     git push -f # (force push to GitHub)
 
-Please update the resulting commit message if needed, it should read as a
-coherent message. In most cases this means that you should not just list the
-interim commits.
-
 If you have problems with squashing (or other workflows with `git`), you can
 alternatively enable "Allow edits from maintainers" in the right GitHub
 sidebar and ask for help in the pull request.
@@ -192,11 +186,11 @@ workload on reviewing.
 "Decision Making" Process
 -------------------------
 
-The following applies to code changes to the Pricecoinx Core project (and related
-projects such as libsecp256k1), and is not to be confused with overall Pricecoinx
+The following applies to code changes to the PricecoinX Core project (and related
+projects such as libsecp256k1), and is not to be confused with overall PricecoinX
 Network Protocol consensus changes.
 
-Whether a pull request is merged into Pricecoinx Core rests with the project merge
+Whether a pull request is merged into PricecoinX Core rests with the project merge
 maintainers and ultimately the project lead.
 
 Maintainers will take into consideration if a patch is in line with the general
@@ -214,7 +208,7 @@ In general, all pull requests must:
   - Where bugs are fixed, where possible, there should be unit tests
     demonstrating the bug and also proving the fix. This helps prevent regression.
 
-Patches that change Pricecoinx consensus rules are considerably more involved than
+Patches that change PricecoinX consensus rules are considerably more involved than
 normal because they affect the entire ecosystem and so must be preceded by
 extensive mailing list discussions and have a numbered BIP. While each case will
 be different, one should be prepared to expend more time and effort than for
@@ -255,7 +249,7 @@ higher in terms of discussion and peer review requirements, keeping in mind that
 mistakes could be very costly to the wider community. This includes refactoring
 of consensus critical code.
 
-Where a patch set proposes to change the Pricecoinx consensus, it must have been
+Where a patch set proposes to change the PricecoinX consensus, it must have been
 discussed extensively on the mailing list and IRC, be accompanied by a widely
 discussed BIP and have a generally widely perceived technical consensus of being
 a worthwhile change based on the judgement of the maintainers.
@@ -295,7 +289,7 @@ about:
 Release Policy
 --------------
 
-The project leader is the release manager for each Pricecoinx Core release.
+The project leader is the release manager for each PricecoinX Core release.
 
 Copyright
 ---------

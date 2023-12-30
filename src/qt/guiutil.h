@@ -31,7 +31,6 @@ class QAbstractItemView;
 class QDateTime;
 class QFont;
 class QLineEdit;
-class QProgressDialog;
 class QUrl;
 class QWidget;
 QT_END_NAMESPACE
@@ -116,9 +115,6 @@ namespace GUIUtil
     // Determine whether a widget is hidden behind other windows
     bool isObscured(QWidget *w);
 
-    // Activate, show and raise the widget
-    void bringToFront(QWidget* w);
-
     // Open debug.log
     void openDebugLogfile();
 
@@ -134,7 +130,7 @@ namespace GUIUtil
         Q_OBJECT
 
     public:
-        explicit ToolTipToRichTextFilter(int size_threshold, QObject *parent = nullptr);
+        explicit ToolTipToRichTextFilter(int size_threshold, QObject *parent = 0);
 
     protected:
         bool eventFilter(QObject *obj, QEvent *evt);
@@ -249,9 +245,6 @@ namespace GUIUtil
     private:
         bool eventFilter(QObject *object, QEvent *event);
     };
-
-    // Fix known bugs in QProgressDialog class.
-    void PolishProgressDialog(QProgressDialog* dialog);
 } // namespace GUIUtil
 
 #endif // BITCOIN_QT_GUIUTIL_H

@@ -2,12 +2,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include <chainparams.h>
 #include <index/txindex.h>
 #include <script/standard.h>
 #include <test/test_bitcoin.h>
-#include <util/system.h>
-#include <util/time.h>
+#include <util.h>
+#include <utiltime.h>
 #include <validation.h>
 
 #include <boost/test/unit_test.hpp>
@@ -39,12 +38,6 @@ BOOST_FIXTURE_TEST_CASE(txindex_initial_sync, TestChain100Setup)
         MilliSleep(100);
     }
 
-    // Check that txindex excludes genesis block transactions.
-    const CBlock& genesis_block = Params().GenesisBlock();
-    for (const auto& txn : genesis_block.vtx) {
-        BOOST_CHECK(!txindex.FindTx(txn->GetHash(), block_hash, tx_disk));
-    }
-
     // Check that txindex has all txs that were in the chain before it started.
     for (const auto& txn : m_coinbase_txns) {
         if (!txindex.FindTx(txn->GetHash(), block_hash, tx_disk)) {
@@ -69,13 +62,7 @@ BOOST_FIXTURE_TEST_CASE(txindex_initial_sync, TestChain100Setup)
         }
     }
 
-    // shutdown sequence (c.f. Shutdown() in init.cpp)
-    txindex.Stop();
-
-    threadGroup.interrupt_all();
-    threadGroup.join_all();
-
-    // Rest of shutdown sequence and destructors happen in ~TestingSetup()
+    txindex.Stop(); // Stop thread before calling destructor
 }
 
 BOOST_AUTO_TEST_SUITE_END()

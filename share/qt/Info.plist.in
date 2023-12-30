@@ -17,7 +17,7 @@
   <string>APPL</string>
 
   <key>CFBundleGetInfoString</key>
-  <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@.@CLIENT_VERSION_BUILD@, Copyright © 2009-@COPYRIGHT_YEAR@ @COPYRIGHT_HOLDERS_FINAL@</string>
+  <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@, Copyright © 2009-@COPYRIGHT_YEAR@ @COPYRIGHT_HOLDERS_FINAL@</string>
 
   <key>CFBundleShortVersionString</key>
   <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@</string>
@@ -29,16 +29,16 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>Pricecoinx-Qt</string>
+  <string>PricecoinX-Qt</string>
   
   <key>CFBundleName</key>
-  <string>Pricecoinx-Qt</string>
+  <string>PricecoinX-Qt</string>
 
   <key>LSHasLocalizedDisplayName</key>
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>org.pricecoinx.Pricecoinx-Qt</string>
+  <string>org.pricecoinx.PricecoinX-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -46,7 +46,7 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>org.pricecoinx.PricecoinxPayment</string>
+      <string>org.pricecoinx.PricecoinXPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
         <string>pricecoinx</string>
@@ -60,7 +60,7 @@
       <key>UTTypeIdentifier</key>
       <string>org.pricecoinx.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>Pricecoinx payment request</string>
+      <string>PricecoinX payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>
@@ -95,6 +95,9 @@
     <string>NSApplication</string>
 
   <key>NSHighResolutionCapable</key>
+    <string>True</string>
+
+  <key>LSAppNapIsDisabled</key>
     <string>True</string>
 
   <key>NSRequiresAquaSystemAppearance</key>

@@ -13,9 +13,9 @@ static uint256 ComputeMerkleRootFromBranch(const uint256& leaf, const std::vecto
     uint256 hash = leaf;
     for (std::vector<uint256>::const_iterator it = vMerkleBranch.begin(); it != vMerkleBranch.end(); ++it) {
         if (nIndex & 1) {
-            hash = Hash(it->begin(), it->end(), hash.begin(), hash.end());
+            hash = Hash(BEGIN(*it), END(*it), BEGIN(hash), END(hash));
         } else {
-            hash = Hash(hash.begin(), hash.end(), it->begin(), it->end());
+            hash = Hash(BEGIN(hash), END(hash), BEGIN(*it), END(*it));
         }
         nIndex >>= 1;
     }

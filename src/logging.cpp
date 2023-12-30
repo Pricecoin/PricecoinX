@@ -4,12 +4,10 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include <logging.h>
-#include <util/time.h>
+#include <utiltime.h>
 
 const char * const DEFAULT_DEBUGLOGFILE = "debug.log";
 
-BCLog::Logger& LogInstance()
-{
 /**
  * NOTE: the logger instances is leaked on exit. This is ugly, but will be
  * cleaned up by the OS/libc. Defining a logger as a global object doesn't work
@@ -19,15 +17,11 @@ BCLog::Logger& LogInstance()
  * access the logger. When the shutdown sequence is fully audited and tested,
  * explicit destruction of these objects can be implemented by changing this
  * from a raw pointer to a std::unique_ptr.
- * Since the destructor is never called, the logger and all its members must
- * have a trivial destructor.
  *
  * This method of initialization was originally introduced in
  * ee3374234c60aba2cc4c5cd5cac1c0aefc2d817c.
  */
-    static BCLog::Logger* g_logger{new BCLog::Logger()};
-    return *g_logger;
-}
+BCLog::Logger* const g_logger = new BCLog::Logger();
 
 bool fLogIPs = DEFAULT_LOGIPS;
 
@@ -204,32 +198,9 @@ std::string BCLog::Logger::LogTimestampStr(const std::string &str)
     return strStamped;
 }
 
-namespace BCLog {
-    /** Belts and suspenders: make sure outgoing log messages don't contain
-     * potentially suspicious characters, such as terminal control codes.
-     *
-     * This escapes control characters except newline ('\n') in C syntax.
-     * It escapes instead of removes them to still allow for troubleshooting
-     * issues where they accidentally end up in strings.
-     */
-    std::string LogEscapeMessage(const std::string& str) {
-        std::string ret;
-        for (char ch_in : str) {
-            uint8_t ch = (uint8_t)ch_in;
-            if ((ch >= 32 || ch == '\n') && ch != '\x7f') {
-                ret += ch_in;
-            } else {
-                ret += strprintf("\\x%02x", ch);
-            }
-        }
-        return ret;
-    }
-}
-
 void BCLog::Logger::LogPrintStr(const std::string &str)
 {
-    std::string strEscaped = LogEscapeMessage(str);
-    std::string strTimestamped = LogTimestampStr(strEscaped);
+    std::string strTimestamped = LogTimestampStr(str);
 
     if (m_print_to_console) {
         // print to console
@@ -248,13 +219,13 @@ void BCLog::Logger::LogPrintStr(const std::string &str)
             // reopen the log file, if requested
             if (m_reopen_file) {
                 m_reopen_file = false;
-                FILE* new_fileout = fsbridge::fopen(m_file_path, "a");
-                if (new_fileout) {
-                    setbuf(new_fileout, nullptr); // unbuffered
-                    fclose(m_fileout);
-                    m_fileout = new_fileout;
+                m_fileout = fsbridge::freopen(m_file_path, "a", m_fileout);
+                if (!m_fileout) {
+                    return;
                 }
+                setbuf(m_fileout, nullptr); // unbuffered
             }
+
             FileWriteStr(strTimestamped, m_fileout);
         }
     }
@@ -274,7 +245,7 @@ void BCLog::Logger::ShrinkDebugFile()
     size_t log_size = 0;
     try {
         log_size = fs::file_size(m_file_path);
-    } catch (const fs::filesystem_error&) {}
+    } catch (boost::filesystem::filesystem_error &) {}
 
     // If debug.log file is more than 10% bigger the RECENT_DEBUG_HISTORY_SIZE
     // trim it down by saving only the last RECENT_DEBUG_HISTORY_SIZE bytes

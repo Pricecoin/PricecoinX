@@ -30,10 +30,6 @@
         <translation>Seçili adresi listeden sil</translation>
     </message>
     <message>
-        <source>Enter address or label to search</source>
-        <translation>Aramak için adres veya etiket girin</translation>
-    </message>
-    <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Seçili sekmedeki veriyi dosya olarak dışa aktar</translation>
     </message>
@@ -66,12 +62,12 @@
         <translation>Alınan Adresler</translation>
     </message>
     <message>
-        <source>These are your Pricecoinx addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Bunlar ödeme göndermek için gereken Pricecoinx adreslerinizdir. Para göndermeden önce her zaman miktarı ve alıcı adresi kontrol edin.</translation>
+        <source>These are your PricecoinX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Bunlar ödeme göndermek için gereken PricecoinX adreslerinizdir. Para göndermeden önce her zaman miktarı ve alıcı adresi kontrol edin.</translation>
     </message>
     <message>
-        <source>These are your Pricecoinx addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Bunlar ödeme almak için kullanılacak Pricecoinx adreslerinizdir. Her işlem için yeni bir ödeme alma adresi kullanılması tavsiye edilir.</translation>
+        <source>These are your PricecoinX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Bunlar ödeme almak için kullanılacak PricecoinX adreslerinizdir. Her işlem için yeni bir ödeme alma adresi kullanılması tavsiye edilir.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -136,10 +132,6 @@
         <translation>Yeni parolayı tekrarla</translation>
     </message>
     <message>
-        <source>Show password</source>
-        <translation>Şifreyi göster</translation>
-    </message>
-    <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Yeni parolayı cüzdana girin.&lt;br/&gt;Lütfen &lt;b&gt;on yada daha fazla karakter&lt;/b&gt; veya &lt;b&gt;sekiz yada daha fazla kelime&lt;/b&gt;içeren bir parola kullanın. </translation>
     </message>
@@ -188,16 +180,16 @@
         <translation>Cüzdan Şifrelendi</translation>
     </message>
     <message>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your pricecoinxs from being stolen by malware infecting your computer.</source>
+        <translation>%1 Şifreleme işlemini bitirmek için kapatılacak. Şunu unutmayın ki şampiyon galatasaray ve şifrelemek, pricecoinxlerinizin bilgisayarınıza bulaşan malware yazılımları tarafından çalınmasını tamamen engelleyemez.</translation>
+    </message>
+    <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
         <translation>ÖNEMLİ: Yeni oluşturduğunuz şifrelenmiş cüzdan dosyasını önceki yedeklenmiş cüzdan dosyasıyla değiştirmeniz gerekmektedir. Güvenlik sebeplerinden dolayı yeni, şifrelenmiş cüzdanınızı kullanmaya başlar başlamaz önceki şifrelenmemiş cüzdan yedekleri kullanılmaz hale gelecektir.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
         <translation>Cüzdan şifreleme başarısız oldu</translation>
-    </message>
-    <message>
-        <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
-        <translation>Cüzdan şifreleme dahili bir hata nedeniyle başarısız oldu. Cüzdanınız şifrelenemedi.</translation>
     </message>
     <message>
         <source>The supplied passphrases do not match.</source>
@@ -270,6 +262,14 @@
         <translation>&amp;Cüzdan Yedekleme</translation>
     </message>
     <message>
+        <source>&amp;Sending addresses...</source>
+        <translation>Gönderme adresleri</translation>
+    </message>
+    <message>
+        <source>&amp;Receiving addresses...</source>
+        <translation>Alış adresleri</translation>
+    </message>
+    <message>
         <source>Open &amp;URI...</source>
         <translation>URI'yi aç</translation>
     </message>
@@ -286,8 +286,8 @@
         <translation>Bloklar disk üzerinde yeniden indeksleniyor...</translation>
     </message>
     <message>
-        <source>Send coins to a Pricecoinx address</source>
-        <translation>Pricecoinx adresine madeni para gönderin</translation>
+        <source>Send coins to a PricecoinX address</source>
+        <translation>PricecoinX adresine madeni para gönderin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -302,9 +302,13 @@
         <translation>Onay mesajı...</translation>
     </message>
     <message>
-        <source>Pricecoinx</source>
-        <translation>Pricecoinx
+        <source>PricecoinX</source>
+        <translation>PricecoinX
 </translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Cüzdan</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -349,10 +353,6 @@
     <message>
         <source>Information</source>
         <translation>Bilgi</translation>
-    </message>
-    <message>
-        <source>&amp;Window</source>
-        <translation>Pencere</translation>
     </message>
     <message>
         <source>Date: %1
@@ -458,8 +458,8 @@
         <translation>Gönderim adresini düzenleyin</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Pricecoinx address.</source>
-        <translation>Girilen adres "%1" Pricecoinx adresiyle eşleşmiyor.</translation>
+        <source>The entered address "%1" is not a valid PricecoinX address.</source>
+        <translation>Girilen adres "%1" PricecoinX adresiyle eşleşmiyor.</translation>
     </message>
     <message>
         <source>New key generation failed.</source>
@@ -495,8 +495,8 @@
         <translation>Hoş geldiniz</translation>
     </message>
     <message>
-        <source>Pricecoinx</source>
-        <translation>Pricecoinx
+        <source>PricecoinX</source>
+        <translation>PricecoinX
 </translation>
     </message>
     <message>
@@ -628,7 +628,7 @@
         <translation>Form</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Pricecoinx network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the PricecoinX network after a connection is established, but this process has not completed yet.</source>
         <translation>Gösterilen bilgi geçerli olmayabilir. Bağlantı tekrar sağlandıktan sonra cüzdanınız otomatik olarak senkronize olacaktır. Henüz senkronize olma işlemi tamamlanmadı.</translation>
     </message>
     <message>
@@ -709,8 +709,8 @@
 <context>
     <name>QObject</name>
     <message>
-        <source>Enter a Pricecoinx address (e.g. %1)</source>
-        <translation>Pricecoinx adresinizi girin (örneğin %1)</translation>
+        <source>Enter a PricecoinX address (e.g. %1)</source>
+        <translation>PricecoinX adresinizi girin (örneğin %1)</translation>
     </message>
     <message>
         <source>N/A</source>
@@ -1094,8 +1094,8 @@
         <translation>Coin gönderimini onaylayın</translation>
     </message>
     <message>
-        <source>Warning: Invalid Pricecoinx address</source>
-        <translation>Uyarı: Hatalı Pricecoinx adresi</translation>
+        <source>Warning: Invalid PricecoinX address</source>
+        <translation>Uyarı: Hatalı PricecoinX adresi</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1352,9 +1352,6 @@
     <name>UnitDisplayStatusBarControl</name>
     </context>
 <context>
-    <name>WalletController</name>
-    </context>
-<context>
     <name>WalletFrame</name>
     </context>
 <context>
@@ -1390,8 +1387,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Pricecoinx Core</source>
-        <translation>Pricecoinx Çekirdeği</translation>
+        <source>PricecoinX Core</source>
+        <translation>PricecoinX Çekirdeği</translation>
     </message>
     <message>
         <source>Copyright (C) %i-%i</source>
