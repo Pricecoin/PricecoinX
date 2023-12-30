@@ -1,13 +1,12 @@
 #!/usr/bin/env bash
 #
-# Copyright (c) 2017-2019 The Bitcoin Core developers
+# Copyright (c) 2017 The Bitcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #
 # Check for specified flake8 warnings in python files.
 
 export LC_ALL=C
-export MYPY_CACHE_DIR="${BASE_ROOT_DIR}/test/.mypy_cache"
 
 enabled=(
     E101 # indentation contains mixed spaces and tabs
@@ -39,6 +38,7 @@ enabled=(
     E711 # comparison to None should be 'if cond is None:'
     E714 # test for object identity should be "is not"
     E721 # do not compare types, use "isinstance()"
+    E741 # do not use variables named "l", "O", or "I"
     E742 # do not define classes named "l", "O", or "I"
     E743 # do not define functions named "l", "O", or "I"
     E901 # SyntaxError: invalid syntax
@@ -55,7 +55,6 @@ enabled=(
     F621 # too many expressions in an assignment with star-unpacking
     F622 # two or more starred expressions in an assignment (a, *b, *c = d)
     F631 # assertion test is a tuple, which are always True
-    F632 # use ==/!= to compare str, bytes, and int literals
     F701 # a break statement outside of a while or for loop
     F702 # a continue statement outside of a while or for loop
     F703 # a continue statement in a finally block in a loop
@@ -74,6 +73,7 @@ enabled=(
     W291 # trailing whitespace
     W292 # no newline at end of file
     W293 # blank line contains whitespace
+    W504 # line break after binary operator
     W601 # .has_key() is deprecated, use "in"
     W602 # deprecated form of raising exception
     W603 # "<>" is deprecated, use "!="
@@ -83,27 +83,11 @@ enabled=(
 )
 
 if ! command -v flake8 > /dev/null; then
-    echo "Skipping Python linting since flake8 is not installed."
+    echo "Skipping Python linting since flake8 is not installed. Install by running \"pip3 install flake8\""
     exit 0
 elif PYTHONWARNINGS="ignore" flake8 --version | grep -q "Python 2"; then
-    echo "Skipping Python linting since flake8 is running under Python 2. Install the Python 3 version of flake8."
+    echo "Skipping Python linting since flake8 is running under Python 2. Install the Python 3 version of flake8 by running \"pip3 install flake8\""
     exit 0
 fi
 
-EXIT_CODE=0
-
-if ! PYTHONWARNINGS="ignore" flake8 --ignore=B,C,E,F,I,N,W --select=$(IFS=","; echo "${enabled[*]}") $(
-    if [[ $# == 0 ]]; then
-        git ls-files "*.py"
-    else
-        echo "$@"
-    fi
-); then
-    EXIT_CODE=1
-fi
-
-if ! mypy --ignore-missing-imports $(git ls-files "test/functional/*.py"); then
-    EXIT_CODE=1
-fi
-
-exit $EXIT_CODE
+PYTHONWARNINGS="ignore" flake8 --ignore=B,C,E,F,I,N,W --select=$(IFS=","; echo "${enabled[*]}") "${@:-.}"

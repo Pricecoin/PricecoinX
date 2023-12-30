@@ -1,4 +1,4 @@
-// Copyright (c) 2011-2019 The Bitcoin Core developers
+// Copyright (c) 2011-2018 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -23,6 +23,7 @@ class QFrame;
 class QLineEdit;
 class QMenu;
 class QModelIndex;
+class QSignalMapper;
 class QTableView;
 QT_END_NAMESPACE
 
@@ -60,9 +61,9 @@ public:
     };
 
 private:
-    WalletModel *model{nullptr};
-    TransactionFilterProxy *transactionProxyModel{nullptr};
-    QTableView *transactionView{nullptr};
+    WalletModel *model;
+    TransactionFilterProxy *transactionProxyModel;
+    QTableView *transactionView;
 
     QComboBox *dateWidget;
     QComboBox *typeWidget;
@@ -71,22 +72,21 @@ private:
     QLineEdit *amountWidget;
 
     QMenu *contextMenu;
+    QSignalMapper *mapperThirdPartyTxUrls;
 
     QFrame *dateRangeWidget;
     QDateTimeEdit *dateFrom;
     QDateTimeEdit *dateTo;
-    QAction *abandonAction{nullptr};
-    QAction *bumpFeeAction{nullptr};
-    QAction *copyAddressAction{nullptr};
-    QAction *copyLabelAction{nullptr};
+    QAction *abandonAction;
+    QAction *bumpFeeAction;
 
     QWidget *createDateRangeWidget();
 
-    GUIUtil::TableViewLastColumnResizingFixer *columnResizingFixer{nullptr};
+    GUIUtil::TableViewLastColumnResizingFixer *columnResizingFixer;
 
-    virtual void resizeEvent(QResizeEvent* event) override;
+    virtual void resizeEvent(QResizeEvent* event);
 
-    bool eventFilter(QObject *obj, QEvent *event) override;
+    bool eventFilter(QObject *obj, QEvent *event);
 
 private Q_SLOTS:
     void contextualMenu(const QPoint &);

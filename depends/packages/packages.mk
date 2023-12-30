@@ -1,27 +1,21 @@
-packages:=boost openssl libevent libfmt
+packages:=boost openssl libevent zeromq
 
-qt_packages = zlib
+qt_native_packages = native_protobuf
+qt_packages = qrencode protobuf zlib
 
-qrencode_packages = qrencode
+qt_linux_packages:=qt expat dbus libxcb xcb_proto libXau xproto freetype fontconfig libX11 xextproto libXext xtrans
 
-qt_linux_packages:=qt expat libxcb xcb_proto libXau xproto freetype fontconfig
-qt_android_packages=qt
+rapidcheck_packages = rapidcheck
 
 qt_darwin_packages=qt
 qt_mingw32_packages=qt
 
-bdb_packages=bdb
-sqlite_packages=sqlite
-
-zmq_packages=zeromq
+wallet_packages=bdb
 
 upnp_packages=miniupnpc
-
-multiprocess_packages = libmultiprocess capnp
-multiprocess_native_packages = native_libmultiprocess native_capnp
 
 darwin_native_packages = native_biplist native_ds_store native_mac_alias
 
 ifneq ($(build_os),darwin)
-darwin_native_packages += native_cctools native_libdmg-hfsplus
+darwin_native_packages += native_cctools native_cdrkit native_libdmg-hfsplus
 endif

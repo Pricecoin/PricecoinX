@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
-# Copyright (c) 2016-2019 The Bitcoin Core developers
-# Distributed under the MIT software license, see the accompanying
-# file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 export LC_ALL=C
 TOPDIR=${TOPDIR:-$(git rev-parse --show-toplevel)}
@@ -10,7 +7,7 @@ BUILDDIR=${BUILDDIR:-$TOPDIR}
 BINDIR=${BINDIR:-$BUILDDIR/src}
 MANDIR=${MANDIR:-$TOPDIR/doc/man}
 
-BITCOIND=${BITCOIND:-$BINDIR/litecoind}
+BITCOIND=${BITCOIND:-$BINDIR/pricecoinxd}
 BITCOINCLI=${BITCOINCLI:-$BINDIR/pricecoinx-cli}
 BITCOINTX=${BITCOINTX:-$BINDIR/pricecoinx-tx}
 WALLET_TOOL=${WALLET_TOOL:-$BINDIR/pricecoinx-wallet}
@@ -19,7 +16,7 @@ BITCOINQT=${BITCOINQT:-$BINDIR/qt/pricecoinx-qt}
 [ ! -x $BITCOIND ] && echo "$BITCOIND not found or not executable." && exit 1
 
 # The autodetected version git tag can screw up manpage output a little bit
-read -r -a BTCVER <<< "$($BITCOINCLI --version | head -n1 | awk -F'[ -]' '{ print $6, $7 }')"
+BTCVER=($($BITCOINCLI --version | head -n1 | awk -F'[ -]' '{ print $6, $7 }'))
 
 # Create a footer file with copyright content.
 # This gets autodetected fine for bitcoind if --version-string is not set,

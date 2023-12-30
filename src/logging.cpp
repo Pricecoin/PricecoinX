@@ -1,13 +1,10 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2020 The Bitcoin Core developers
+// Copyright (c) 2009-2018 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include <logging.h>
-#include <util/threadnames.h>
 #include <util/time.h>
-
-#include <mutex>
 
 const char * const DEFAULT_DEBUGLOGFILE = "debug.log";
 
@@ -22,8 +19,8 @@ BCLog::Logger& LogInstance()
  * access the logger. When the shutdown sequence is fully audited and tested,
  * explicit destruction of these objects can be implemented by changing this
  * from a raw pointer to a std::unique_ptr.
- * Since the ~Logger() destructor is never called, the Logger class and all
- * its subclasses must have implicitly-defined destructors.
+ * Since the destructor is never called, the logger and all its members must
+ * have a trivial destructor.
  *
  * This method of initialization was originally introduced in
  * ee3374234c60aba2cc4c5cd5cac1c0aefc2d817c.
@@ -39,52 +36,26 @@ static int FileWriteStr(const std::string &str, FILE *fp)
     return fwrite(str.data(), 1, str.size(), fp);
 }
 
-bool BCLog::Logger::StartLogging()
+bool BCLog::Logger::OpenDebugLog()
 {
-    StdLockGuard scoped_lock(m_cs);
+    std::lock_guard<std::mutex> scoped_lock(m_file_mutex);
 
-    assert(m_buffering);
     assert(m_fileout == nullptr);
+    assert(!m_file_path.empty());
 
-    if (m_print_to_file) {
-        assert(!m_file_path.empty());
-        m_fileout = fsbridge::fopen(m_file_path, "a");
-        if (!m_fileout) {
-            return false;
-        }
-
-        setbuf(m_fileout, nullptr); // unbuffered
-
-        // Add newlines to the logfile to distinguish this execution from the
-        // last one.
-        FileWriteStr("\n\n\n\n\n", m_fileout);
+    m_fileout = fsbridge::fopen(m_file_path, "a");
+    if (!m_fileout) {
+        return false;
     }
 
+    setbuf(m_fileout, nullptr); // unbuffered
     // dump buffered messages from before we opened the log
-    m_buffering = false;
     while (!m_msgs_before_open.empty()) {
-        const std::string& s = m_msgs_before_open.front();
-
-        if (m_print_to_file) FileWriteStr(s, m_fileout);
-        if (m_print_to_console) fwrite(s.data(), 1, s.size(), stdout);
-        for (const auto& cb : m_print_callbacks) {
-            cb(s);
-        }
-
+        FileWriteStr(m_msgs_before_open.front(), m_fileout);
         m_msgs_before_open.pop_front();
     }
-    if (m_print_to_console) fflush(stdout);
 
     return true;
-}
-
-void BCLog::Logger::DisconnectTestLogger()
-{
-    StdLockGuard scoped_lock(m_cs);
-    m_buffering = true;
-    if (m_fileout != nullptr) fclose(m_fileout);
-    m_fileout = nullptr;
-    m_print_callbacks.clear();
 }
 
 void BCLog::Logger::EnableCategory(BCLog::LogFlags flag)
@@ -139,7 +110,7 @@ const CLogCategoryDesc LogCategories[] =
     {BCLog::HTTP, "http"},
     {BCLog::BENCH, "bench"},
     {BCLog::ZMQ, "zmq"},
-    {BCLog::WALLETDB, "walletdb"},
+    {BCLog::DB, "db"},
     {BCLog::RPC, "rpc"},
     {BCLog::ESTIMATEFEE, "estimatefee"},
     {BCLog::ADDRMAN, "addrman"},
@@ -154,7 +125,6 @@ const CLogCategoryDesc LogCategories[] =
     {BCLog::COINDB, "coindb"},
     {BCLog::QT, "qt"},
     {BCLog::LEVELDB, "leveldb"},
-    {BCLog::VALIDATION, "validation"},
     {BCLog::ALL, "1"},
     {BCLog::ALL, "all"},
 };
@@ -174,22 +144,37 @@ bool GetLogCategory(BCLog::LogFlags& flag, const std::string& str)
     return false;
 }
 
-std::vector<LogCategory> BCLog::Logger::LogCategoriesList()
+std::string ListLogCategories()
 {
-    std::vector<LogCategory> ret;
+    std::string ret;
+    int outcount = 0;
     for (const CLogCategoryDesc& category_desc : LogCategories) {
         // Omit the special cases.
         if (category_desc.flag != BCLog::NONE && category_desc.flag != BCLog::ALL) {
-            LogCategory catActive;
+            if (outcount != 0) ret += ", ";
+            ret += category_desc.category;
+            outcount++;
+        }
+    }
+    return ret;
+}
+
+std::vector<CLogCategoryActive> ListActiveLogCategories()
+{
+    std::vector<CLogCategoryActive> ret;
+    for (const CLogCategoryDesc& category_desc : LogCategories) {
+        // Omit the special cases.
+        if (category_desc.flag != BCLog::NONE && category_desc.flag != BCLog::ALL) {
+            CLogCategoryActive catActive;
             catActive.category = category_desc.category;
-            catActive.active = WillLogCategory(category_desc.flag);
+            catActive.active = LogAcceptCategory(category_desc.flag);
             ret.push_back(catActive);
         }
     }
     return ret;
 }
 
-std::string BCLog::Logger::LogTimestampStr(const std::string& str)
+std::string BCLog::Logger::LogTimestampStr(const std::string &str)
 {
     std::string strStamped;
 
@@ -210,6 +195,11 @@ std::string BCLog::Logger::LogTimestampStr(const std::string& str)
         strStamped += ' ' + str;
     } else
         strStamped = str;
+
+    if (!str.empty() && str[str.size()-1] == '\n')
+        m_started_new_line = true;
+    else
+        m_started_new_line = false;
 
     return strStamped;
 }
@@ -236,47 +226,37 @@ namespace BCLog {
     }
 }
 
-void BCLog::Logger::LogPrintStr(const std::string& str)
+void BCLog::Logger::LogPrintStr(const std::string &str)
 {
-    StdLockGuard scoped_lock(m_cs);
-    std::string str_prefixed = LogEscapeMessage(str);
-
-    if (m_log_threadnames && m_started_new_line) {
-        str_prefixed.insert(0, "[" + util::ThreadGetInternalName() + "] ");
-    }
-
-    str_prefixed = LogTimestampStr(str_prefixed);
-
-    m_started_new_line = !str.empty() && str[str.size()-1] == '\n';
-
-    if (m_buffering) {
-        // buffer if we haven't started logging yet
-        m_msgs_before_open.push_back(str_prefixed);
-        return;
-    }
+    std::string strEscaped = LogEscapeMessage(str);
+    std::string strTimestamped = LogTimestampStr(strEscaped);
 
     if (m_print_to_console) {
         // print to console
-        fwrite(str_prefixed.data(), 1, str_prefixed.size(), stdout);
+        fwrite(strTimestamped.data(), 1, strTimestamped.size(), stdout);
         fflush(stdout);
     }
-    for (const auto& cb : m_print_callbacks) {
-        cb(str_prefixed);
-    }
     if (m_print_to_file) {
-        assert(m_fileout != nullptr);
+        std::lock_guard<std::mutex> scoped_lock(m_file_mutex);
 
-        // reopen the log file, if requested
-        if (m_reopen_file) {
-            m_reopen_file = false;
-            FILE* new_fileout = fsbridge::fopen(m_file_path, "a");
-            if (new_fileout) {
-                setbuf(new_fileout, nullptr); // unbuffered
-                fclose(m_fileout);
-                m_fileout = new_fileout;
-            }
+        // buffer if we haven't opened the log yet
+        if (m_fileout == nullptr) {
+            m_msgs_before_open.push_back(strTimestamped);
         }
-        FileWriteStr(str_prefixed, m_fileout);
+        else
+        {
+            // reopen the log file, if requested
+            if (m_reopen_file) {
+                m_reopen_file = false;
+                FILE* new_fileout = fsbridge::fopen(m_file_path, "a");
+                if (new_fileout) {
+                    setbuf(new_fileout, nullptr); // unbuffered
+                    fclose(m_fileout);
+                    m_fileout = new_fileout;
+                }
+            }
+            FileWriteStr(strTimestamped, m_fileout);
+        }
     }
 }
 

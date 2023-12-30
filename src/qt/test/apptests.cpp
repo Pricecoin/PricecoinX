@@ -1,22 +1,23 @@
-// Copyright (c) 2018-2020 The Bitcoin Core developers
+// Copyright (c) 2018 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include <qt/test/apptests.h>
 
 #include <chainparams.h>
-#include <key.h>
+#include <init.h>
 #include <qt/bitcoin.h>
 #include <qt/bitcoingui.h>
 #include <qt/networkstyle.h>
 #include <qt/rpcconsole.h>
 #include <shutdown.h>
-#include <test/util/setup_common.h>
-#include <univalue.h>
 #include <validation.h>
 
 #if defined(HAVE_CONFIG_H)
 #include <config/bitcoin-config.h>
+#endif
+#ifdef ENABLE_WALLET
+#include <wallet/db.h>
 #endif
 
 #include <QAction>
@@ -28,6 +29,9 @@
 #include <QtGlobal>
 #include <QtTest/QtTestWidgets>
 #include <QtTest/QtTestGui>
+#include <new>
+#include <string>
+#include <univalue.h>
 
 namespace {
 //! Call getblockchaininfo RPC and check first field of JSON output.
@@ -57,20 +61,15 @@ void AppTests::appTests()
         // and fails to handle returned nulls
         // (https://bugreports.qt.io/browse/QTBUG-49686).
         QWARN("Skipping AppTests on mac build with 'minimal' platform set due to Qt bugs. To run AppTests, invoke "
-              "with 'QT_QPA_PLATFORM=cocoa test_bitcoin-qt' on mac, or else use a linux or windows build.");
+              "with 'test_pricecoinx-qt -platform cocoa' on mac, or else use a linux or windows build.");
         return;
     }
 #endif
 
-    fs::create_directories([] {
-        BasicTestingSetup test{CBaseChainParams::REGTEST}; // Create a temp data directory to backup the gui settings to
-        return GetDataDir() / "blocks";
-    }());
-
-    qRegisterMetaType<interfaces::BlockAndHeaderTipInfo>("interfaces::BlockAndHeaderTipInfo");
     m_app.parameterSetup();
     m_app.createOptionsModel(true /* reset settings */);
-    QScopedPointer<const NetworkStyle> style(NetworkStyle::instantiate(Params().NetworkIDString()));
+    QScopedPointer<const NetworkStyle> style(
+        NetworkStyle::instantiate(QString::fromStdString(Params().NetworkIDString())));
     m_app.setupPlatformStyle();
     m_app.createWindow(style.data());
     connect(&m_app, &BitcoinApplication::windowShown, this, &AppTests::guiTests);
@@ -82,13 +81,8 @@ void AppTests::appTests()
     m_app.exec();
 
     // Reset global state to avoid interfering with later tests.
-    LogInstance().DisconnectTestLogger();
     AbortShutdown();
-    {
-        LOCK(cs_main);
-        UnloadBlockIndex(/* mempool */ nullptr, g_chainman);
-        g_chainman.Reset();
-    }
+    UnloadBlockIndex();
 }
 
 //! Entry point for BitcoinGUI tests.

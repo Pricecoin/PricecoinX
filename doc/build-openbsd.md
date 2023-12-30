@@ -1,8 +1,10 @@
 OpenBSD build guide
 ======================
-(updated for OpenBSD 6.7)
+(updated for OpenBSD 6.4)
 
-This guide describes how to build litecoind, pricecoinx-qt, and command-line utilities on OpenBSD.
+This guide describes how to build pricecoinxd and command-line utilities on OpenBSD.
+
+OpenBSD is most commonly used as a server OS, so this guide does not contain instructions for building the GUI.
 
 Preparation
 -------------
@@ -11,10 +13,9 @@ Run the following as root to install the base dependencies for building:
 
 ```bash
 pkg_add git gmake libevent libtool boost
-pkg_add qt5 # (optional for enabling the GUI)
 pkg_add autoconf # (select highest version, e.g. 2.69)
 pkg_add automake # (select highest version, e.g. 1.16)
-pkg_add python # (select highest version, e.g. 3.8)
+pkg_add python # (select highest version, e.g. 3.6)
 
 git clone https://github.com/pricecoinx-project/pricecoinx.git
 ```
@@ -22,10 +23,10 @@ git clone https://github.com/pricecoinx-project/pricecoinx.git
 See [dependencies.md](dependencies.md) for a complete overview.
 
 **Important**: From OpenBSD 6.2 onwards a C++11-supporting clang compiler is
-part of the base image, and while building it is necessary to make sure that
-this compiler is used and not ancient g++ 4.2.1. This is done by appending
-`CC=cc CC_FOR_BUILD=cc CXX=c++` to configuration commands. Mixing different
-compilers within the same executable will result in errors.
+part of the base image, and while building it is necessary to make sure that this
+compiler is used and not ancient g++ 4.2.1. This is done by appending
+`CC=cc CXX=c++` to configuration commands. Mixing different compilers
+within the same executable will result in linker errors.
 
 ### Building BerkeleyDB
 
@@ -37,19 +38,19 @@ from ports, for the same reason as boost above (g++/libstd++ incompatibility).
 If you have to build it yourself, you can use [the installation script included
 in contrib/](/contrib/install_db4.sh) like so:
 
-```bash
+```shell
 ./contrib/install_db4.sh `pwd` CC=cc CXX=c++
 ```
 
 from the root of the repository. Then set `BDB_PREFIX` for the next section:
 
-```bash
+```shell
 export BDB_PREFIX="$PWD/db4"
 ```
 
-### Building Litecoin Core
+### Building Pricecoinx Core
 
-**Important**: Use `gmake` (the non-GNU `make` will exit with an error).
+**Important**: use `gmake`, not `make`. The non-GNU `make` will exit with a horrible error.
 
 Preparation:
 ```bash
@@ -69,22 +70,12 @@ Make sure `BDB_PREFIX` is set to the appropriate path from the above steps.
 To configure with wallet:
 ```bash
 ./configure --with-gui=no CC=cc CXX=c++ \
-    BDB_LIBS="-L${BDB_PREFIX}/lib -ldb_cxx-4.8" \
-    BDB_CFLAGS="-I${BDB_PREFIX}/include" \
-    MAKE=gmake
+    BDB_LIBS="-L${BDB_PREFIX}/lib -ldb_cxx-4.8" BDB_CFLAGS="-I${BDB_PREFIX}/include"
 ```
 
 To configure without wallet:
 ```bash
-./configure --disable-wallet --with-gui=no CC=cc CC_FOR_BUILD=cc CXX=c++ MAKE=gmake
-```
-
-To configure with GUI:
-```bash
-./configure --with-gui=yes CC=cc CXX=c++ \
-    BDB_LIBS="-L${BDB_PREFIX}/lib -ldb_cxx-4.8" \
-    BDB_CFLAGS="-I${BDB_PREFIX}/include" \
-    MAKE=gmake
+./configure --disable-wallet --with-gui=no CC=cc CXX=c++
 ```
 
 Build and run the tests:

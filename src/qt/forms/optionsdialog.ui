@@ -217,13 +217,6 @@
            </widget>
           </item>
           <item>
-           <widget class="QCheckBox" name="mwebFeatures">
-            <property name="text">
-             <string>Enable advanced MW&amp;EB features</string>
-            </property>
-           </widget>
-          </item>
-          <item>
            <widget class="QCheckBox" name="spendZeroConfChange">
             <property name="toolTip">
              <string>If you disable the spending of unconfirmed change, the change from a transaction cannot be used until that transaction has at least one confirmation. This also affects how your balance is computed.</string>
@@ -259,7 +252,7 @@
        <item>
         <widget class="QCheckBox" name="mapPortUpnp">
          <property name="toolTip">
-          <string>Automatically open the Litecoin client port on the router. This only works when your router supports UPnP and it is enabled.</string>
+          <string>Automatically open the Pricecoinx client port on the router. This only works when your router supports UPnP and it is enabled.</string>
          </property>
          <property name="text">
           <string>Map port using &amp;UPnP</string>
@@ -279,7 +272,7 @@
        <item>
         <widget class="QCheckBox" name="connectSocks">
          <property name="toolTip">
-          <string>Connect to the Litecoin network through a SOCKS5 proxy.</string>
+          <string>Connect to the Pricecoinx network through a SOCKS5 proxy.</string>
          </property>
          <property name="text">
           <string>&amp;Connect through SOCKS5 proxy (default proxy):</string>
@@ -466,10 +459,10 @@
        <item>
         <widget class="QCheckBox" name="connectSocksTor">
          <property name="toolTip">
-          <string>Connect to the Litecoin network through a separate SOCKS5 proxy for Tor onion services.</string>
+          <string>Connect to the Pricecoinx network through a separate SOCKS5 proxy for Tor hidden services.</string>
          </property>
          <property name="text">
-          <string>Use separate SOCKS&amp;5 proxy to reach peers via Tor onion services:</string>
+          <string>Use separate SOCKS&amp;5 proxy to reach peers via Tor hidden services:</string>
          </property>
         </widget>
        </item>
@@ -691,9 +684,6 @@
           <widget class="QLineEdit" name="thirdPartyTxUrls">
            <property name="toolTip">
             <string>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</string>
-           </property>
-           <property name="placeholderText">
-            <string notr="true">https://example.com/tx/%s</string>
            </property>
           </widget>
          </item>

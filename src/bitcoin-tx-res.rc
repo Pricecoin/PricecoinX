@@ -16,8 +16,8 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Litecoin"
-            VALUE "FileDescription",    "pricecoinx-tx (CLI Litecoin transaction editor utility)"
+            VALUE "CompanyName",        "Pricecoinx"
+            VALUE "FileDescription",    "pricecoinx-tx (CLI Pricecoinx transaction editor utility)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "pricecoinx-tx"
             VALUE "LegalCopyright",     COPYRIGHT_STR
