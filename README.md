@@ -1,9 +1,9 @@
 PricecoinX Core integration/staging tree
 =====================================
 
-[![Build Status](https://travis-ci.org/pricecoinx-project/pricecoinx.svg?branch=master)](https://travis-ci.org/pricecoinx-project/pricecoinx)
+[![Build Status](https://travis-ci.org/pricecoinx/pricecoinx.svg?branch=master)](https://travis-ci.org/pricecoin/pricecoinx)
 
-https://pricecoinx.org
+https://pricecoincrypto.com
 
 What is PricecoinX?
 ----------------
@@ -13,9 +13,6 @@ anyone, anywhere in the world. PricecoinX uses peer-to-peer technology to operat
 with no central authority: managing transactions and issuing money are carried
 out collectively by the network. PricecoinX Core is the name of open source
 software which enables the use of this currency.
-
-For more information, as well as an immediately useable, binary version of
-the PricecoinX Core software, see [https://pricecoinx.org](https://pricecoinx.org).
 
 License
 -------
@@ -27,30 +24,18 @@ Development Process
 -------------------
 
 The `master` branch is regularly built (see `doc/build-*.md` for instructions) and tested, but it is not guaranteed to be
-completely stable. [Tags](https://github.com/pricecoinx-project/pricecoinx/tags) are created
+completely stable. [Tags](https://github.com/pricecoin/pricecoinx/tags) are created
 regularly from release branches to indicate new official, stable release versions of PricecoinX Core.
-
-The https://github.com/pricecoinx-project/gui repository is used exclusively for the
-development of the GUI. Its master branch is identical in all monotree
-repositories. Release branches and tags do not exist, so please do not fork
-that repository unless it is for development reasons.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md)
 and useful hints for developers can be found in [doc/developer-notes.md](doc/developer-notes.md).
-
-The developer [mailing list](https://groups.google.com/forum/#!forum/pricecoinx-dev)
-should be used to discuss complicated or controversial changes before working
-on a patch set.
-
-Developer IRC can be found on Freenode at #pricecoinx-dev.
 
 Testing
 -------
 
 Testing and code review is the bottleneck for development; we get more pull
 requests than we can review and test on short notice. Please be patient and help out by testing
-other people's pull requests, and remember this is a security-critical project where any mistake might cost people
-lots of money.
+other people's pull requests, and remember this is a security-critical project where any mistake might cost people lots of money.
 
 ### Automated Testing
 
