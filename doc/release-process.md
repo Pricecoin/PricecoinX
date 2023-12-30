@@ -66,7 +66,7 @@ Check out the source code in the following directory hierarchy.
     git clone https://github.com/devrandom/gitian-builder.git
     git clone https://github.com/pricecoinx-project/pricecoinx.git
 
-### PricecoinX maintainers/release engineers, suggestion for writing release notes
+### Litecoin maintainers/release engineers, suggestion for writing release notes
 
 Write the release notes. `git shortlog` helps a lot, for example:
 
@@ -138,7 +138,7 @@ NOTE: Offline builds must use the --url flag to ensure Gitian fetches only from 
 
 The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 
-### Build and sign PricecoinX Core for Linux, Windows, and macOS:
+### Build and sign Litecoin Core for Linux, Windows, and macOS:
 
     export GITIAN_THREADS=2
     export GITIAN_MEMORY=3000
@@ -215,7 +215,7 @@ Codesigner only: Sign the macOS binary:
 
     Notarize the disk image:
 
-    $   xcrun altool --notarize-app --primary-bundle-id "org.pricecoinx.PricecoinX-Qt" -u "<apple-id-email>" -p "@keychain:<apple-id-notarisation-app-specific-password>" --asc-provider <team-id-shortcode> -t osx -f pricecoinx-${VERSION}-osx.dmg
+    $   xcrun altool --notarize-app --primary-bundle-id "org.pricecoinx.Litecoin-Qt" -u "<apple-id-email>" -p "@keychain:<apple-id-notarisation-app-specific-password>" --asc-provider <team-id-shortcode> -t osx -f pricecoinx-${VERSION}-osx.dmg
 
     The notarization takes a few minutes. Check the status:
 
@@ -227,7 +227,7 @@ Codesigner only: Sign the macOS binary:
 
     Staple the notarization ticket onto the application
 
-    $   xcrun stapler staple dist/PricecoinX-Qt.app
+    $   xcrun stapler staple dist/Litecoin-Qt.app
 
 Codesigner only: Sign the windows binaries:
 
@@ -244,7 +244,7 @@ Codesigner only: Commit the detached codesign payloads:
     tar xf signature-osx.tar.gz
     tar xf signature-win.tar.gz
     #copy the notarization ticket to detached-sigs repo
-    cp dist/PricecoinX-Qt.app/Contents/CodeResources osx/dist/PricecoinX-Qt.app/Contents/
+    cp dist/Litecoin-Qt.app/Contents/CodeResources osx/dist/Litecoin-Qt.app/Contents/
     git add -A
     git commit -m "point to ${VERSION}"
     git tag -s v${VERSION} HEAD
@@ -362,7 +362,7 @@ Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spur
 
   - Update title of #pricecoinx and #pricecoinx-dev on Freenode IRC
 
-  - Optionally twitter, reddit /r/PricecoinX, ... but this will usually sort out itself
+  - Optionally twitter, reddit /r/Litecoin, ... but this will usually sort out itself
 
   - Archive release notes for the new version to `doc/release-notes/` (branch `master` and branch of the release)
 

@@ -88,7 +88,7 @@ TESTS =
 BENCHMARKS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += pricecoinxd
+  bin_PROGRAMS += litecoind
 endif
 
 if BUILD_BITCOIN_NODE
@@ -643,16 +643,16 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind & bitcoin-node binaries #
-pricecoinx_daemon_sources = bitcoind.cpp
-pricecoinx_bin_cppflags = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-pricecoinx_bin_cxxflags = $(AM_CXXFLAGS) $(PIE_FLAGS)
-pricecoinx_bin_ldflags = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) $(PTHREAD_FLAGS)
+litecoin_daemon_sources = bitcoind.cpp
+litecoin_bin_cppflags = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+litecoin_bin_cxxflags = $(AM_CXXFLAGS) $(PIE_FLAGS)
+litecoin_bin_ldflags = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) $(PTHREAD_FLAGS)
 
 if TARGET_WINDOWS
-pricecoinx_daemon_sources += bitcoind-res.rc
+litecoin_daemon_sources += bitcoind-res.rc
 endif
 
-pricecoinx_bin_ldadd = \
+litecoin_bin_ldadd = \
   $(LIBBITCOIN_WALLET) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \
@@ -666,50 +666,50 @@ pricecoinx_bin_ldadd = \
   $(LIBSECP256K1) \
   $(LIBMW)
 
-pricecoinx_bin_ldadd += $(BOOST_LIBS) $(BDB_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS) $(SQLITE_LIBS) $(MWEB_LIBS)
+litecoin_bin_ldadd += $(BOOST_LIBS) $(BDB_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS) $(SQLITE_LIBS) $(MWEB_LIBS)
 
-pricecoinxd_SOURCES = $(pricecoinx_daemon_sources)
-pricecoinxd_CPPFLAGS = $(pricecoinx_bin_cppflags)
-pricecoinxd_CXXFLAGS = $(pricecoinx_bin_cxxflags)
-pricecoinxd_LDFLAGS = $(pricecoinx_bin_ldflags)
-pricecoinxd_LDADD = $(LIBBITCOIN_SERVER) $(pricecoinx_bin_ldadd)
+litecoind_SOURCES = $(litecoin_daemon_sources)
+litecoind_CPPFLAGS = $(litecoin_bin_cppflags)
+litecoind_CXXFLAGS = $(litecoin_bin_cxxflags)
+litecoind_LDFLAGS = $(litecoin_bin_ldflags)
+litecoind_LDADD = $(LIBBITCOIN_SERVER) $(litecoin_bin_ldadd)
 
-pricecoinx_node_SOURCES = $(pricecoinx_daemon_sources)
-pricecoinx_node_CPPFLAGS = $(pricecoinx_bin_cppflags)
-pricecoinx_node_CXXFLAGS = $(pricecoinx_bin_cxxflags)
-pricecoinx_node_LDFLAGS = $(pricecoinx_bin_ldflags)
-pricecoinx_node_LDADD = $(LIBBITCOIN_SERVER) $(pricecoinx_bin_ldadd)
+litecoin_node_SOURCES = $(litecoin_daemon_sources)
+litecoin_node_CPPFLAGS = $(litecoin_bin_cppflags)
+litecoin_node_CXXFLAGS = $(litecoin_bin_cxxflags)
+litecoin_node_LDFLAGS = $(litecoin_bin_ldflags)
+litecoin_node_LDADD = $(LIBBITCOIN_SERVER) $(litecoin_bin_ldadd)
 
 # bitcoin-cli binary #
-pricecoinx_cli_SOURCES = bitcoin-cli.cpp
-pricecoinx_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-pricecoinx_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-pricecoinx_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) $(PTHREAD_FLAGS)
+litecoin_cli_SOURCES = bitcoin-cli.cpp
+litecoin_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+litecoin_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+litecoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) $(PTHREAD_FLAGS)
 
 if TARGET_WINDOWS
-pricecoinx_cli_SOURCES += bitcoin-cli-res.rc
+litecoin_cli_SOURCES += bitcoin-cli-res.rc
 endif
 
-pricecoinx_cli_LDADD = \
+litecoin_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO)
 
-pricecoinx_cli_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS) $(MWEB_LIBS)
+litecoin_cli_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS) $(MWEB_LIBS)
 #
 
 # bitcoin-tx binary #
-pricecoinx_tx_SOURCES = bitcoin-tx.cpp
-pricecoinx_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-pricecoinx_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-pricecoinx_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) $(PTHREAD_FLAGS)
+litecoin_tx_SOURCES = bitcoin-tx.cpp
+litecoin_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+litecoin_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+litecoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) $(PTHREAD_FLAGS)
 
 if TARGET_WINDOWS
-pricecoinx_tx_SOURCES += bitcoin-tx-res.rc
+litecoin_tx_SOURCES += bitcoin-tx-res.rc
 endif
 
-pricecoinx_tx_LDADD = \
+litecoin_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \
@@ -718,17 +718,17 @@ pricecoinx_tx_LDADD = \
   $(LIBSECP256K1) \
   $(LIBMW)
 
-pricecoinx_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS) $(MWEB_LIBS)
+litecoin_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS) $(MWEB_LIBS)
 
 # bitcoin-wallet binary #
-pricecoinx_wallet_SOURCES = bitcoin-wallet.cpp
-pricecoinx_wallet_CPPFLAGS = $(pricecoinx_bin_cppflags)
-pricecoinx_wallet_CXXFLAGS = $(pricecoinx_bin_cxxflags)
-pricecoinx_wallet_LDFLAGS = $(pricecoinx_bin_ldflags)
-pricecoinx_wallet_LDADD = $(LIBBITCOIN_WALLET_TOOL) $(pricecoinx_bin_ldadd)
+litecoin_wallet_SOURCES = bitcoin-wallet.cpp
+litecoin_wallet_CPPFLAGS = $(litecoin_bin_cppflags)
+litecoin_wallet_CXXFLAGS = $(litecoin_bin_cxxflags)
+litecoin_wallet_LDFLAGS = $(litecoin_bin_ldflags)
+litecoin_wallet_LDADD = $(LIBBITCOIN_WALLET_TOOL) $(litecoin_bin_ldadd)
 
 if TARGET_WINDOWS
-pricecoinx_wallet_SOURCES += bitcoin-wallet-res.rc
+litecoin_wallet_SOURCES += bitcoin-wallet-res.rc
 endif
 #
 

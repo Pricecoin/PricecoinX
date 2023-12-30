@@ -7,7 +7,7 @@ export LC_ALL=C
 set -e
 
 ROOTDIR=dist
-BUNDLE="${ROOTDIR}/PricecoinX-Qt.app"
+BUNDLE="${ROOTDIR}/Litecoin-Qt.app"
 SIGNAPPLE=signapple
 TEMPDIR=sign.temp
 OUT=signature-osx.tar.gz
