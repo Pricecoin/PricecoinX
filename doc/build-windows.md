@@ -108,6 +108,15 @@ Build using:
     make
     sudo bash -c "echo 1 > /proc/sys/fs/binfmt_misc/status" # Enable WSL support for Win32 applications.
 
+Notes for PricecoinX building:
+
+    $ CONFIG_SITE=$PWD/depends/x86_64-w64-mingw32/share/config.site ./configure --prefix=/ --disable-shared BDB_LIBS="-L${BDB_PREFIX}/lib -ldb_cxx-4.8" BDB_CFLAGS="-I${BDB_PREFIX}/include"
+
+    If you see a weird LD error on building depends, continue to the CONFIG_SITE command but run the above command, then ruturn to depends to make host=x86
+
+
+
+
 ## Depends system
 
 For further documentation on the depends system see [README.md](../depends/README.md) in the depends directory.
