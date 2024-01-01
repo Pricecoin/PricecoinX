@@ -573,7 +573,7 @@ class SegWitTest(BitcoinTestFramework):
         txid = int(self.nodes[0].sendtoaddress(self.nodes[0].getnewaddress(), 1), 16)
 
         for node in [self.nodes[0], self.nodes[2]]:
-            gbt_results = node.getblocktemplate({"rules": ["mweb", "segwit"]})
+            gbt_results = node.getblocktemplate({})
             if node == self.nodes[2]:
                 # If this is a non-segwit node, we should not get a witness
                 # commitment.
